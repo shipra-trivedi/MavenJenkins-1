@@ -21,7 +21,7 @@ public class Test_Steps {
 	public static WebDriver driver;
 	@Given("^User is on Home Page$")
 	public void user_is_on_Home_Page() throws Throwable {
-	    //System.out.println(binaryPath);
+	      //System.out.println(binaryPath);
 		System.setProperty("webdriver.gecko.driver",binaryPath);
 		driver = new FirefoxDriver();
 	    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

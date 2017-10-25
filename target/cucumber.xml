@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="4" name="cucumber.runtime.formatter.JUnitFormatter" skipped="1" tests="5" time="28.584563">
+<testcase classname="Login Action" name="Successful Login with Valid Credentials by data table" time="7.74278">
+<failure message="org.openqa.selenium.WebDriverException: Process unexpectedly closed with status: 0&#10;Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'&#10;System info: host: 'SHUBHAMJ-PC', ip: '172.21.31.61', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'&#10;Driver info: driver.version: FirefoxDriver&#10;remote stacktrace: stack backtrace:&#10;   0:           0x4821c4 - &lt;no info&gt;&#10;   1:           0x482933 - &lt;no info&gt;&#10;   2:           0x445159 - &lt;no info&gt;&#10;   3:           0x44c838 - &lt;no info&gt;&#10;   4:           0x43026a - &lt;no info&gt;&#10;   5:           0x40ba4e - &lt;no info&gt;&#10;   6:           0x4119b9 - &lt;no info&gt;&#10;   7:           0x6d2c89 - &lt;no info&gt;&#10;   8:           0x426006 - &lt;no info&gt;&#10;   9:           0x6cd490 - &lt;no info&gt;&#10;  10:     0x7ffd40c22774 - BaseThreadInitThunk&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;&#10;&#9;at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)&#13;&#10;&#9;at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)&#13;&#10;&#9;at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$24(ProtocolHandshake.java:359)&#13;&#10;&#9;at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)&#13;&#10;&#9;at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)&#13;&#10;&#9;at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)&#13;&#10;&#9;at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)&#13;&#10;&#9;at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)&#13;&#10;&#9;at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)&#13;&#10;&#9;at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)&#13;&#10;&#9;at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)&#13;&#10;&#9;at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)&#13;&#10;&#9;at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:362)&#13;&#10;&#9;at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:217)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:140)&#13;&#10;&#9;at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)&#13;&#10;&#9;at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:98)&#13;&#10;&#9;at stepDefinition.Test_Steps.user_is_on_Home_Page(Test_Steps.java:26)&#13;&#10;&#9;at ✽.Given User is on Home Page(LogIn_Test.feature:24)&#13;&#10;"><![CDATA[Given User is on Home Page..................................................failed
+When User Navigate to LogIn Page............................................skipped
+And User enters Credentials to LogIn........................................skipped
+Then Message displayed Login Successfully...................................skipped
+
+StackTrace:
+org.openqa.selenium.WebDriverException: Process unexpectedly closed with status: 0
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'SHUBHAMJ-PC', ip: '172.21.31.61', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: stack backtrace:
+   0:           0x4821c4 - <no info>
+   1:           0x482933 - <no info>
+   2:           0x445159 - <no info>
+   3:           0x44c838 - <no info>
+   4:           0x43026a - <no info>
+   5:           0x40ba4e - <no info>
+   6:           0x4119b9 - <no info>
+   7:           0x6d2c89 - <no info>
+   8:           0x426006 - <no info>
+   9:           0x6cd490 - <no info>
+  10:     0x7ffd40c22774 - BaseThreadInitThunk
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$24(ProtocolHandshake.java:359)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:362)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:217)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:140)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:120)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:98)
+	at stepDefinition.Test_Steps.user_is_on_Home_Page(Test_Steps.java:26)
+	at ✽.Given User is on Home Page(LogIn_Test.feature:24)
+]]></failure>
+</testcase>
+<testcase classname="Login Action" name="Successful Login with Valid Credentials by Maps in Data Tables" time="6.945809">
+<failure message="org.openqa.selenium.WebDriverException: Process unexpectedly closed with status: 0&#10;Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'&#10;System info: host: 'SHUBHAMJ-PC', ip: '172.21.31.61', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'&#10;Driver info: driver.version: FirefoxDriver&#10;remote stacktrace: stack backtrace:&#10;   0:           0x4821c4 - &lt;no info&gt;&#10;   1:           0x482933 - &lt;no info&gt;&#10;   2:           0x445159 - &lt;no info&gt;&#10;   3:           0x44c838 - &lt;no info&gt;&#10;   4:           0x43026a - &lt;no info&gt;&#10;   5:           0x40ba4e - &lt;no info&gt;&#10;   6:           0x4119b9 - &lt;no info&gt;&#10;   7:           0x6d2c89 - &lt;no info&gt;&#10;   8:           0x426006 - &lt;no info&gt;&#10;   9:           0x6cd490 - &lt;no info&gt;&#10;  10:     0x7ffd40c22774 - BaseThreadInitThunk&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;&#10;&#9;at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)&#13;&#10;&#9;at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)&#13;&#10;&#9;at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$24(ProtocolHandshake.java:359)&#13;&#10;&#9;at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)&#13;&#10;&#9;at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)&#13;&#10;&#9;at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)&#13;&#10;&#9;at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)&#13;&#10;&#9;at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)&#13;&#10;&#9;at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)&#13;&#10;&#9;at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)&#13;&#10;&#9;at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)&#13;&#10;&#9;at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)&#13;&#10;&#9;at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:362)&#13;&#10;&#9;at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:217)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:140)&#13;&#10;&#9;at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)&#13;&#10;&#9;at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:98)&#13;&#10;&#9;at stepDefinition.Test_Steps.user_is_on_Home_Page(Test_Steps.java:26)&#13;&#10;&#9;at ✽.Given User is on Home Page(LogIn_Test.feature:31)&#13;&#10;"><![CDATA[Given User is on Home Page..................................................failed
+When User Navigate to LogIn Page............................................skipped
+And User enters Credentials to LogIns.......................................undefined
+Then Message displayed Login Successfully...................................skipped
+
+StackTrace:
+org.openqa.selenium.WebDriverException: Process unexpectedly closed with status: 0
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'SHUBHAMJ-PC', ip: '172.21.31.61', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: stack backtrace:
+   0:           0x4821c4 - <no info>
+   1:           0x482933 - <no info>
+   2:           0x445159 - <no info>
+   3:           0x44c838 - <no info>
+   4:           0x43026a - <no info>
+   5:           0x40ba4e - <no info>
+   6:           0x4119b9 - <no info>
+   7:           0x6d2c89 - <no info>
+   8:           0x426006 - <no info>
+   9:           0x6cd490 - <no info>
+  10:     0x7ffd40c22774 - BaseThreadInitThunk
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$24(ProtocolHandshake.java:359)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:362)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:217)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:140)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:120)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:98)
+	at stepDefinition.Test_Steps.user_is_on_Home_Page(Test_Steps.java:26)
+	at ✽.Given User is on Home Page(LogIn_Test.feature:31)
+]]></failure>
+</testcase>
+<testcase classname="Login Action" name="Successful Login with Valid Credentials" time="6.935678">
+<failure message="org.openqa.selenium.WebDriverException: Process unexpectedly closed with status: 0&#10;Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'&#10;System info: host: 'SHUBHAMJ-PC', ip: '172.21.31.61', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'&#10;Driver info: driver.version: FirefoxDriver&#10;remote stacktrace: stack backtrace:&#10;   0:           0x4821c4 - &lt;no info&gt;&#10;   1:           0x482933 - &lt;no info&gt;&#10;   2:           0x445159 - &lt;no info&gt;&#10;   3:           0x44c838 - &lt;no info&gt;&#10;   4:           0x43026a - &lt;no info&gt;&#10;   5:           0x40ba4e - &lt;no info&gt;&#10;   6:           0x4119b9 - &lt;no info&gt;&#10;   7:           0x6d2c89 - &lt;no info&gt;&#10;   8:           0x426006 - &lt;no info&gt;&#10;   9:           0x6cd490 - &lt;no info&gt;&#10;  10:     0x7ffd40c22774 - BaseThreadInitThunk&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;&#10;&#9;at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)&#13;&#10;&#9;at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)&#13;&#10;&#9;at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$24(ProtocolHandshake.java:359)&#13;&#10;&#9;at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)&#13;&#10;&#9;at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)&#13;&#10;&#9;at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)&#13;&#10;&#9;at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)&#13;&#10;&#9;at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)&#13;&#10;&#9;at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)&#13;&#10;&#9;at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)&#13;&#10;&#9;at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)&#13;&#10;&#9;at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)&#13;&#10;&#9;at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:362)&#13;&#10;&#9;at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:217)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:140)&#13;&#10;&#9;at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)&#13;&#10;&#9;at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:98)&#13;&#10;&#9;at stepDefinition.Test_Steps.user_is_on_Home_Page(Test_Steps.java:26)&#13;&#10;&#9;at ✽.Given User is on Home Page(LogIn_Test.feature:40)&#13;&#10;"><![CDATA[Given User is on Home Page..................................................failed
+When User Navigate to LogIn Page............................................skipped
+And User enters "Shubham1" and "Test@153"...................................skipped
+Then Message displayed Login Successfully...................................skipped
+
+StackTrace:
+org.openqa.selenium.WebDriverException: Process unexpectedly closed with status: 0
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'SHUBHAMJ-PC', ip: '172.21.31.61', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: stack backtrace:
+   0:           0x4821c4 - <no info>
+   1:           0x482933 - <no info>
+   2:           0x445159 - <no info>
+   3:           0x44c838 - <no info>
+   4:           0x43026a - <no info>
+   5:           0x40ba4e - <no info>
+   6:           0x4119b9 - <no info>
+   7:           0x6d2c89 - <no info>
+   8:           0x426006 - <no info>
+   9:           0x6cd490 - <no info>
+  10:     0x7ffd40c22774 - BaseThreadInitThunk
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$24(ProtocolHandshake.java:359)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:362)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:217)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:140)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:120)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:98)
+	at stepDefinition.Test_Steps.user_is_on_Home_Page(Test_Steps.java:26)
+	at ✽.Given User is on Home Page(LogIn_Test.feature:40)
+]]></failure>
+</testcase>
+<testcase classname="Login Action" name="Successful Login with Valid Credentials 2" time="6.960243">
+<failure message="org.openqa.selenium.WebDriverException: Process unexpectedly closed with status: 0&#10;Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'&#10;System info: host: 'SHUBHAMJ-PC', ip: '172.21.31.61', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'&#10;Driver info: driver.version: FirefoxDriver&#10;remote stacktrace: stack backtrace:&#10;   0:           0x4821c4 - &lt;no info&gt;&#10;   1:           0x482933 - &lt;no info&gt;&#10;   2:           0x445159 - &lt;no info&gt;&#10;   3:           0x44c838 - &lt;no info&gt;&#10;   4:           0x43026a - &lt;no info&gt;&#10;   5:           0x40ba4e - &lt;no info&gt;&#10;   6:           0x4119b9 - &lt;no info&gt;&#10;   7:           0x6d2c89 - &lt;no info&gt;&#10;   8:           0x426006 - &lt;no info&gt;&#10;   9:           0x6cd490 - &lt;no info&gt;&#10;  10:     0x7ffd40c22774 - BaseThreadInitThunk&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;&#10;&#9;at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)&#13;&#10;&#9;at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)&#13;&#10;&#9;at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$24(ProtocolHandshake.java:359)&#13;&#10;&#9;at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)&#13;&#10;&#9;at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)&#13;&#10;&#9;at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)&#13;&#10;&#9;at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)&#13;&#10;&#9;at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)&#13;&#10;&#9;at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)&#13;&#10;&#9;at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)&#13;&#10;&#9;at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)&#13;&#10;&#9;at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)&#13;&#10;&#9;at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:362)&#13;&#10;&#9;at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:217)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:140)&#13;&#10;&#9;at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)&#13;&#10;&#9;at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:98)&#13;&#10;&#9;at stepDefinition.Test_Steps.user_is_on_Home_Page(Test_Steps.java:26)&#13;&#10;&#9;at ✽.Given User is on Home Page(LogIn_Test.feature:40)&#13;&#10;"><![CDATA[Given User is on Home Page..................................................failed
+When User Navigate to LogIn Page............................................skipped
+And User enters "Shubham2" and "Test@153"...................................skipped
+Then Message displayed Login Successfully...................................skipped
+
+StackTrace:
+org.openqa.selenium.WebDriverException: Process unexpectedly closed with status: 0
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'SHUBHAMJ-PC', ip: '172.21.31.61', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: stack backtrace:
+   0:           0x4821c4 - <no info>
+   1:           0x482933 - <no info>
+   2:           0x445159 - <no info>
+   3:           0x44c838 - <no info>
+   4:           0x43026a - <no info>
+   5:           0x40ba4e - <no info>
+   6:           0x4119b9 - <no info>
+   7:           0x6d2c89 - <no info>
+   8:           0x426006 - <no info>
+   9:           0x6cd490 - <no info>
+  10:     0x7ffd40c22774 - BaseThreadInitThunk
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$24(ProtocolHandshake.java:359)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:362)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:217)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:140)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:120)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:98)
+	at stepDefinition.Test_Steps.user_is_on_Home_Page(Test_Steps.java:26)
+	at ✽.Given User is on Home Page(LogIn_Test.feature:40)
+]]></failure>
+</testcase>
+<testcase classname="Login Action" name="Successful LogOut" time="0.000053">
+<skipped><![CDATA[When User LogOut from the Application.......................................passed
+Then Message displayed LogOut Successfullyy.................................undefined
+]]></skipped>
+</testcase>
+</testsuite>
