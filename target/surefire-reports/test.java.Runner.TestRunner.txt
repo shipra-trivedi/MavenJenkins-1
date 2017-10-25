@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: test.java.Runner.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 24, Failures: 0, Errors: 8, Skipped: 14, Time elapsed: 29.368 sec <<< FAILURE!
-Given User is on Home Page(Scenario: Successful Login with Valid Credentials by data table)  Time elapsed: 0.005 sec  <<< ERROR!
+Tests run: 24, Failures: 0, Errors: 8, Skipped: 14, Time elapsed: 29.458 sec <<< FAILURE!
+Given User is on Home Page(Scenario: Successful Login with Valid Credentials by data table)  Time elapsed: 0.01 sec  <<< ERROR!
 org.openqa.selenium.WebDriverException: Process unexpectedly closed with status: 0
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
 System info: host: 'SHUBHAMJ-PC', ip: '172.21.31.61', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
@@ -47,7 +47,7 @@ remote stacktrace: stack backtrace:
 	at stepDefinition.Test_Steps.user_is_on_Home_Page(Test_Steps.java:26)
 	at ?.Given User is on Home Page(LogIn_Test.feature:24)
 
-Scenario: Successful Login with Valid Credentials by data table  Time elapsed: 0.009 sec  <<< ERROR!
+Scenario: Successful Login with Valid Credentials by data table  Time elapsed: 0.017 sec  <<< ERROR!
 org.openqa.selenium.WebDriverException: Process unexpectedly closed with status: 0
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
 System info: host: 'SHUBHAMJ-PC', ip: '172.21.31.61', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
@@ -92,7 +92,7 @@ remote stacktrace: stack backtrace:
 	at stepDefinition.Test_Steps.user_is_on_Home_Page(Test_Steps.java:26)
 	at ?.Given User is on Home Page(LogIn_Test.feature:24)
 
-Given User is on Home Page(Scenario: Successful Login with Valid Credentials by Maps in Data Tables)  Time elapsed: 0.004 sec  <<< ERROR!
+Given User is on Home Page(Scenario: Successful Login with Valid Credentials by Maps in Data Tables)  Time elapsed: 0.006 sec  <<< ERROR!
 org.openqa.selenium.WebDriverException: Process unexpectedly closed with status: 0
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
 System info: host: 'SHUBHAMJ-PC', ip: '172.21.31.61', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
@@ -137,7 +137,7 @@ remote stacktrace: stack backtrace:
 	at stepDefinition.Test_Steps.user_is_on_Home_Page(Test_Steps.java:26)
 	at ?.Given User is on Home Page(LogIn_Test.feature:31)
 
-Scenario: Successful Login with Valid Credentials by Maps in Data Tables  Time elapsed: 0.011 sec  <<< ERROR!
+Scenario: Successful Login with Valid Credentials by Maps in Data Tables  Time elapsed: 0.021 sec  <<< ERROR!
 org.openqa.selenium.WebDriverException: Process unexpectedly closed with status: 0
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
 System info: host: 'SHUBHAMJ-PC', ip: '172.21.31.61', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
@@ -182,7 +182,7 @@ remote stacktrace: stack backtrace:
 	at stepDefinition.Test_Steps.user_is_on_Home_Page(Test_Steps.java:26)
 	at ?.Given User is on Home Page(LogIn_Test.feature:31)
 
-Given User is on Home Page(| Shubham1 | Test@153 |)  Time elapsed: 0.002 sec  <<< ERROR!
+Given User is on Home Page(| Shubham1 | Test@153 |)  Time elapsed: 0.001 sec  <<< ERROR!
 org.openqa.selenium.WebDriverException: Process unexpectedly closed with status: 0
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
 System info: host: 'SHUBHAMJ-PC', ip: '172.21.31.61', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
@@ -227,7 +227,7 @@ remote stacktrace: stack backtrace:
 	at stepDefinition.Test_Steps.user_is_on_Home_Page(Test_Steps.java:26)
 	at ?.Given User is on Home Page(LogIn_Test.feature:40)
 
-| Shubham1 | Test@153 |  Time elapsed: 0.008 sec  <<< ERROR!
+| Shubham1 | Test@153 |  Time elapsed: 0.01 sec  <<< ERROR!
 org.openqa.selenium.WebDriverException: Process unexpectedly closed with status: 0
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
 System info: host: 'SHUBHAMJ-PC', ip: '172.21.31.61', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
@@ -272,7 +272,7 @@ remote stacktrace: stack backtrace:
 	at stepDefinition.Test_Steps.user_is_on_Home_Page(Test_Steps.java:26)
 	at ?.Given User is on Home Page(LogIn_Test.feature:40)
 
-Given User is on Home Page(| Shubham2 | Test@153 |)  Time elapsed: 0.002 sec  <<< ERROR!
+Given User is on Home Page(| Shubham2 | Test@153 |)  Time elapsed: 0.001 sec  <<< ERROR!
 org.openqa.selenium.WebDriverException: Process unexpectedly closed with status: 0
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
 System info: host: 'SHUBHAMJ-PC', ip: '172.21.31.61', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
@@ -317,7 +317,7 @@ remote stacktrace: stack backtrace:
 	at stepDefinition.Test_Steps.user_is_on_Home_Page(Test_Steps.java:26)
 	at ?.Given User is on Home Page(LogIn_Test.feature:40)
 
-| Shubham2 | Test@153 |  Time elapsed: 0.026 sec  <<< ERROR!
+| Shubham2 | Test@153 |  Time elapsed: 0.012 sec  <<< ERROR!
 org.openqa.selenium.WebDriverException: Process unexpectedly closed with status: 0
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
 System info: host: 'SHUBHAMJ-PC', ip: '172.21.31.61', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
