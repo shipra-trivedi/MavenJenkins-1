@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -15,6 +16,7 @@ import cucumber.api.DataTable;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+
 
 public class Test_Steps {
 	String binaryPath = System.getProperty("user.dir")+ File.separator + "src" +  File.separator + "test" + File.separator + "java" + File.separator  + "libs" + File.separator  + "DriverBinaries" + File.separator +  "geckodriver.exe";
@@ -31,6 +33,8 @@ public class Test_Steps {
 	@When("^User Navigate to LogIn Page$")
 	public void user_Navigate_to_LogIn_Page() throws Throwable {
 		driver.findElement(By.xpath(".//*[@id='account']/a")).click();
+		//Assert.assertEquals("dd", driver.getCurrentUrl());
+		//org.junit.Assert.fail("Custom Exception expected");
 	}
 
 	@When("^User enters \"(.*)\" and \"(.*)\"$")
