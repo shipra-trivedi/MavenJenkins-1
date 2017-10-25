@@ -21,7 +21,7 @@ public class Test_Steps {
 	public static WebDriver driver;
 	@Given("^User is on Home Page$")
 	public void user_is_on_Home_Page() throws Throwable {
-	  //System.out.println(binaryPath);
+	    //System.out.println(binaryPath);
 		System.setProperty("webdriver.gecko.driver",binaryPath);
 		driver = new FirefoxDriver();
 	    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -58,7 +58,7 @@ public class Test_Steps {
 	    driver.findElement(By.id("login")).click();
 	}
 	
-	@When("^User enters Credentials to LogIns$")
+/*	@When("^User enters Credentials to LogIns$")
 	public void user_enters_testuser_and_Test(List<Credentials>  usercredentials) throws Throwable {
 		 
 		//Write the code to handle Data Table
@@ -67,7 +67,7 @@ public class Test_Steps {
 		    driver.findElement(By.id("pwd")).sendKeys(credentials.getPassword());
 		    driver.findElement(By.id("login")).click();
 			}		
-	}
+	}*/
 
 	@Then("^Message displayed Login Successfully$")
 	public void message_displayed_Login_Successfully() throws Throwable {
