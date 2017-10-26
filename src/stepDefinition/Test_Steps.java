@@ -10,6 +10,15 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import automationframework.AutomationLog;
+import automationframework.AutomationTestCase;
+import automationframework.Configuration;
+import automationframework.Credentials;
+import pageobjects.Page;
+
+import automationframework.AppDriver;
+import automationframework.AppDriver2;
+
 //import com.github.mkolisnyk.cucumber.reporting.CucumberResultsOverview;
 
 import cucumber.api.DataTable;
@@ -19,7 +28,22 @@ import cucumber.api.java.en.When;
 
 
 public class Test_Steps {
-	String binaryPath = System.getProperty("user.dir")+ File.separator + "src" +  File.separator + "test" + File.separator + "java" + File.separator  + "libs" + File.separator  + "DriverBinaries" + File.separator +  "geckodriver.exe";
+
+	AppDriver app = new AppDriver();
+//	AppDriver2 app = new AppDriver2();
+	
+	WebDriver driver=app.getDriver(Configuration.getConfigurationValueForProperty("browser"));
+	
+	@Given("^User is on Home Page$")
+    public void setup() 
+    {
+		System.out.println("Browser Name ="+Configuration.getConfigurationValueForProperty("browser"));
+		System.out.println("applicationURL Name ="+Configuration.getConfigurationValueForProperty("applicationURL"));
+/*	  AutomationTestCase test=new AutomationTestCase();
+	  test.setup();*/
+    }
+	
+/*	String binaryPath = System.getProperty("user.dir")+ File.separator + "src" +  File.separator + "test" + File.separator + "java" + File.separator  + "libs" + File.separator  + "DriverBinaries" + File.separator +  "geckodriver.exe";
 	public static WebDriver driver;
 	@Given("^User is on Home Page$")
 	public void user_is_on_Home_Page() throws Throwable {
@@ -28,7 +52,7 @@ public class Test_Steps {
 		driver = new FirefoxDriver();
 	    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	    driver.get("http://www.store.demoqa.com");
-	}
+	}*/
 
 	@When("^User Navigate to LogIn Page$")
 	public void user_Navigate_to_LogIn_Page() throws Throwable {

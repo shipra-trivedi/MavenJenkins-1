@@ -1,33 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="2" tests="5" time="89.695838">
-<testcase classname="Login Action" name="Successful Login with Valid Credentials by data table" time="28.138765">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="2" tests="5" time="94.616235">
+<testcase classname="Login Action" name="Successful Login with Valid Credentials by data table" time="20.32844">
 <system-out><![CDATA[Given User is on Home Page..................................................passed
 When User Navigate to LogIn Page............................................passed
 And User enters Credentials to LogIn........................................passed
 Then Message displayed Login Successfully...................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Login Action" name="Successful Login with Valid Credentials by Maps in Data Tables" time="20.094469">
+<testcase classname="Login Action" name="Successful Login with Valid Credentials by Maps in Data Tables" time="23.087405">
 <skipped><![CDATA[Given User is on Home Page..................................................passed
 When User Navigate to LogIn Page............................................passed
 And User enters Credentials to LogIns.......................................undefined
 Then Message displayed Login Successfully...................................skipped
 ]]></skipped>
 </testcase>
-<testcase classname="Login Action" name="Successful Login with Valid Credentials" time="19.602365">
+<testcase classname="Login Action" name="Successful Login with Valid Credentials" time="19.265275">
 <system-out><![CDATA[Given User is on Home Page..................................................passed
 When User Navigate to LogIn Page............................................passed
 And User enters "Shubham1" and "Test@153"...................................passed
 Then Message displayed Login Successfully...................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Login Action" name="Successful Login with Valid Credentials 2" time="21.860187">
+<testcase classname="Login Action" name="Successful Login with Valid Credentials 2" time="18.260719">
 <system-out><![CDATA[Given User is on Home Page..................................................passed
 When User Navigate to LogIn Page............................................passed
 And User enters "Shubham2" and "Test@153"...................................passed
 Then Message displayed Login Successfully...................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Login Action" name="Successful LogOut" time="0.000052">
+<testcase classname="Login Action" name="Successful LogOut" time="13.674396">
 <skipped><![CDATA[When User LogOut from the Application.......................................passed
 Then Message displayed LogOut Successfullyy.................................undefined
 ]]></skipped>

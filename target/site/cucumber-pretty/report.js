@@ -119,31 +119,31 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Test_Steps.user_is_on_Home_Page()"
+  "location": "Test_Steps.setup()"
 });
 formatter.result({
-  "duration": 15453654160,
+  "duration": 13705918980,
   "status": "passed"
 });
 formatter.match({
   "location": "Test_Steps.user_Navigate_to_LogIn_Page()"
 });
 formatter.result({
-  "duration": 12007632502,
+  "duration": 6372056674,
   "status": "passed"
 });
 formatter.match({
   "location": "Test_Steps.user_enters_testuser__and_Test(DataTable)"
 });
 formatter.result({
-  "duration": 677396866,
+  "duration": 250408533,
   "status": "passed"
 });
 formatter.match({
   "location": "Test_Steps.message_displayed_Login_Successfully()"
 });
 formatter.result({
-  "duration": 81635,
+  "duration": 55467,
   "status": "passed"
 });
 formatter.scenario({
@@ -198,17 +198,17 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Test_Steps.user_is_on_Home_Page()"
+  "location": "Test_Steps.setup()"
 });
 formatter.result({
-  "duration": 13889198585,
+  "duration": 18032369511,
   "status": "passed"
 });
 formatter.match({
   "location": "Test_Steps.user_Navigate_to_LogIn_Page()"
 });
 formatter.result({
-  "duration": 6205270872,
+  "duration": 5055035196,
   "status": "passed"
 });
 formatter.match({});
@@ -315,17 +315,17 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Test_Steps.user_is_on_Home_Page()"
+  "location": "Test_Steps.setup()"
 });
 formatter.result({
-  "duration": 13453734374,
+  "duration": 13374333937,
   "status": "passed"
 });
 formatter.match({
   "location": "Test_Steps.user_Navigate_to_LogIn_Page()"
 });
 formatter.result({
-  "duration": 5507430405,
+  "duration": 5626945210,
   "status": "passed"
 });
 formatter.match({
@@ -342,14 +342,14 @@ formatter.match({
   "location": "Test_Steps.user_enters_UserName_and_Password(String,String)"
 });
 formatter.result({
-  "duration": 641163458,
+  "duration": 263954071,
   "status": "passed"
 });
 formatter.match({
   "location": "Test_Steps.message_displayed_Login_Successfully()"
 });
 formatter.result({
-  "duration": 37262,
+  "duration": 41814,
   "status": "passed"
 });
 formatter.scenario({
@@ -385,17 +385,17 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Test_Steps.user_is_on_Home_Page()"
+  "location": "Test_Steps.setup()"
 });
 formatter.result({
-  "duration": 15523266005,
+  "duration": 12845435930,
   "status": "passed"
 });
 formatter.match({
   "location": "Test_Steps.user_Navigate_to_LogIn_Page()"
 });
 formatter.result({
-  "duration": 5751134294,
+  "duration": 5151560904,
   "status": "passed"
 });
 formatter.match({
@@ -412,14 +412,14 @@ formatter.match({
   "location": "Test_Steps.user_enters_UserName_and_Password(String,String)"
 });
 formatter.result({
-  "duration": 585741418,
+  "duration": 263688114,
   "status": "passed"
 });
 formatter.match({
   "location": "Test_Steps.message_displayed_Login_Successfully()"
 });
 formatter.result({
-  "duration": 44942,
+  "duration": 33564,
   "status": "passed"
 });
 formatter.scenario({
@@ -444,7 +444,7 @@ formatter.match({
   "location": "Test_Steps.user_LogOut_from_the_Application()"
 });
 formatter.result({
-  "duration": 52337,
+  "duration": 13674395975,
   "status": "passed"
 });
 formatter.match({});

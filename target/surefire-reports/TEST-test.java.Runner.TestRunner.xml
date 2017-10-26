@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="25" failures="0" name="test.java.Runner.TestRunner" time="0.018" errors="0" skipped="5">
+<testsuite tests="25" failures="0" name="test.java.Runner.TestRunner" time="0.028" errors="0" skipped="5">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\bin"/>
@@ -63,28 +63,28 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Scenario: Successful Login with Valid Credentials by data table" name="Given User is on Home Page" time="0.01"/>
-  <testcase classname="Scenario: Successful Login with Valid Credentials by data table" name="When User Navigate to LogIn Page" time="0"/>
+  <testcase classname="Scenario: Successful Login with Valid Credentials by data table" name="Given User is on Home Page" time="0.002"/>
+  <testcase classname="Scenario: Successful Login with Valid Credentials by data table" name="When User Navigate to LogIn Page" time="0.001"/>
   <testcase classname="Scenario: Successful Login with Valid Credentials by data table" name="And User enters Credentials to LogIn" time="0"/>
   <testcase classname="Scenario: Successful Login with Valid Credentials by data table" name="Then Message displayed Login Successfully" time="0"/>
-  <testcase classname="Scenario: Successful Login with Valid Credentials by data table" name="Scenario: Successful Login with Valid Credentials by data table" time="0.002"/>
+  <testcase classname="Scenario: Successful Login with Valid Credentials by data table" name="Scenario: Successful Login with Valid Credentials by data table" time="0.001"/>
   <testcase classname="Scenario: Successful Login with Valid Credentials by Maps in Data Tables" name="Given User is on Home Page" time="0"/>
   <testcase classname="Scenario: Successful Login with Valid Credentials by Maps in Data Tables" name="When User Navigate to LogIn Page" time="0"/>
-  <testcase classname="Scenario: Successful Login with Valid Credentials by Maps in Data Tables" name="And User enters Credentials to LogIns" time="0">
+  <testcase classname="Scenario: Successful Login with Valid Credentials by Maps in Data Tables" name="And User enters Credentials to LogIns" time="0.002">
     <skipped/>
   </testcase>
-  <testcase classname="Scenario: Successful Login with Valid Credentials by Maps in Data Tables" name="Then Message displayed Login Successfully" time="0">
+  <testcase classname="Scenario: Successful Login with Valid Credentials by Maps in Data Tables" name="Then Message displayed Login Successfully" time="0.006">
     <skipped/>
   </testcase>
-  <testcase classname="Scenario: Successful Login with Valid Credentials by Maps in Data Tables" name="Scenario: Successful Login with Valid Credentials by Maps in Data Tables" time="0">
+  <testcase classname="Scenario: Successful Login with Valid Credentials by Maps in Data Tables" name="Scenario: Successful Login with Valid Credentials by Maps in Data Tables" time="0.006">
     <skipped/>
   </testcase>
-  <testcase classname="Scenario: Successful Login with Valid Credentials by Maps in Data Tables" name="Scenario: Successful Login with Valid Credentials by Maps in Data Tables" time="0"/>
+  <testcase classname="Scenario: Successful Login with Valid Credentials by Maps in Data Tables" name="Scenario: Successful Login with Valid Credentials by Maps in Data Tables" time="0.006"/>
   <testcase classname="| Shubham1 | Test@153 |" name="Given User is on Home Page" time="0"/>
   <testcase classname="| Shubham1 | Test@153 |" name="When User Navigate to LogIn Page" time="0"/>
   <testcase classname="| Shubham1 | Test@153 |" name="And User enters &quot;Shubham1&quot; and &quot;Test@153&quot;" time="0"/>
   <testcase classname="| Shubham1 | Test@153 |" name="Then Message displayed Login Successfully" time="0"/>
-  <testcase classname="| Shubham1 | Test@153 |" name="| Shubham1 | Test@153 |" time="0.002"/>
+  <testcase classname="| Shubham1 | Test@153 |" name="| Shubham1 | Test@153 |" time="0"/>
   <testcase classname="| Shubham2 | Test@153 |" name="Given User is on Home Page" time="0"/>
   <testcase classname="| Shubham2 | Test@153 |" name="When User Navigate to LogIn Page" time="0"/>
   <testcase classname="| Shubham2 | Test@153 |" name="And User enters &quot;Shubham2&quot; and &quot;Test@153&quot;" time="0"/>

@@ -86,19 +86,19 @@
         "steps": [
           {
             "result": {
-              "duration": 15453654160,
+              "duration": 13705918980,
               "status": "passed"
             },
             "line": 24,
             "name": "User is on Home Page",
             "match": {
-              "location": "Test_Steps.user_is_on_Home_Page()"
+              "location": "Test_Steps.setup()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 12007632502,
+              "duration": 6372056674,
               "status": "passed"
             },
             "line": 25,
@@ -110,7 +110,7 @@
           },
           {
             "result": {
-              "duration": 677396866,
+              "duration": 250408533,
               "status": "passed"
             },
             "line": 26,
@@ -132,7 +132,7 @@
           },
           {
             "result": {
-              "duration": 81635,
+              "duration": 55467,
               "status": "passed"
             },
             "line": 28,
@@ -154,19 +154,19 @@
         "steps": [
           {
             "result": {
-              "duration": 13889198585,
+              "duration": 18032369511,
               "status": "passed"
             },
             "line": 31,
             "name": "User is on Home Page",
             "match": {
-              "location": "Test_Steps.user_is_on_Home_Page()"
+              "location": "Test_Steps.setup()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 6205270872,
+              "duration": 5055035196,
               "status": "passed"
             },
             "line": 32,
@@ -231,19 +231,19 @@
         "steps": [
           {
             "result": {
-              "duration": 13453734374,
+              "duration": 13374333937,
               "status": "passed"
             },
             "line": 40,
             "name": "User is on Home Page",
             "match": {
-              "location": "Test_Steps.user_is_on_Home_Page()"
+              "location": "Test_Steps.setup()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 5507430405,
+              "duration": 5626945210,
               "status": "passed"
             },
             "line": 41,
@@ -255,7 +255,7 @@
           },
           {
             "result": {
-              "duration": 641163458,
+              "duration": 263954071,
               "status": "passed"
             },
             "line": 42,
@@ -281,7 +281,7 @@
           },
           {
             "result": {
-              "duration": 37262,
+              "duration": 41814,
               "status": "passed"
             },
             "line": 43,
@@ -303,19 +303,19 @@
         "steps": [
           {
             "result": {
-              "duration": 15523266005,
+              "duration": 12845435930,
               "status": "passed"
             },
             "line": 40,
             "name": "User is on Home Page",
             "match": {
-              "location": "Test_Steps.user_is_on_Home_Page()"
+              "location": "Test_Steps.setup()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 5751134294,
+              "duration": 5151560904,
               "status": "passed"
             },
             "line": 41,
@@ -327,7 +327,7 @@
           },
           {
             "result": {
-              "duration": 585741418,
+              "duration": 263688114,
               "status": "passed"
             },
             "line": 42,
@@ -353,7 +353,7 @@
           },
           {
             "result": {
-              "duration": 44942,
+              "duration": 33564,
               "status": "passed"
             },
             "line": 43,
@@ -375,7 +375,7 @@
         "steps": [
           {
             "result": {
-              "duration": 52337,
+              "duration": 13674395975,
               "status": "passed"
             },
             "line": 50,

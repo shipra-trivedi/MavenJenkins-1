@@ -33,11 +33,6 @@
   		<version>3.6.0</version>
   	</dependency>
   	<dependency>
-  		<groupId>org.seleniumhq.selenium</groupId>
-  		<artifactId>selenium-chrome-driver</artifactId>
-  		<version>3.6.0</version>
-  	</dependency>
-  	<dependency>
   		<groupId>info.cukes</groupId>
   		<artifactId>cucumber-java</artifactId>
   		<version>1.2.5</version>
@@ -51,6 +46,16 @@
   		<groupId>info.cukes</groupId>
   		<artifactId>cucumber-junit</artifactId>
   		<version>1.2.5</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.seleniumhq.selenium</groupId>
+  		<artifactId>selenium-chrome-driver</artifactId>
+  		<version>3.6.0</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.apache.poi</groupId>
+  		<artifactId>poi-ooxml</artifactId>
+  		<version>3.15</version>
   	</dependency>
   </dependencies>
 </project>
