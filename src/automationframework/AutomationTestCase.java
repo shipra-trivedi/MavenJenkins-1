@@ -53,7 +53,7 @@ public class AutomationTestCase
         AutomationLog.startTestCase(executingTestCaseName);
 		new Page(AppDriver.getDriver(Configuration.getConfigurationValueForProperty("browser")));
        // populate test case data from csv
-        System.out.println("checking name="+executingTestCaseFileName);
+        //System.out.println("checking name="+executingTestCaseFileName);
         testCaseData = TestDataProvider.getTestData(executingTestCaseFileName);
     }
 

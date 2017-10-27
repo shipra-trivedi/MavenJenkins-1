@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="22" failures="0" name="test.java.Runner.TestRunner" time="0.025" errors="0" skipped="9">
+<testsuite tests="22" failures="0" name="test.java.Runner.TestRunner" time="0.028" errors="0" skipped="9">
   <properties>
     <property name="DISPLAY" value="needs-to-be-defined"/>
     <property name="PROCESSOR_ARCHITECTURE" value="AMD64"/>
@@ -39,23 +39,23 @@
     <property name="PROCESSOR_IDENTIFIER" value="Intel64 Family 6 Model 94 Stepping 3, GenuineIntel"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="LOCALAPPDATA" value="C:\Users\Shubham Jain\AppData\Local"/>
-    <property name="RUN_CHANGES_DISPLAY_URL" value="http://localhost:9090/job/MavenJenkinsCI/1/display/redirect?page=changes"/>
+    <property name="RUN_CHANGES_DISPLAY_URL" value="http://localhost:9090/job/MavenJenkinsCI/2/display/redirect?page=changes"/>
     <property name="MSYSTEM_CARCH" value="x86_64"/>
     <property name="user.timezone" value="Asia/Calcutta"/>
     <property name="INFOPATH" value="C:\Program Files\Git\usr\local\info;C:\Program Files\Git\usr\share\info;C:\Program Files\Git\usr\info;C:\Program Files\Git\share\info"/>
     <property name="user.script" value=""/>
     <property name="path.separator" value=";"/>
     <property name="NUMBER_OF_PROCESSORS" value="4"/>
-    <property name="BUILD_TAG" value="jenkins-MavenJenkinsCI-1"/>
+    <property name="BUILD_TAG" value="jenkins-MavenJenkinsCI-2"/>
     <property name="TERM" value="xterm"/>
     <property name="file.encoding" value="Cp1252"/>
     <property name="PATH" value="C:\Program Files\Java\jdk1.8.0_131/bin;C:\Users\Shubham Jain\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Shubham Jain\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files\Git\cmd;C:\Program Files (x86)\Skype\Phone;D:\appium\andriodsdk\Sdk\platform-tools;D:\appium\andriodsdk\Sdk\tools;D:\maven\apache-maven\bin;C:\Program Files\nodejs;C:\Python27;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;D:\performace\apache-ant-1.10.1\bin;C:\Program Files\Java\jdk1.8.0_131\bin;C:\Program Files\PuTTY;C:\Python27\Scripts;C:\Program Files\OWASP\Zed Attack Proxy;D:\curl\bin;C:\Program Files (x86)\Microsoft Emulator Manager\1.0;C:\PostgreSQL\pg96\bin;C:\Users\Shubham Jain\AppData\Local\Microsoft\WindowsApps;C:\Users\Shubham Jain\AppData\Roaming\npm;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Program Files (x86)\Nmap;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl"/>
-    <property name="sun.java.command" value="jenkins.maven3.agent.Maven35Main D:\maven\apache-maven\ C:\Users\Shubham Jain\.jenkins\war\WEB-INF\lib\remoting-3.10.jar C:\Users\Shubham Jain\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.12-alpha-1.jar C:\Users\Shubham Jain\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.12-alpha-1.jar 31383"/>
+    <property name="sun.java.command" value="jenkins.maven3.agent.Maven35Main D:\maven\apache-maven\ C:\Users\Shubham Jain\.jenkins\war\WEB-INF\lib\remoting-3.10.jar C:\Users\Shubham Jain\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.12-alpha-1.jar C:\Users\Shubham Jain\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.12-alpha-1.jar 32299"/>
     <property name="HUDSON_URL" value="http://localhost:9090/"/>
     <property name="JENKINS_SERVER_COOKIE" value="ba9793a7fb1b8be3"/>
     <property name="EXECUTOR_NUMBER" value="0"/>
     <property name="PLINK_PROTOCOL" value="ssh"/>
-    <property name="GIT_COMMIT" value="c9f4ec8a81093aa96cc78b53123b481bf54749fd"/>
+    <property name="GIT_COMMIT" value="9e680a73eee55b384b02119d384275946c04aaac"/>
     <property name="MANPATH" value="C:\Program Files\Git\mingw64\share\man;C:\Program Files\Git\usr\local\man;C:\Program Files\Git\usr\share\man;C:\Program Files\Git\usr\man;C:\Program Files\Git\share\man"/>
     <property name="java.io.tmpdir" value="C:\Users\SHUBHA~1\AppData\Local\Temp\"/>
     <property name="APPDATA" value="C:\Users\Shubham Jain\AppData\Roaming"/>
@@ -63,14 +63,14 @@
     <property name="SYSTEMROOT" value="C:\WINDOWS"/>
     <property name="line.separator" value="
 "/>
-    <property name="BUILD_URL" value="http://localhost:9090/job/MavenJenkinsCI/1/"/>
+    <property name="BUILD_URL" value="http://localhost:9090/job/MavenJenkinsCI/2/"/>
     <property name="SHLVL" value="1"/>
     <property name="M2_HOME" value="D:\maven\apache-maven\"/>
     <property name="COMMONPROGRAMFILES" value="C:\Program Files\Common Files"/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="sun.desktop" value="windows"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="BUILD_DISPLAY_NAME" value="#1"/>
+    <property name="BUILD_DISPLAY_NAME" value="#2"/>
     <property name="OS" value="Windows_NT"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="HUDSON_SERVER_COOKIE" value="ba9793a7fb1b8be3"/>
@@ -87,20 +87,23 @@
     <property name="os.name" value="Windows 10"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="BUILD_NUMBER" value="1"/>
+    <property name="BUILD_NUMBER" value="2"/>
     <property name="maven3.interceptor" value="C:\Users\Shubham Jain\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.12-alpha-1.jar"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_131\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\maven\apache-maven\/bin;C:\Program Files\Java\jdk1.8.0_131/bin;C:\Program Files\Java\jdk1.8.0_131/bin;C:\Users\Shubham Jain\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Shubham Jain\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files\Git\cmd;C:\Program Files (x86)\Skype\Phone;D:\appium\andriodsdk\Sdk\platform-tools;D:\appium\andriodsdk\Sdk\tools;D:\maven\apache-maven\bin;C:\Program Files\nodejs;C:\Python27;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;D:\performace\apache-ant-1.10.1\bin;C:\Program Files\Java\jdk1.8.0_131\bin;C:\Program Files\PuTTY;C:\Python27\Scripts;C:\Program Files\OWASP\Zed Attack Proxy;D:\curl\bin;C:\Program Files (x86)\Microsoft Emulator Manager\1.0;C:\PostgreSQL\pg96\bin;C:\Users\Shubham Jain\AppData\Local\Microsoft\WindowsApps;C:\Users\Shubham Jain\AppData\Roaming\npm;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Program Files (x86)\Nmap;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;."/>
     <property name="HOMEDRIVE" value="C:"/>
+    <property name="POM_GROUPID" value="MavenJenkins"/>
+    <property name="POM_ARTIFACTID" value="MavenJenkins"/>
     <property name="java.class.version" value="52.0"/>
     <property name="JOB_URL" value="http://localhost:9090/job/MavenJenkinsCI/"/>
+    <property name="GIT_PREVIOUS_COMMIT" value="c9f4ec8a81093aa96cc78b53123b481bf54749fd"/>
     <property name="ANT_HOME" value="D:\performace\apache-ant-1.10.1"/>
     <property name="OneDrive" value="C:\Users\Shubham Jain\OneDrive"/>
     <property name="MINGW_PACKAGE_PREFIX" value="mingw-w64-x86_64"/>
     <property name="GIT_BRANCH" value="origin/master"/>
-    <property name="RUN_DISPLAY_URL" value="http://localhost:9090/job/MavenJenkinsCI/1/display/redirect"/>
+    <property name="RUN_DISPLAY_URL" value="http://localhost:9090/job/MavenJenkinsCI/2/display/redirect"/>
     <property name="VBOX_MSI_INSTALL_PATH" value="C:\Program Files\Oracle\VirtualBox\"/>
     <property name="JENKINS_HOME" value="C:\Users\Shubham Jain\.jenkins"/>
-    <property name="BUILD_ID" value="1"/>
+    <property name="BUILD_ID" value="2"/>
     <property name="TEMP" value="C:\Users\SHUBHA~1\AppData\Local\Temp"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\bin"/>
     <property name="MSYSTEM_PREFIX" value="C:/Program Files/Git/mingw64"/>
@@ -108,6 +111,7 @@
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="user.variant" value=""/>
     <property name="PROCESSOR_REVISION" value="5e03"/>
+    <property name="POM_VERSION" value="0.0.1-SNAPSHOT"/>
     <property name="HUDSON_HOME" value="C:\Users\Shubham Jain\.jenkins"/>
     <property name="COMSPEC" value="C:\WINDOWS\system32\cmd.exe"/>
     <property name="ProgramFiles(x86)" value="C:\Program Files (x86)"/>
@@ -153,6 +157,7 @@
     <property name="PATH+JDK" value="C:\Program Files\Java\jdk1.8.0_131/bin"/>
     <property name="user.country" value="US"/>
     <property name="MSYSTEM_CHOST" value="x86_64-w64-mingw32"/>
+    <property name="POM_PACKAGING" value="jar"/>
     <property name="maven.home" value="D:\maven\apache-maven"/>
     <property name="EXEPATH" value="C:\Program Files\Git"/>
     <property name="ORIGINAL_TMP" value="C:/Users/SHUBHA~1/AppData/Local/Temp"/>
@@ -161,6 +166,7 @@
     <property name="HOME" value="C:\Users\Shubham Jain"/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="WINDIR" value="C:\WINDOWS"/>
+    <property name="POM_DISPLAYNAME" value="MavenJenkins"/>
     <property name="java.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="GIT_URL" value="https://github.com/shubhamj-cuelogic/MavenJenkins.git"/>
@@ -169,39 +175,39 @@
   <testcase classname="Scenario: Successful Login with Valid Credentials by data table" name="When User Navigate to LogIn Page" time="0"/>
   <testcase classname="Scenario: Successful Login with Valid Credentials by data table" name="And User enters Credentials to LogIn" time="0"/>
   <testcase classname="Scenario: Successful Login with Valid Credentials by data table" name="Then Message displayed Login Successfully" time="0"/>
-  <testcase classname="Scenario: Successful Login with Valid Credentials by data table" name="Scenario: Successful Login with Valid Credentials by data table" time="0.001"/>
+  <testcase classname="Scenario: Successful Login with Valid Credentials by data table" name="Scenario: Successful Login with Valid Credentials by data table" time="0"/>
   <testcase classname="Scenario: Successful Login with Valid Credentials by Maps in Data Tables" name="Given User is on Home Page" time="0"/>
-  <testcase classname="Scenario: Successful Login with Valid Credentials by Maps in Data Tables" name="When User Navigate to LogIn Page" time="0"/>
-  <testcase classname="Scenario: Successful Login with Valid Credentials by Maps in Data Tables" name="And User enters Credentials to LogIns" time="0">
+  <testcase classname="Scenario: Successful Login with Valid Credentials by Maps in Data Tables" name="When User Navigate to LogIn Page" time="0.001"/>
+  <testcase classname="Scenario: Successful Login with Valid Credentials by Maps in Data Tables" name="And User enters Credentials to LogIns" time="0.004">
     <skipped/>
   </testcase>
-  <testcase classname="Scenario: Successful Login with Valid Credentials by Maps in Data Tables" name="Then Message displayed Login Successfully" time="0.003">
+  <testcase classname="Scenario: Successful Login with Valid Credentials by Maps in Data Tables" name="Then Message displayed Login Successfully" time="0.005">
     <skipped/>
   </testcase>
-  <testcase classname="Scenario: Successful Login with Valid Credentials by Maps in Data Tables" name="Scenario: Successful Login with Valid Credentials by Maps in Data Tables" time="0.003">
+  <testcase classname="Scenario: Successful Login with Valid Credentials by Maps in Data Tables" name="Scenario: Successful Login with Valid Credentials by Maps in Data Tables" time="0.006">
     <skipped/>
   </testcase>
-  <testcase classname="Scenario: Successful Login with Valid Credentials by Maps in Data Tables" name="Scenario: Successful Login with Valid Credentials by Maps in Data Tables" time="0.003"/>
+  <testcase classname="Scenario: Successful Login with Valid Credentials by Maps in Data Tables" name="Scenario: Successful Login with Valid Credentials by Maps in Data Tables" time="0.006"/>
   <testcase classname="Scenario: Successful Login with Valid Credentials" name="Given User is on Home Page" time="0"/>
   <testcase classname="Scenario: Successful Login with Valid Credentials" name="When User Navigate to LogIn Page" time="0"/>
-  <testcase classname="Scenario: Successful Login with Valid Credentials" name="And User enters Credentials to LogIns" time="0.001">
+  <testcase classname="Scenario: Successful Login with Valid Credentials" name="And User enters Credentials to LogIns" time="0">
     <skipped/>
   </testcase>
-  <testcase classname="Scenario: Successful Login with Valid Credentials" name="Then Message displayed Login Successfully" time="0.002">
+  <testcase classname="Scenario: Successful Login with Valid Credentials" name="Then Message displayed Login Successfully" time="0">
     <skipped/>
   </testcase>
-  <testcase classname="Scenario: Successful Login with Valid Credentials" name="Scenario: Successful Login with Valid Credentials" time="0.002">
+  <testcase classname="Scenario: Successful Login with Valid Credentials" name="Scenario: Successful Login with Valid Credentials" time="0">
     <skipped/>
   </testcase>
-  <testcase classname="Scenario: Successful Login with Valid Credentials" name="Scenario: Successful Login with Valid Credentials" time="0.002"/>
+  <testcase classname="Scenario: Successful Login with Valid Credentials" name="Scenario: Successful Login with Valid Credentials" time="0"/>
   <testcase classname="Scenario: Successful LogOut" name="When User LogOut from the Application" time="0"/>
-  <testcase classname="Scenario: Successful LogOut" name="Then Message displayed LogOut Successfullyy" time="0.001">
+  <testcase classname="Scenario: Successful LogOut" name="Then Message displayed LogOut Successfullyy" time="0">
     <skipped/>
   </testcase>
   <testcase classname="Scenario: Successful LogOut" name="Then Asserts of JUnits" time="0.001">
     <skipped/>
   </testcase>
-  <testcase classname="Scenario: Successful LogOut" name="Scenario: Successful LogOut" time="0.002">
+  <testcase classname="Scenario: Successful LogOut" name="Scenario: Successful LogOut" time="0.001">
     <skipped/>
   </testcase>
   <testcase classname="Scenario: Successful LogOut" name="Scenario: Successful LogOut" time="0.002"/>
