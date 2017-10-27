@@ -22,5 +22,6 @@ automationframework\ExcelLib.class
 automationframework\MainTest.class
 pageobjects\Page.class
 automationframework\AutomationLog.class
+stepDefinition\Test_Steps3.class
 automationframework\WaitFor$2.class
 automationframework\TestDataProvider.class

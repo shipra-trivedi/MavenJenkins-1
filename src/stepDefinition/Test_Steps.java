@@ -28,7 +28,7 @@ import automationframework.AppDriver;
 /*import automationframework.AppPage.driver;
 import automationframework.AppPage.driver2;*/
 
-//import com.github.mkolisnyk.cucumber.reporting.CucumberResultsOverview;
+//import com.github.mkolisnyk.cucumber.reporting.*;
 
 import cucumber.api.DataTable;
 import cucumber.api.java.en.Given;
@@ -47,7 +47,7 @@ public class Test_Steps extends AutomationTestCaseVerification {
 	}
 
 	@Given("^User is on Home Page$")
-    public void setup() 
+    public void UserCheck() 
     {
 		System.out.println("Browser Name ="+Configuration.getConfigurationValueForProperty("browser"));
 		System.out.println("applicationURL Name ="+Configuration.getConfigurationValueForProperty("applicationURL"));
@@ -57,44 +57,18 @@ public class Test_Steps extends AutomationTestCaseVerification {
 		
 		ScreenshotAndTestNgReporterListener.customScreenshot();
 		AutomationLog.info("Testing Custom Snapshot taking by framework");
+		
+	/*	Assert.assertEquals("Custom Error by shubham", Page.driver.getTitle());
+		AutomationLog.info("Title of the game is not equal");*/
+		
+		Assert.assertEquals("ONLINE STORE | Toolsqa Dummy Test site", Page.driver.getTitle());
+		AutomationLog.info("Title of the game is equal");
+		
+
+		
+		Assert.assertEquals("ONLINE STORE | Toolsqa Dummy Test site", Page.driver.getTitle());
+		AutomationLog.info("Title of the game is equal 2");
     }
-
-	@When("^User Navigate to LogIn Page$")
-	public void user_Navigate_to_LogIn_Page() throws Throwable {
-		home.button_MyAccount().click();
-	}
-	
-	@When("^User enters Credentials to LogIn$")
-	public void user_enters_testuser__and_Test() throws Throwable {
- 
-		 HashMap<String, String> expectedLoginData = testCaseData.get("AccountCredentials");
-		 AutomationLog.info("Implementing CSV data Provider in famework");
-		 loginpage.txtbx_UserName().sendKeys(expectedLoginData.get("username"));
-		 AutomationLog.info("Enter Username from CSV");
-		 loginpage.txtbx_Password().sendKeys(expectedLoginData.get("password"));
-		 AutomationLog.info("Enter Password from CSV");
-		 loginpage.button_LoginToAccount().click();
-		 AutomationLog.info("Clicking on Login button");
-	}
-	
-	@Then("^Message displayed Login Successfully$")
-	public void message_displayed_Login_Successfully() throws Throwable {
-		System.out.println("Login Successfully");
-	}
-
-	@When("^User LogOut from the Application$")
-	public void user_LogOut_from_the_Application() throws Throwable {
-		//loginpage.button_SingOutToAccount().click();
-		 AutomationLog.info("Clicking on Logout button");
-		//genrateReports();
-	}
-
-	@Then("^Message displayed LogOut Successfully$")
-	public void message_displayed_LogOut_Successfully() throws Throwable {
-		System.out.println("LogOut Successfully");
-		Page.driver.quit();
-		AppDriver.killChromePhantomInstance(Page.driver);
-	}
 
 	@Override
 	protected void verifyTestCases() throws Exception {

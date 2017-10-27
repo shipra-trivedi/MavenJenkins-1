@@ -1,21 +1,29 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="2" tests="3" time="52.676411">
-<testcase classname="Login Action" name="Successful Login with Valid Credentials by data table" time="19.876925">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="3" tests="4" time="127.461408">
+<testcase classname="Login Action" name="Successful Login with Valid Credentials by data table" time="40.11196">
 <system-out><![CDATA[Given User is on Home Page..................................................passed
 When User Navigate to LogIn Page............................................passed
 And User enters Credentials to LogIn........................................passed
 Then Message displayed Login Successfully...................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Login Action" name="Successful Login with Valid Credentials by Maps in Data Tables" time="19.713816">
+<testcase classname="Login Action" name="Successful Login with Valid Credentials by Maps in Data Tables" time="35.450678">
 <skipped><![CDATA[Given User is on Home Page..................................................passed
 When User Navigate to LogIn Page............................................passed
 And User enters Credentials to LogIns.......................................undefined
 Then Message displayed Login Successfully...................................skipped
 ]]></skipped>
 </testcase>
-<testcase classname="Login Action" name="Successful LogOut" time="13.08567">
+<testcase classname="Login Action" name="Successful Login with Valid Credentials" time="36.398326">
+<skipped><![CDATA[Given User is on Home Page..................................................passed
+When User Navigate to LogIn Page............................................passed
+And User enters Credentials to LogIns.......................................undefined
+Then Message displayed Login Successfully...................................skipped
+]]></skipped>
+</testcase>
+<testcase classname="Login Action" name="Successful LogOut" time="15.500444">
 <skipped><![CDATA[When User LogOut from the Application.......................................passed
 Then Message displayed LogOut Successfullyy.................................undefined
+Then Asserts of JUnits......................................................skipped
 ]]></skipped>
 </testcase>
 </testsuite>

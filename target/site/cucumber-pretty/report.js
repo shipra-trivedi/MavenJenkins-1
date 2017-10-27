@@ -109,31 +109,31 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Test_Steps.setup()"
+  "location": "Test_Steps.UserCheck()"
 });
 formatter.result({
-  "duration": 14083035353,
+  "duration": 14952638266,
   "status": "passed"
 });
 formatter.match({
-  "location": "Test_Steps.user_Navigate_to_LogIn_Page()"
+  "location": "Test_Steps3.user_Navigate_to_LogIn_Page()"
 });
 formatter.result({
-  "duration": 5505797976,
+  "duration": 24884686725,
   "status": "passed"
 });
 formatter.match({
-  "location": "Test_Steps.user_enters_testuser__and_Test()"
+  "location": "Test_Steps3.user_enters_testuser__and_Test()"
 });
 formatter.result({
-  "duration": 288038848,
+  "duration": 274584619,
   "status": "passed"
 });
 formatter.match({
-  "location": "Test_Steps.message_displayed_Login_Successfully()"
+  "location": "Test_Steps3.message_displayed_Login_Successfully()"
 });
 formatter.result({
-  "duration": 52622,
+  "duration": 50347,
   "status": "passed"
 });
 formatter.scenario({
@@ -165,17 +165,17 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Test_Steps.setup()"
+  "location": "Test_Steps.UserCheck()"
 });
 formatter.result({
-  "duration": 13017797415,
+  "duration": 15711083071,
   "status": "passed"
 });
 formatter.match({
-  "location": "Test_Steps.user_Navigate_to_LogIn_Page()"
+  "location": "Test_Steps3.user_Navigate_to_LogIn_Page()"
 });
 formatter.result({
-  "duration": 6696018600,
+  "duration": 19739594661,
   "status": "passed"
 });
 formatter.match({});
@@ -183,18 +183,18 @@ formatter.result({
   "status": "undefined"
 });
 formatter.match({
-  "location": "Test_Steps.message_displayed_Login_Successfully()"
+  "location": "Test_Steps3.message_displayed_Login_Successfully()"
 });
 formatter.result({
   "status": "skipped"
 });
-formatter.scenarioOutline({
+formatter.scenario({
   "line": 35,
   "name": "Successful Login with Valid Credentials",
   "description": "",
   "id": "login-action;successful-login-with-valid-credentials",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline"
+  "type": "scenario",
+  "keyword": "Scenario"
 });
 formatter.step({
   "line": 36,
@@ -216,6 +216,30 @@ formatter.step({
   "name": "Message displayed Login Successfully",
   "keyword": "Then "
 });
+formatter.match({
+  "location": "Test_Steps.UserCheck()"
+});
+formatter.result({
+  "duration": 15059204585,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Test_Steps3.user_Navigate_to_LogIn_Page()"
+});
+formatter.result({
+  "duration": 21339121686,
+  "status": "passed"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({
+  "location": "Test_Steps3.message_displayed_Login_Successfully()"
+});
+formatter.result({
+  "status": "skipped"
+});
 formatter.scenario({
   "line": 41,
   "name": "Successful LogOut",
@@ -234,15 +258,26 @@ formatter.step({
   "name": "Message displayed LogOut Successfullyy",
   "keyword": "Then "
 });
+formatter.step({
+  "line": 44,
+  "name": "Asserts of JUnits",
+  "keyword": "Then "
+});
 formatter.match({
-  "location": "Test_Steps.user_LogOut_from_the_Application()"
+  "location": "Test_Steps3.user_LogOut_from_the_Application()"
 });
 formatter.result({
-  "duration": 13085669595,
+  "duration": 15500444160,
   "status": "passed"
 });
 formatter.match({});
 formatter.result({
   "status": "undefined"
+});
+formatter.match({
+  "location": "Test_Steps3.testAssert()"
+});
+formatter.result({
+  "status": "skipped"
 });
 });

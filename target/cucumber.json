@@ -86,49 +86,49 @@
         "steps": [
           {
             "result": {
-              "duration": 14083035353,
+              "duration": 14952638266,
               "status": "passed"
             },
             "line": 24,
             "name": "User is on Home Page",
             "match": {
-              "location": "Test_Steps.setup()"
+              "location": "Test_Steps.UserCheck()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 5505797976,
+              "duration": 24884686725,
               "status": "passed"
             },
             "line": 25,
             "name": "User Navigate to LogIn Page",
             "match": {
-              "location": "Test_Steps.user_Navigate_to_LogIn_Page()"
+              "location": "Test_Steps3.user_Navigate_to_LogIn_Page()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 288038848,
+              "duration": 274584619,
               "status": "passed"
             },
             "line": 26,
             "name": "User enters Credentials to LogIn",
             "match": {
-              "location": "Test_Steps.user_enters_testuser__and_Test()"
+              "location": "Test_Steps3.user_enters_testuser__and_Test()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 52622,
+              "duration": 50347,
               "status": "passed"
             },
             "line": 27,
             "name": "Message displayed Login Successfully",
             "match": {
-              "location": "Test_Steps.message_displayed_Login_Successfully()"
+              "location": "Test_Steps3.message_displayed_Login_Successfully()"
             },
             "keyword": "Then "
           }
@@ -144,25 +144,25 @@
         "steps": [
           {
             "result": {
-              "duration": 13017797415,
+              "duration": 15711083071,
               "status": "passed"
             },
             "line": 30,
             "name": "User is on Home Page",
             "match": {
-              "location": "Test_Steps.setup()"
+              "location": "Test_Steps.UserCheck()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 6696018600,
+              "duration": 19739594661,
               "status": "passed"
             },
             "line": 31,
             "name": "User Navigate to LogIn Page",
             "match": {
-              "location": "Test_Steps.user_Navigate_to_LogIn_Page()"
+              "location": "Test_Steps3.user_Navigate_to_LogIn_Page()"
             },
             "keyword": "When "
           },
@@ -182,7 +182,61 @@
             "line": 33,
             "name": "Message displayed Login Successfully",
             "match": {
-              "location": "Test_Steps.message_displayed_Login_Successfully()"
+              "location": "Test_Steps3.message_displayed_Login_Successfully()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 35,
+        "name": "Successful Login with Valid Credentials",
+        "description": "",
+        "id": "login-action;successful-login-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 15059204585,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "User is on Home Page",
+            "match": {
+              "location": "Test_Steps.UserCheck()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 21339121686,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "User Navigate to LogIn Page",
+            "match": {
+              "location": "Test_Steps3.user_Navigate_to_LogIn_Page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 38,
+            "name": "User enters Credentials to LogIns",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 39,
+            "name": "Message displayed Login Successfully",
+            "match": {
+              "location": "Test_Steps3.message_displayed_Login_Successfully()"
             },
             "keyword": "Then "
           }
@@ -198,13 +252,13 @@
         "steps": [
           {
             "result": {
-              "duration": 13085669595,
+              "duration": 15500444160,
               "status": "passed"
             },
             "line": 42,
             "name": "User LogOut from the Application",
             "match": {
-              "location": "Test_Steps.user_LogOut_from_the_Application()"
+              "location": "Test_Steps3.user_LogOut_from_the_Application()"
             },
             "keyword": "When "
           },
@@ -215,6 +269,17 @@
             "line": 43,
             "name": "Message displayed LogOut Successfullyy",
             "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 44,
+            "name": "Asserts of JUnits",
+            "match": {
+              "location": "Test_Steps3.testAssert()"
+            },
             "keyword": "Then "
           }
         ]
