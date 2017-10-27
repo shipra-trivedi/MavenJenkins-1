@@ -100,7 +100,7 @@ public class LoginPage extends Page {
 	public WebElement txtbx_UserName() throws Exception {
 		try {
 
-			element = driver.findElement(By.id("session_username"));
+			element = driver.findElement(By.id("log"));
 			AutomationLog.info("Username text box found on the Login Page");
 		} catch (Exception e) {
 			AutomationLog.error("UserName text box was not found on the Login Page");
@@ -111,7 +111,7 @@ public class LoginPage extends Page {
 
 	public WebElement txtbx_Password() throws Exception {
 		try {
-			element = driver.findElement(By.id("session_password"));
+			element = driver.findElement(By.id("pwd"));
 			AutomationLog.info("Password text box found on the Login Page");
 		} catch (Exception e) {
 			AutomationLog.error("Password text box was not found on the Login Page");
@@ -122,10 +122,21 @@ public class LoginPage extends Page {
 
 	public WebElement button_LoginToAccount() throws Exception {
 		try {
-			element = driver.findElement(By.name("commit"));
+			element = driver.findElement(By.id("login"));
 			AutomationLog.info("Login to Account button found on the Login Page");
 		} catch (Exception e) {
 			AutomationLog.error("Login to Account button was not found on the Login Page");
+			throw (e);
+		}
+		return element;
+	}
+	
+	public WebElement button_SingOutToAccount() throws Exception {
+		try {
+			element = driver.findElement(By.xpath(".//*[@id='account_logout']/a"));
+			AutomationLog.info("SignOut Element Found");
+		} catch (Exception e) {
+			AutomationLog.error("SignOut Element not Found");
 			throw (e);
 		}
 		return element;

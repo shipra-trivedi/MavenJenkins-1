@@ -45,14 +45,16 @@ public class AutomationTestCase
 			System.out.println(e.getMessage());
 		}
        // populate test case data from csv
-     //   testCaseData = TestDataProvider.getTestData(executingTestCaseFileName);
+        testCaseData = TestDataProvider.getTestData(executingTestCaseFileName);
     }
     
     public void consetup() 
     {
         AutomationLog.startTestCase(executingTestCaseName);
+		new Page(AppDriver.getDriver(Configuration.getConfigurationValueForProperty("browser")));
        // populate test case data from csv
-       // testCaseData = TestDataProvider.getTestData(executingTestCaseFileName);
+        System.out.println("checking name="+executingTestCaseFileName);
+        testCaseData = TestDataProvider.getTestData(executingTestCaseFileName);
     }
 
     public static Credentials getGlobalUserCredentials()

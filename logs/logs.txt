@@ -1,0 +1,24 @@
+27/10/2017 04:32:05.133 - [Shubham Automation] - [INFO] - java.util.logging.ConsoleHandler@934b6cb
+27/10/2017 04:32:05.134 - [Shubham Automation] - [INFO] - [ AutomationTestCase : consetup ] Begin Test case : Test_Steps
+27/10/2017 04:32:18.634 - [Shubham Automation] - [INFO] - [ Test_Steps : setup ] Testing logger
+27/10/2017 04:32:18.635 - [Shubham Automation] - [SEVERE] - [ Test_Steps : setup ] Testing error
+27/10/2017 04:32:18.635 - [Shubham Automation] - [SEVERE] - [ Test_Steps : setup ] Testing fatal
+27/10/2017 04:32:18.636 - [Shubham Automation] - [WARNING] - [ Test_Steps : setup ] Testing warn
+27/10/2017 04:32:19.058 - [Shubham Automation] - [INFO] - [ Test_Steps : setup ] Testing Custom Snapshot taking by framework
+27/10/2017 04:32:19.096 - [Shubham Automation] - [INFO] - [ Homepage : button_MyAccount ] My Account Link is found on Home Page
+27/10/2017 04:32:24.573 - [Shubham Automation] - [INFO] - [ Test_Steps : user_enters_testuser__and_Test ] Implementing CSV data Provider in famework
+27/10/2017 04:32:24.593 - [Shubham Automation] - [INFO] - [ LoginPage : txtbx_UserName ] Username text box found on the Login Page
+27/10/2017 04:32:24.681 - [Shubham Automation] - [INFO] - [ Test_Steps : user_enters_testuser__and_Test ] Enter Username from CSV
+27/10/2017 04:32:24.701 - [Shubham Automation] - [INFO] - [ LoginPage : txtbx_Password ] Password text box found on the Login Page
+27/10/2017 04:32:24.783 - [Shubham Automation] - [INFO] - [ Test_Steps : user_enters_testuser__and_Test ] Enter Password from CSV
+27/10/2017 04:32:24.802 - [Shubham Automation] - [INFO] - [ LoginPage : button_LoginToAccount ] Login to Account button found on the Login Page
+27/10/2017 04:32:24.860 - [Shubham Automation] - [INFO] - [ Test_Steps : user_enters_testuser__and_Test ] Clicking on Login button
+27/10/2017 04:32:24.867 - [Shubham Automation] - [INFO] - [ AutomationTestCase : consetup ] Begin Test case : Test_Steps
+27/10/2017 04:32:37.509 - [Shubham Automation] - [INFO] - [ Test_Steps : setup ] Testing logger
+27/10/2017 04:32:37.509 - [Shubham Automation] - [SEVERE] - [ Test_Steps : setup ] Testing error
+27/10/2017 04:32:37.509 - [Shubham Automation] - [SEVERE] - [ Test_Steps : setup ] Testing fatal
+27/10/2017 04:32:37.510 - [Shubham Automation] - [WARNING] - [ Test_Steps : setup ] Testing warn
+27/10/2017 04:32:37.885 - [Shubham Automation] - [INFO] - [ Test_Steps : setup ] Testing Custom Snapshot taking by framework
+27/10/2017 04:32:37.907 - [Shubham Automation] - [INFO] - [ Homepage : button_MyAccount ] My Account Link is found on Home Page
+27/10/2017 04:32:44.602 - [Shubham Automation] - [INFO] - [ AutomationTestCase : consetup ] Begin Test case : Test_Steps
+27/10/2017 04:32:57.687 - [Shubham Automation] - [INFO] - [ Test_Steps : user_LogOut_from_the_Application ] Clicking on Logout button

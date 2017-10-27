@@ -1,23 +1,32 @@
 package stepDefinition;
 
 import java.io.File;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+/*import org.openqa.selenium.WebPage.driver;
+import org.openqa.selenium.firefox.FirefoxPage.driver;*/
+
+import automationframework.AutomationFramework;
+
+import automationframework.AutomationTestCaseVerification;
 
 import automationframework.AutomationLog;
 import automationframework.AutomationTestCase;
 import automationframework.Configuration;
 import automationframework.Credentials;
+import automationframework.ScreenshotAndTestNgReporterListener;
+import automationframework.TestDataProvider;
+import pageobjects.Homepage;
+import pageobjects.LoginPage;
 import pageobjects.Page;
-
 import automationframework.AppDriver;
-import automationframework.AppDriver2;
+/*import automationframework.AppPage.driver;
+import automationframework.AppPage.driver2;*/
 
 //import com.github.mkolisnyk.cucumber.reporting.CucumberResultsOverview;
 
@@ -27,76 +36,47 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 
-public class Test_Steps {
+public class Test_Steps extends AutomationTestCaseVerification {
+	
+	Homepage home=new Homepage();
+	LoginPage loginpage=new LoginPage(Page.driver);
+	
+	
+	public Test_Steps() {
+		consetup();
+	}
 
-	AppDriver app = new AppDriver();
-//	AppDriver2 app = new AppDriver2();
-	
-	WebDriver driver=app.getDriver(Configuration.getConfigurationValueForProperty("browser"));
-	
 	@Given("^User is on Home Page$")
     public void setup() 
     {
 		System.out.println("Browser Name ="+Configuration.getConfigurationValueForProperty("browser"));
 		System.out.println("applicationURL Name ="+Configuration.getConfigurationValueForProperty("applicationURL"));
-/*	  AutomationTestCase test=new AutomationTestCase();
-	  test.setup();*/
+		AutomationLog.info("Testing logger");
+		AutomationLog.error("Testing error");
+		AutomationLog.warn("Testing warn");
+		
+		ScreenshotAndTestNgReporterListener.customScreenshot();
+		AutomationLog.info("Testing Custom Snapshot taking by framework");
     }
-	
-/*	String binaryPath = System.getProperty("user.dir")+ File.separator + "src" +  File.separator + "test" + File.separator + "java" + File.separator  + "libs" + File.separator  + "DriverBinaries" + File.separator +  "geckodriver.exe";
-	public static WebDriver driver;
-	@Given("^User is on Home Page$")
-	public void user_is_on_Home_Page() throws Throwable {
-	    //System.out.println(binaryPath);
-		System.setProperty("webdriver.gecko.driver",binaryPath);
-		driver = new FirefoxDriver();
-	    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	    driver.get("http://www.store.demoqa.com");
-	}*/
 
 	@When("^User Navigate to LogIn Page$")
 	public void user_Navigate_to_LogIn_Page() throws Throwable {
-		driver.findElement(By.xpath(".//*[@id='account']/a")).click();
-		//Assert.assertEquals("dd", driver.getCurrentUrl());
-		//org.junit.Assert.fail("Custom Exception expected");
-	}
-
-	@When("^User enters \"(.*)\" and \"(.*)\"$")
-	public void user_enters_UserName_and_Password(String username, String password) throws Throwable {
-		driver.findElement(By.id("log")).sendKeys(username); 	 
-	    driver.findElement(By.id("pwd")).sendKeys(password);
-	    driver.findElement(By.id("login")).click();
+		home.button_MyAccount().click();
 	}
 	
 	@When("^User enters Credentials to LogIn$")
-	public void user_enters_testuser__and_Test(DataTable usercredentials) throws Throwable {
+	public void user_enters_testuser__and_Test() throws Throwable {
  
-		//Write the code to handle Data Table
-		List<List<String>> data = usercredentials.raw();
-		System.out.println("DataTable"+data.get(0).get(0));
-		System.out.println("DataTable2"+data.get(0).get(1));
-		System.out.println("DataTable3"+data.get(0).get(2));
-
-		//This is to get the first data of the set (First Row + First Column)
-		driver.findElement(By.id("log")).sendKeys(data.get(0).get(0)); 
- 
-		//This is to get the first data of the set (First Row + Second Column)
-	    driver.findElement(By.id("pwd")).sendKeys(data.get(0).get(1));
- 
-	    driver.findElement(By.id("login")).click();
+		 HashMap<String, String> expectedLoginData = testCaseData.get("AccountCredentials");
+		 AutomationLog.info("Implementing CSV data Provider in famework");
+		 loginpage.txtbx_UserName().sendKeys(expectedLoginData.get("username"));
+		 AutomationLog.info("Enter Username from CSV");
+		 loginpage.txtbx_Password().sendKeys(expectedLoginData.get("password"));
+		 AutomationLog.info("Enter Password from CSV");
+		 loginpage.button_LoginToAccount().click();
+		 AutomationLog.info("Clicking on Login button");
 	}
 	
-/*	@When("^User enters Credentials to LogIns$")
-	public void user_enters_testuser_and_Test(List<Credentials>  usercredentials) throws Throwable {
-		 
-		//Write the code to handle Data Table
-		for (Credentials credentials : usercredentials) {			
-			driver.findElement(By.id("log")).sendKeys(credentials.getUsername()); 
-		    driver.findElement(By.id("pwd")).sendKeys(credentials.getPassword());
-		    driver.findElement(By.id("login")).click();
-			}		
-	}*/
-
 	@Then("^Message displayed Login Successfully$")
 	public void message_displayed_Login_Successfully() throws Throwable {
 		System.out.println("Login Successfully");
@@ -104,14 +84,36 @@ public class Test_Steps {
 
 	@When("^User LogOut from the Application$")
 	public void user_LogOut_from_the_Application() throws Throwable {
-		//driver.findElement (By.xpath(".//*[@id='account_logout']/a")).click();
+		//loginpage.button_SingOutToAccount().click();
+		 AutomationLog.info("Clicking on Logout button");
 		//genrateReports();
 	}
 
 	@Then("^Message displayed LogOut Successfully$")
 	public void message_displayed_LogOut_Successfully() throws Throwable {
 		System.out.println("LogOut Successfully");
+		Page.driver.quit();
+		AppDriver.killChromePhantomInstance(Page.driver);
 	}
+
+	@Override
+	protected void verifyTestCases() throws Exception {
+		AutomationLog.info("In verifyTestCases");
+		
+	}
+
+	@Override
+	protected String successMessage() {
+		AutomationLog.info("In successMessage");
+		return null;
+	}
+
+	@Override
+	protected String failureMessage() {
+		AutomationLog.info("In failureMessage");
+		return null;
+	}
+
 	
 /*	public void genrateReports() {
 		CucumberResultsOverview results = new CucumberResultsOverview();

@@ -152,7 +152,7 @@ public class AppDriver {
 	public static void killChromePhantomInstance(WebDriver driver) {
 		String OS = OSNAMES.split(" ")[0];
 		try{
-			if(driver instanceof PhantomJSDriver & OS.equalsIgnoreCase("windows"))
+			if(Page.driver instanceof PhantomJSDriver & OS.equalsIgnoreCase("windows"))
 			{
 				Runtime.getRuntime().exec("taskkill /F /IM phantomjs.exe");
 			}

@@ -1,4 +1,4 @@
-#Author: your.email@your.domain.com
+#Author: shubham.jain@cuelogic.co.in
 #Keywords Summary :
 #Feature: List of scenarios.
 #Scenario: Business rule through list of steps with arguments.
@@ -24,27 +24,19 @@ Scenario: Successful Login with Valid Credentials by data table
 	Given User is on Home Page
 	When User Navigate to LogIn Page
 	And User enters Credentials to LogIn
-	    | shubham3 | Test@153 | testdata3 |
 	Then Message displayed Login Successfully
 
 Scenario: Successful Login with Valid Credentials by Maps in Data Tables
 	Given User is on Home Page
 	When User Navigate to LogIn Page
 	And User enters Credentials to LogIns
-	| Username   | Password |
-  | testuser_1 | Test@153 |
-  | testuser_2 | Test@154 |
 	Then Message displayed Login Successfully
 
 Scenario Outline: Successful Login with Valid Credentials
 	Given User is on Home Page
 	When User Navigate to LogIn Page
-	And User enters "<username>" and "<password>"
+	And User enters Credentials to LogIns
 	Then Message displayed Login Successfully
-Examples:
-    | username   | password |
-    | Shubham1 | Test@153 |
-    | Shubham2 | Test@153 |
     
 Scenario: Successful LogOut
 	When User LogOut from the Application

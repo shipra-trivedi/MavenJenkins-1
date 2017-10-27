@@ -3,7 +3,7 @@ formatter.feature({
   "comments": [
     {
       "line": 1,
-      "value": "#Author: your.email@your.domain.com"
+      "value": "#Author: shubham.jain@cuelogic.co.in"
     },
     {
       "line": 2,
@@ -101,20 +101,10 @@ formatter.step({
 formatter.step({
   "line": 26,
   "name": "User enters Credentials to LogIn",
-  "rows": [
-    {
-      "cells": [
-        "shubham3",
-        "Test@153",
-        "testdata3"
-      ],
-      "line": 27
-    }
-  ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 28,
+  "line": 27,
   "name": "Message displayed Login Successfully",
   "keyword": "Then "
 });
@@ -122,32 +112,32 @@ formatter.match({
   "location": "Test_Steps.setup()"
 });
 formatter.result({
-  "duration": 13705918980,
+  "duration": 14083035353,
   "status": "passed"
 });
 formatter.match({
   "location": "Test_Steps.user_Navigate_to_LogIn_Page()"
 });
 formatter.result({
-  "duration": 6372056674,
+  "duration": 5505797976,
   "status": "passed"
 });
 formatter.match({
-  "location": "Test_Steps.user_enters_testuser__and_Test(DataTable)"
+  "location": "Test_Steps.user_enters_testuser__and_Test()"
 });
 formatter.result({
-  "duration": 250408533,
+  "duration": 288038848,
   "status": "passed"
 });
 formatter.match({
   "location": "Test_Steps.message_displayed_Login_Successfully()"
 });
 formatter.result({
-  "duration": 55467,
+  "duration": 52622,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 30,
+  "line": 29,
   "name": "Successful Login with Valid Credentials by Maps in Data Tables",
   "description": "",
   "id": "login-action;successful-login-with-valid-credentials-by-maps-in-data-tables",
@@ -155,45 +145,22 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 31,
+  "line": 30,
   "name": "User is on Home Page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 32,
+  "line": 31,
   "name": "User Navigate to LogIn Page",
   "keyword": "When "
 });
 formatter.step({
-  "line": 33,
+  "line": 32,
   "name": "User enters Credentials to LogIns",
-  "rows": [
-    {
-      "cells": [
-        "Username",
-        "Password"
-      ],
-      "line": 34
-    },
-    {
-      "cells": [
-        "testuser_1",
-        "Test@153"
-      ],
-      "line": 35
-    },
-    {
-      "cells": [
-        "testuser_2",
-        "Test@154"
-      ],
-      "line": 36
-    }
-  ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 37,
+  "line": 33,
   "name": "Message displayed Login Successfully",
   "keyword": "Then "
 });
@@ -201,14 +168,14 @@ formatter.match({
   "location": "Test_Steps.setup()"
 });
 formatter.result({
-  "duration": 18032369511,
+  "duration": 13017797415,
   "status": "passed"
 });
 formatter.match({
   "location": "Test_Steps.user_Navigate_to_LogIn_Page()"
 });
 formatter.result({
-  "duration": 5055035196,
+  "duration": 6696018600,
   "status": "passed"
 });
 formatter.match({});
@@ -222,7 +189,7 @@ formatter.result({
   "status": "skipped"
 });
 formatter.scenarioOutline({
-  "line": 39,
+  "line": 35,
   "name": "Successful Login with Valid Credentials",
   "description": "",
   "id": "login-action;successful-login-with-valid-credentials",
@@ -230,200 +197,27 @@ formatter.scenarioOutline({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 40,
+  "line": 36,
   "name": "User is on Home Page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 41,
+  "line": 37,
   "name": "User Navigate to LogIn Page",
   "keyword": "When "
 });
 formatter.step({
-  "line": 42,
-  "name": "User enters \"\u003cusername\u003e\" and \"\u003cpassword\u003e\"",
+  "line": 38,
+  "name": "User enters Credentials to LogIns",
   "keyword": "And "
 });
 formatter.step({
-  "line": 43,
+  "line": 39,
   "name": "Message displayed Login Successfully",
   "keyword": "Then "
 });
-formatter.examples({
-  "line": 44,
-  "name": "",
-  "description": "",
-  "id": "login-action;successful-login-with-valid-credentials;",
-  "rows": [
-    {
-      "cells": [
-        "username",
-        "password"
-      ],
-      "line": 45,
-      "id": "login-action;successful-login-with-valid-credentials;;1"
-    },
-    {
-      "cells": [
-        "Shubham1",
-        "Test@153"
-      ],
-      "line": 46,
-      "id": "login-action;successful-login-with-valid-credentials;;2"
-    },
-    {
-      "cells": [
-        "Shubham2",
-        "Test@153"
-      ],
-      "line": 47,
-      "id": "login-action;successful-login-with-valid-credentials;;3"
-    }
-  ],
-  "keyword": "Examples"
-});
 formatter.scenario({
-  "line": 46,
-  "name": "Successful Login with Valid Credentials",
-  "description": "",
-  "id": "login-action;successful-login-with-valid-credentials;;2",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 40,
-  "name": "User is on Home Page",
-  "keyword": "Given "
-});
-formatter.step({
   "line": 41,
-  "name": "User Navigate to LogIn Page",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 42,
-  "name": "User enters \"Shubham1\" and \"Test@153\"",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 43,
-  "name": "Message displayed Login Successfully",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "Test_Steps.setup()"
-});
-formatter.result({
-  "duration": 13374333937,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Test_Steps.user_Navigate_to_LogIn_Page()"
-});
-formatter.result({
-  "duration": 5626945210,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Shubham1",
-      "offset": 13
-    },
-    {
-      "val": "Test@153",
-      "offset": 28
-    }
-  ],
-  "location": "Test_Steps.user_enters_UserName_and_Password(String,String)"
-});
-formatter.result({
-  "duration": 263954071,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Test_Steps.message_displayed_Login_Successfully()"
-});
-formatter.result({
-  "duration": 41814,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 47,
-  "name": "Successful Login with Valid Credentials",
-  "description": "",
-  "id": "login-action;successful-login-with-valid-credentials;;3",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 40,
-  "name": "User is on Home Page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 41,
-  "name": "User Navigate to LogIn Page",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 42,
-  "name": "User enters \"Shubham2\" and \"Test@153\"",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 43,
-  "name": "Message displayed Login Successfully",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "Test_Steps.setup()"
-});
-formatter.result({
-  "duration": 12845435930,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Test_Steps.user_Navigate_to_LogIn_Page()"
-});
-formatter.result({
-  "duration": 5151560904,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Shubham2",
-      "offset": 13
-    },
-    {
-      "val": "Test@153",
-      "offset": 28
-    }
-  ],
-  "location": "Test_Steps.user_enters_UserName_and_Password(String,String)"
-});
-formatter.result({
-  "duration": 263688114,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Test_Steps.message_displayed_Login_Successfully()"
-});
-formatter.result({
-  "duration": 33564,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 49,
   "name": "Successful LogOut",
   "description": "",
   "id": "login-action;successful-logout",
@@ -431,12 +225,12 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 50,
+  "line": 42,
   "name": "User LogOut from the Application",
   "keyword": "When "
 });
 formatter.step({
-  "line": 51,
+  "line": 43,
   "name": "Message displayed LogOut Successfullyy",
   "keyword": "Then "
 });
@@ -444,7 +238,7 @@ formatter.match({
   "location": "Test_Steps.user_LogOut_from_the_Application()"
 });
 formatter.result({
-  "duration": 13674395975,
+  "duration": 13085669595,
   "status": "passed"
 });
 formatter.match({});
