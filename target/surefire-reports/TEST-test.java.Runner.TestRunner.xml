@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="test.java.Runner.TestRunner" time="0.025" errors="0" skipped="0">
+<testsuite tests="5" failures="0" name="test.java.Runner.TestRunner" time="0.045" errors="3" skipped="2">
   <properties>
     <property name="DISPLAY" value="needs-to-be-defined"/>
     <property name="PROCESSOR_ARCHITECTURE" value="AMD64"/>
@@ -39,23 +39,23 @@
     <property name="PROCESSOR_IDENTIFIER" value="Intel64 Family 6 Model 94 Stepping 3, GenuineIntel"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="LOCALAPPDATA" value="C:\Users\Shubham Jain\AppData\Local"/>
-    <property name="RUN_CHANGES_DISPLAY_URL" value="http://localhost:9090/job/MavenJenkinsCI/8/display/redirect?page=changes"/>
+    <property name="RUN_CHANGES_DISPLAY_URL" value="http://localhost:9090/job/MavenJenkinsCI/11/display/redirect?page=changes"/>
     <property name="MSYSTEM_CARCH" value="x86_64"/>
     <property name="user.timezone" value="Asia/Calcutta"/>
     <property name="INFOPATH" value="C:\Program Files\Git\usr\local\info;C:\Program Files\Git\usr\share\info;C:\Program Files\Git\usr\info;C:\Program Files\Git\share\info"/>
     <property name="user.script" value=""/>
     <property name="path.separator" value=";"/>
     <property name="NUMBER_OF_PROCESSORS" value="4"/>
-    <property name="BUILD_TAG" value="jenkins-MavenJenkinsCI-8"/>
+    <property name="BUILD_TAG" value="jenkins-MavenJenkinsCI-11"/>
     <property name="TERM" value="xterm"/>
     <property name="file.encoding" value="Cp1252"/>
     <property name="PATH" value="C:\Program Files\Java\jdk1.8.0_131/bin;C:\Users\Shubham Jain\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Shubham Jain\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files\Git\cmd;C:\Program Files (x86)\Skype\Phone;D:\appium\andriodsdk\Sdk\platform-tools;D:\appium\andriodsdk\Sdk\tools;D:\maven\apache-maven\bin;C:\Program Files\nodejs;C:\Python27;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;D:\performace\apache-ant-1.10.1\bin;C:\Program Files\Java\jdk1.8.0_131\bin;C:\Program Files\PuTTY;C:\Python27\Scripts;C:\Program Files\OWASP\Zed Attack Proxy;D:\curl\bin;C:\Program Files (x86)\Microsoft Emulator Manager\1.0;C:\PostgreSQL\pg96\bin;C:\Users\Shubham Jain\AppData\Local\Microsoft\WindowsApps;C:\Users\Shubham Jain\AppData\Roaming\npm;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Program Files (x86)\Nmap;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl"/>
-    <property name="sun.java.command" value="jenkins.maven3.agent.Maven35Main D:\maven\apache-maven\ C:\Users\Shubham Jain\.jenkins\war\WEB-INF\lib\remoting-3.10.jar C:\Users\Shubham Jain\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.12-alpha-1.jar C:\Users\Shubham Jain\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.12-alpha-1.jar 53942"/>
+    <property name="sun.java.command" value="jenkins.maven3.agent.Maven35Main D:\maven\apache-maven\ C:\Users\Shubham Jain\.jenkins\war\WEB-INF\lib\remoting-3.10.jar C:\Users\Shubham Jain\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.12-alpha-1.jar C:\Users\Shubham Jain\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.12-alpha-1.jar 54650"/>
     <property name="HUDSON_URL" value="http://localhost:9090/"/>
     <property name="JENKINS_SERVER_COOKIE" value="ba9793a7fb1b8be3"/>
     <property name="EXECUTOR_NUMBER" value="1"/>
     <property name="PLINK_PROTOCOL" value="ssh"/>
-    <property name="GIT_COMMIT" value="aaa94fc756f6d02f37222ef085659cc0e557fb39"/>
+    <property name="GIT_COMMIT" value="35aa76ea26aea12740f0a0735368202d360c4143"/>
     <property name="MANPATH" value="C:\Program Files\Git\mingw64\share\man;C:\Program Files\Git\usr\local\man;C:\Program Files\Git\usr\share\man;C:\Program Files\Git\usr\man;C:\Program Files\Git\share\man"/>
     <property name="java.io.tmpdir" value="C:\Users\SHUBHA~1\AppData\Local\Temp\"/>
     <property name="APPDATA" value="C:\Users\Shubham Jain\AppData\Roaming"/>
@@ -63,14 +63,14 @@
     <property name="SYSTEMROOT" value="C:\WINDOWS"/>
     <property name="line.separator" value="
 "/>
-    <property name="BUILD_URL" value="http://localhost:9090/job/MavenJenkinsCI/8/"/>
+    <property name="BUILD_URL" value="http://localhost:9090/job/MavenJenkinsCI/11/"/>
     <property name="SHLVL" value="1"/>
     <property name="M2_HOME" value="D:\maven\apache-maven\"/>
     <property name="COMMONPROGRAMFILES" value="C:\Program Files\Common Files"/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="sun.desktop" value="windows"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="BUILD_DISPLAY_NAME" value="#8"/>
+    <property name="BUILD_DISPLAY_NAME" value="#11"/>
     <property name="OS" value="Windows_NT"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="HUDSON_SERVER_COOKIE" value="ba9793a7fb1b8be3"/>
@@ -87,7 +87,7 @@
     <property name="os.name" value="Windows 10"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="BUILD_NUMBER" value="8"/>
+    <property name="BUILD_NUMBER" value="11"/>
     <property name="maven3.interceptor" value="C:\Users\Shubham Jain\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.12-alpha-1.jar"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_131\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\maven\apache-maven\/bin;C:\Program Files\Java\jdk1.8.0_131/bin;C:\Program Files\Java\jdk1.8.0_131/bin;C:\Users\Shubham Jain\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Shubham Jain\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files\Git\cmd;C:\Program Files (x86)\Skype\Phone;D:\appium\andriodsdk\Sdk\platform-tools;D:\appium\andriodsdk\Sdk\tools;D:\maven\apache-maven\bin;C:\Program Files\nodejs;C:\Python27;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;D:\performace\apache-ant-1.10.1\bin;C:\Program Files\Java\jdk1.8.0_131\bin;C:\Program Files\PuTTY;C:\Python27\Scripts;C:\Program Files\OWASP\Zed Attack Proxy;D:\curl\bin;C:\Program Files (x86)\Microsoft Emulator Manager\1.0;C:\PostgreSQL\pg96\bin;C:\Users\Shubham Jain\AppData\Local\Microsoft\WindowsApps;C:\Users\Shubham Jain\AppData\Roaming\npm;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Program Files (x86)\Nmap;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;."/>
     <property name="HOMEDRIVE" value="C:"/>
@@ -95,15 +95,15 @@
     <property name="POM_ARTIFACTID" value="MavenJenkins"/>
     <property name="java.class.version" value="52.0"/>
     <property name="JOB_URL" value="http://localhost:9090/job/MavenJenkinsCI/"/>
-    <property name="GIT_PREVIOUS_COMMIT" value="aaa94fc756f6d02f37222ef085659cc0e557fb39"/>
+    <property name="GIT_PREVIOUS_COMMIT" value="ef38306160ca794a9ac97cd8556efeb8464f2bfb"/>
     <property name="ANT_HOME" value="D:\performace\apache-ant-1.10.1"/>
     <property name="OneDrive" value="C:\Users\Shubham Jain\OneDrive"/>
     <property name="MINGW_PACKAGE_PREFIX" value="mingw-w64-x86_64"/>
     <property name="GIT_BRANCH" value="origin/master"/>
-    <property name="RUN_DISPLAY_URL" value="http://localhost:9090/job/MavenJenkinsCI/8/display/redirect"/>
+    <property name="RUN_DISPLAY_URL" value="http://localhost:9090/job/MavenJenkinsCI/11/display/redirect"/>
     <property name="VBOX_MSI_INSTALL_PATH" value="C:\Program Files\Oracle\VirtualBox\"/>
     <property name="JENKINS_HOME" value="C:\Users\Shubham Jain\.jenkins"/>
-    <property name="BUILD_ID" value="8"/>
+    <property name="BUILD_ID" value="11"/>
     <property name="TEMP" value="C:\Users\SHUBHA~1\AppData\Local\Temp"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\bin"/>
     <property name="MSYSTEM_PREFIX" value="C:/Program Files/Git/mingw64"/>
@@ -113,7 +113,7 @@
     <property name="PROCESSOR_REVISION" value="5e03"/>
     <property name="POM_VERSION" value="0.0.1-SNAPSHOT"/>
     <property name="HUDSON_HOME" value="C:\Users\Shubham Jain\.jenkins"/>
-    <property name="GIT_PREVIOUS_SUCCESSFUL_COMMIT" value="aaa94fc756f6d02f37222ef085659cc0e557fb39"/>
+    <property name="GIT_PREVIOUS_SUCCESSFUL_COMMIT" value="ef38306160ca794a9ac97cd8556efeb8464f2bfb"/>
     <property name="COMSPEC" value="C:\WINDOWS\system32\cmd.exe"/>
     <property name="ProgramFiles(x86)" value="C:\Program Files (x86)"/>
     <property name="PATH+MAVEN" value="D:\maven\apache-maven\/bin"/>
@@ -172,8 +172,209 @@
     <property name="sun.arch.data.model" value="64"/>
     <property name="GIT_URL" value="https://github.com/shubhamj-cuelogic/MavenJenkins.git"/>
   </properties>
-  <testcase classname="Scenario: Successful Login with Valid Credentials by data table" name="Given User is on Home Page" time="0.004"/>
-  <testcase classname="Scenario: Successful Login with Valid Credentials by data table" name="When User Navigate to LogIn Page" time="0"/>
-  <testcase classname="Scenario: Successful Login with Valid Credentials by data table" name="And User enters Credentials to LogIn" time="0"/>
-  <testcase classname="Scenario: Successful Login with Valid Credentials by data table" name="Scenario: Successful Login with Valid Credentials by data table" time="0.021"/>
+  <testcase classname="Scenario: Successful Login with Valid Credentials by data table" name="Given User is on Home Page" time="0">
+    <error message="Failed to instantiate class stepDefinition.Test_Steps" type="cucumber.runtime.CucumberException">cucumber.runtime.CucumberException: Failed to instantiate class stepDefinition.Test_Steps
+	at cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:47)
+	at cucumber.runtime.java.DefaultJavaObjectFactory.getInstance(DefaultJavaObjectFactory.java:33)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:41)
+	... 38 more
+Caused by: java.lang.NullPointerException
+	at java.util.logging.Logger.addHandler(Logger.java:1748)
+	at automationframework.AutomationLog.&lt;init&gt;(AutomationLog.java:40)
+	at automationframework.AutomationLog.getAutomationLog(AutomationLog.java:53)
+	at automationframework.AutomationLog.getLogger(AutomationLog.java:60)
+	at automationframework.AutomationLog.startTestCase(AutomationLog.java:66)
+	at automationframework.AutomationTestCase.consetup(AutomationTestCase.java:53)
+	at stepDefinition.Test_Steps.&lt;init&gt;(Test_Steps.java:46)
+	... 43 more
+</error>
+    <system-out>#Author: shubham.jain@cuelogic.co.in
+#Keywords Summary :
+#Feature: List of scenarios.
+#Scenario: Business rule through list of steps with arguments.
+#Given: Some precondition step
+#When: Some key actions
+#Then: To observe outcomes or validation
+#And,But: To enumerate more Given,When,Then steps
+#Scenario Outline: List of steps for data-driven as an Examples and &lt;placeholder&gt;
+#Examples: Container for s table
+#Background: List of steps run before each of the scenarios
+#&quot;&quot;&quot; (Doc Strings)
+#| (Data Tables)
+#@ (Tags/Labels):To group Scenarios
+#&lt;&gt; (placeholder)
+#&quot;&quot;
+## (Comments)
+#Sample Feature Definition Template
+Feature: Login Action
+logs\logs.txt.lck
+</system-out>
+  </testcase>
+  <testcase classname="Scenario: Successful Login with Valid Credentials by data table" name="Scenario: Successful Login with Valid Credentials by data table" time="0">
+    <error message="Failed to instantiate class stepDefinition.Test_Steps" type="cucumber.runtime.CucumberException">cucumber.runtime.CucumberException: Failed to instantiate class stepDefinition.Test_Steps
+	at cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:47)
+	at cucumber.runtime.java.DefaultJavaObjectFactory.getInstance(DefaultJavaObjectFactory.java:33)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:41)
+	... 38 more
+Caused by: java.lang.NullPointerException
+	at java.util.logging.Logger.addHandler(Logger.java:1748)
+	at automationframework.AutomationLog.&lt;init&gt;(AutomationLog.java:40)
+	at automationframework.AutomationLog.getAutomationLog(AutomationLog.java:53)
+	at automationframework.AutomationLog.getLogger(AutomationLog.java:60)
+	at automationframework.AutomationLog.startTestCase(AutomationLog.java:66)
+	at automationframework.AutomationTestCase.consetup(AutomationTestCase.java:53)
+	at stepDefinition.Test_Steps.&lt;init&gt;(Test_Steps.java:46)
+	... 43 more
+</error>
+  </testcase>
+  <testcase classname="Scenario: Successful Login with Valid Credentials by data table" name="When User Navigate to LogIn Page" time="0.015">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Successful Login with Valid Credentials by data table" name="And User enters Credentials to LogIn" time="0.015">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Successful Login with Valid Credentials by data table" name="Scenario: Successful Login with Valid Credentials by data table" time="0.015">
+    <error message="Failed to instantiate class stepDefinition.Test_Steps3" type="cucumber.runtime.CucumberException">cucumber.runtime.CucumberException: Failed to instantiate class stepDefinition.Test_Steps3
+	at cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:47)
+	at cucumber.runtime.java.DefaultJavaObjectFactory.getInstance(DefaultJavaObjectFactory.java:33)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:41)
+	... 37 more
+Caused by: java.lang.NullPointerException
+	at java.util.logging.Logger.addHandler(Logger.java:1748)
+	at automationframework.AutomationLog.&lt;init&gt;(AutomationLog.java:40)
+	at automationframework.AutomationLog.getAutomationLog(AutomationLog.java:53)
+	at automationframework.AutomationLog.getLogger(AutomationLog.java:60)
+	at automationframework.AutomationLog.startTestCase(AutomationLog.java:66)
+	at automationframework.AutomationTestCase.consetup(AutomationTestCase.java:53)
+	at stepDefinition.Test_Steps3.&lt;init&gt;(Test_Steps3.java:26)
+	... 42 more
+</error>
+    <system-out>logs\logs.txt.lck
+</system-out>
+  </testcase>
 </testsuite>
