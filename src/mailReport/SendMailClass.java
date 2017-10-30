@@ -45,6 +45,7 @@ public class SendMailClass
     static String fileDateFormet = dateFormatForFileName.format(currentDate);
 	static String testoutputfolderpath = System.getProperty("user.dir")+ File.separator +"target"+ File.separator+ "site";
 //    static String testoutputfolderpath = System.getProperty("user.dir")+ File.separator +"src"+ File.separator+ "logs2";
+//	static String zipFilefolderpath = System.getProperty("user.dir")+ File.separator +"reports"+File.separator+"results"+fileDateFormet;  // Zip Reports Files
 	static String zipFilefolderpath = System.getProperty("user.dir")+ File.separator +"reports"+File.separator+"results"+fileDateFormet;  // Zip Reports Files
 //    static String zipFilefolderpath = System.getProperty("user.dir")+ File.separator +"reports"+File.separator+"results2017-10-30 15-57-28";
 	static String zipLogFilefolderpath = System.getProperty("user.dir")+ File.separator +"logs"+File.separator+"logs.txt";
