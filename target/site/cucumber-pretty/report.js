@@ -107,25 +107,25 @@ formatter.match({
   "location": "Test_Steps.UserCheck()"
 });
 formatter.result({
-  "duration": 15390446587,
+  "duration": 15508835845,
   "status": "passed"
 });
 formatter.match({
   "location": "Test_Steps3.user_Navigate_to_LogIn_Page()"
 });
 formatter.result({
-  "duration": 22044981216,
+  "duration": 22965034362,
   "status": "passed"
 });
 formatter.match({
   "location": "Test_Steps3.user_enters_testuser__and_Test()"
 });
 formatter.result({
-  "duration": 285991985,
+  "duration": 287550173,
   "status": "passed"
 });
 formatter.after({
-  "duration": 19504651,
+  "duration": 20785221,
   "status": "passed"
 });
 });
