@@ -1,37 +1,19 @@
-27/10/2017 05:49:28.438 - [Shubham Automation] - [INFO] - java.util.logging.ConsoleHandler@b83a9be
-27/10/2017 05:49:28.439 - [Shubham Automation] - [INFO] - [ AutomationTestCase : consetup ] Begin Test case : Test_Steps
-27/10/2017 05:49:42.981 - [Shubham Automation] - [INFO] - [ Test_Steps : UserCheck ] Testing logger
-27/10/2017 05:49:42.981 - [Shubham Automation] - [SEVERE] - [ Test_Steps : UserCheck ] Testing error
-27/10/2017 05:49:42.982 - [Shubham Automation] - [WARNING] - [ Test_Steps : UserCheck ] Testing warn
-27/10/2017 05:49:43.430 - [Shubham Automation] - [INFO] - [ Test_Steps : UserCheck ] Testing Custom Snapshot taking by framework
-27/10/2017 05:49:43.437 - [Shubham Automation] - [INFO] - [ Test_Steps : UserCheck ] Title of the game is equal
-27/10/2017 05:49:43.443 - [Shubham Automation] - [INFO] - [ Test_Steps : UserCheck ] Title of the game is equal 2
-27/10/2017 05:49:43.448 - [Shubham Automation] - [INFO] - [ AutomationTestCase : consetup ] Begin Test case : Test_Steps3
-27/10/2017 05:49:56.875 - [Shubham Automation] - [INFO] - [ Homepage : button_MyAccount ] My Account Link is found on Home Page
-27/10/2017 05:50:02.130 - [Shubham Automation] - [INFO] - [ Test_Steps3 : user_enters_testuser__and_Test ] Implementing CSV data Provider in famework
-27/10/2017 05:50:02.157 - [Shubham Automation] - [INFO] - [ LoginPage : txtbx_UserName ] Username text box found on the Login Page
-27/10/2017 05:50:02.235 - [Shubham Automation] - [INFO] - [ Test_Steps3 : user_enters_testuser__and_Test ] Enter Username from CSV
-27/10/2017 05:50:02.253 - [Shubham Automation] - [INFO] - [ LoginPage : txtbx_Password ] Password text box found on the Login Page
-27/10/2017 05:50:02.343 - [Shubham Automation] - [INFO] - [ Test_Steps3 : user_enters_testuser__and_Test ] Enter Password from CSV
-27/10/2017 05:50:02.360 - [Shubham Automation] - [INFO] - [ LoginPage : button_LoginToAccount ] Login to Account button found on the Login Page
-27/10/2017 05:50:02.421 - [Shubham Automation] - [INFO] - [ Test_Steps3 : user_enters_testuser__and_Test ] Clicking on Login button
-27/10/2017 05:50:02.426 - [Shubham Automation] - [INFO] - [ AutomationTestCase : consetup ] Begin Test case : Test_Steps
-27/10/2017 05:50:15.363 - [Shubham Automation] - [INFO] - [ Test_Steps : UserCheck ] Testing logger
-27/10/2017 05:50:15.363 - [Shubham Automation] - [SEVERE] - [ Test_Steps : UserCheck ] Testing error
-27/10/2017 05:50:15.364 - [Shubham Automation] - [WARNING] - [ Test_Steps : UserCheck ] Testing warn
-27/10/2017 05:50:15.811 - [Shubham Automation] - [INFO] - [ Test_Steps : UserCheck ] Testing Custom Snapshot taking by framework
-27/10/2017 05:50:15.823 - [Shubham Automation] - [INFO] - [ Test_Steps : UserCheck ] Title of the game is equal
-27/10/2017 05:50:15.830 - [Shubham Automation] - [INFO] - [ Test_Steps : UserCheck ] Title of the game is equal 2
-27/10/2017 05:50:15.832 - [Shubham Automation] - [INFO] - [ AutomationTestCase : consetup ] Begin Test case : Test_Steps3
-27/10/2017 05:50:29.371 - [Shubham Automation] - [INFO] - [ Homepage : button_MyAccount ] My Account Link is found on Home Page
-27/10/2017 05:50:35.031 - [Shubham Automation] - [INFO] - [ AutomationTestCase : consetup ] Begin Test case : Test_Steps
-27/10/2017 05:50:49.075 - [Shubham Automation] - [INFO] - [ Test_Steps : UserCheck ] Testing logger
-27/10/2017 05:50:49.075 - [Shubham Automation] - [SEVERE] - [ Test_Steps : UserCheck ] Testing error
-27/10/2017 05:50:49.075 - [Shubham Automation] - [WARNING] - [ Test_Steps : UserCheck ] Testing warn
-27/10/2017 05:50:49.463 - [Shubham Automation] - [INFO] - [ Test_Steps : UserCheck ] Testing Custom Snapshot taking by framework
-27/10/2017 05:50:49.471 - [Shubham Automation] - [INFO] - [ Test_Steps : UserCheck ] Title of the game is equal
-27/10/2017 05:50:49.477 - [Shubham Automation] - [INFO] - [ Test_Steps : UserCheck ] Title of the game is equal 2
-27/10/2017 05:50:49.480 - [Shubham Automation] - [INFO] - [ AutomationTestCase : consetup ] Begin Test case : Test_Steps3
-27/10/2017 05:51:02.998 - [Shubham Automation] - [INFO] - [ Homepage : button_MyAccount ] My Account Link is found on Home Page
-27/10/2017 05:51:10.914 - [Shubham Automation] - [INFO] - [ AutomationTestCase : consetup ] Begin Test case : Test_Steps3
-27/10/2017 05:51:24.370 - [Shubham Automation] - [INFO] - [ Test_Steps3 : user_LogOut_from_the_Application ] Clicking on Logout button
+30/10/2017 04:22:15.890 - [Shubham Automation] - [INFO] - java.util.logging.ConsoleHandler@352ff4da
+30/10/2017 04:22:15.905 - [Shubham Automation] - [INFO] - [ AutomationTestCase : consetup ] Begin Test case : Test_Steps
+30/10/2017 04:22:30.186 - [Shubham Automation] - [INFO] - [ Test_Steps : UserCheck ] Testing logger
+30/10/2017 04:22:30.186 - [Shubham Automation] - [SEVERE] - [ Test_Steps : UserCheck ] Testing error
+30/10/2017 04:22:30.187 - [Shubham Automation] - [WARNING] - [ Test_Steps : UserCheck ] Testing warn
+30/10/2017 04:22:30.610 - [Shubham Automation] - [INFO] - [ Test_Steps : UserCheck ] Testing Custom Snapshot taking by framework
+30/10/2017 04:22:30.623 - [Shubham Automation] - [INFO] - [ Test_Steps : UserCheck ] Title of the game is equal
+30/10/2017 04:22:30.631 - [Shubham Automation] - [INFO] - [ Test_Steps : UserCheck ] Title of the game is equal 2
+30/10/2017 04:22:30.634 - [Shubham Automation] - [INFO] - [ AutomationTestCase : consetup ] Begin Test case : Test_Steps3
+30/10/2017 04:22:47.322 - [Shubham Automation] - [INFO] - [ Homepage : button_MyAccount ] My Account Link is found on Home Page
+30/10/2017 04:22:52.750 - [Shubham Automation] - [INFO] - [ Test_Steps3 : user_enters_testuser__and_Test ] Implementing CSV data Provider in famework
+30/10/2017 04:22:52.779 - [Shubham Automation] - [INFO] - [ LoginPage : txtbx_UserName ] Username text box found on the Login Page
+30/10/2017 04:22:52.854 - [Shubham Automation] - [INFO] - [ Test_Steps3 : user_enters_testuser__and_Test ] Enter Username from CSV
+30/10/2017 04:22:52.872 - [Shubham Automation] - [INFO] - [ LoginPage : txtbx_Password ] Password text box found on the Login Page
+30/10/2017 04:22:52.952 - [Shubham Automation] - [INFO] - [ Test_Steps3 : user_enters_testuser__and_Test ] Enter Password from CSV
+30/10/2017 04:22:52.968 - [Shubham Automation] - [INFO] - [ LoginPage : button_LoginToAccount ] Login to Account button found on the Login Page
+30/10/2017 04:22:53.017 - [Shubham Automation] - [INFO] - [ Test_Steps3 : user_enters_testuser__and_Test ] Clicking on Login button
+30/10/2017 04:22:53.018 - [Shubham Automation] - [INFO] - [ Test_Steps3 : beforeScenario ] I am in email send function
+30/10/2017 04:22:53.205 - [Shubham Automation] - [INFO] - [ Test_Steps3 : beforeScenario ] Email sent

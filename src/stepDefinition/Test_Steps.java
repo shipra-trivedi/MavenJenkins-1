@@ -47,7 +47,7 @@ public class Test_Steps extends AutomationTestCaseVerification {
 	}
 
 	@Given("^User is on Home Page$")
-    public void UserCheck() 
+    public void UserCheck() throws Exception
     {
 		System.out.println("Browser Name ="+Configuration.getConfigurationValueForProperty("browser"));
 		System.out.println("applicationURL Name ="+Configuration.getConfigurationValueForProperty("applicationURL"));
@@ -68,15 +68,17 @@ public class Test_Steps extends AutomationTestCaseVerification {
 		
 		Assert.assertEquals("ONLINE STORE | Toolsqa Dummy Test site", Page.driver.getTitle());
 		AutomationLog.info("Title of the game is equal 2");
+		
+		//int i=1/0;   // checking exception case in step defination
     }
 
-	@Override
+/*	@Override
 	protected void verifyTestCases() throws Exception {
 		AutomationLog.info("In verifyTestCases");
 		
-	}
+	}*/
 
-	@Override
+/*	@Override
 	protected String successMessage() {
 		AutomationLog.info("In successMessage");
 		return null;
@@ -86,7 +88,7 @@ public class Test_Steps extends AutomationTestCaseVerification {
 	protected String failureMessage() {
 		AutomationLog.info("In failureMessage");
 		return null;
-	}
+	}*/
 
 	
 /*	public void genrateReports() {

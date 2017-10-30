@@ -7,8 +7,12 @@ import org.junit.Assert;
 import automationframework.AppDriver;
 import automationframework.AutomationLog;
 import automationframework.AutomationTestCaseVerification;
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
+import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import mailReport.SendMailClass;
 import pageobjects.Homepage;
 import pageobjects.LoginPage;
 import pageobjects.Page;
@@ -55,11 +59,31 @@ public class Test_Steps3 extends AutomationTestCaseVerification{
 	@Then("^Message displayed LogOut Successfully$")
 	public void message_displayed_LogOut_Successfully() throws Throwable {
 		System.out.println("LogOut Successfully");
+		
+
 		Page.driver.quit();
 		AppDriver.killChromePhantomInstance(Page.driver);
 	}
 	
-	@Then("^Asserts of JUnits$")
+/*	@Given("^Email must be sent$")
+    public void UserCheck() 
+    {
+
+    }*/
+	
+	@After
+	public void beforeScenario() {
+		AutomationLog.info("I am in email send function");
+        try {
+			SendMailClass.execute();
+			AutomationLog.info("Email sent");
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+			e.printStackTrace();
+		}
+	}
+	
+/*	@Then("^Asserts of JUnits$")
     public void testAssert(){					
 		
         //Variable declaration		
@@ -82,24 +106,38 @@ public class Test_Steps3 extends AutomationTestCaseVerification{
         Assert.assertTrue(variable1<variable2);					
         Assert.assertArrayEquals(airethematicArrary1, airethematicArrary2);
      //   Assert.assertTrue(message, condition);
+        
+
+        
 	}
+	@Given("^Email must be sent$")
+    public void UserCheck() 
+    {
+        try {
+			SendMailClass.execute();
+			AutomationLog.info("Email sent");
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+			e.printStackTrace();
+		}
+    }*/
 	
-	@Override
+/*	@Override
 	protected void verifyTestCases() throws Exception {
 		// TODO Auto-generated method stub
 		
-	}
+	}*/
 
-	@Override
+/*	@Override
 	protected String successMessage() {
-		// TODO Auto-generated method stub
+		AutomationLog.info("In successMessage");
 		return null;
 	}
 
 	@Override
 	protected String failureMessage() {
-		// TODO Auto-generated method stub
+		AutomationLog.info("In failureMessage");
 		return null;
-	}
+	}*/
 
 }

@@ -134,7 +134,7 @@ public class ScreenshotAndTestNgReporterListener {
             // extracting date and time for snapshot file
             SimpleDateFormat dateFormatForFileName = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss");//dd/MM/yyyy
             String fileDateFormet = dateFormatForFileName.format(currentDate);
-            String filefolder="./test-output"+"/Snap/"+folderDateFormat+"/";
+            String filefolder="./target"+"/site/"+"/Snap/"+folderDateFormat+"/";
             // Creating folders and files
             File screenshot = new File(filefolder+fileDateFormet+".jpeg");
             FileUtils.copyFile(screenShot, new File(screenshot.getPath()));

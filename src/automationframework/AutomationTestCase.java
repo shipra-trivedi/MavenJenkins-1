@@ -70,12 +70,12 @@ public class AutomationTestCase
 
     //	Page.driver.quit();  // As per suggestion by shubham
 
-/*        AutomationLog.endTestCase(executingTestCaseName);
-
+        AutomationLog.endTestCase(executingTestCaseName);
+        
         if (testCaseData != null)
             testCaseData.clear();
-*/
-    //    AppDriver.clearBrowserContext(Page.driver);
+
+        AppDriver.clearBrowserContext(Page.driver);
     }
 
     public void testcasePassed(String customMessage) 

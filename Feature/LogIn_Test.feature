@@ -24,21 +24,3 @@ Scenario: Successful Login with Valid Credentials by data table
 	Given User is on Home Page
 	When User Navigate to LogIn Page
 	And User enters Credentials to LogIn
-	Then Message displayed Login Successfully
-
-Scenario: Successful Login with Valid Credentials by Maps in Data Tables
-	Given User is on Home Page
-	When User Navigate to LogIn Page
-	And User enters Credentials to LogIns
-	Then Message displayed Login Successfully
-
-Scenario: Successful Login with Valid Credentials
-	Given User is on Home Page
-	When User Navigate to LogIn Page
-	And User enters Credentials to LogIns
-	Then Message displayed Login Successfully
-    
-Scenario: Successful LogOut
-	When User LogOut from the Application
-	Then Message displayed LogOut Successfullyy
-	Then Asserts of JUnits

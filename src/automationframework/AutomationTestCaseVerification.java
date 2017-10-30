@@ -46,17 +46,19 @@ public abstract class AutomationTestCaseVerification extends AutomationTestCase
         return false;
     }
   
-    protected abstract void verifyTestCases() throws Exception;
+ /*   protected abstract void verifyTestCases() throws Exception;
     protected abstract String successMessage();
     protected abstract String failureMessage();
-
+    protected abstract String successMessage();
+    protected abstract String failureMessage();
+*/
     public void Execute() throws Exception
     {
         try
         {
             setup();
-            verifyTestCases();
-       //     testcasePassed(successMessage());
+        //    verifyTestCases();
+         //   testcasePassed(successMessage());
         }
         catch(Exception e)
         {
@@ -77,8 +79,8 @@ public abstract class AutomationTestCaseVerification extends AutomationTestCase
         try
         {
         	Consetup();
-            verifyTestCases();
-            //testcasePassed(successMessage());
+           // verifyTestCases();
+           // testcasePassed(successMessage());
         }
         catch(Exception e)
         {
@@ -90,7 +92,7 @@ public abstract class AutomationTestCaseVerification extends AutomationTestCase
         }
         finally
         {
-            //cleanup();
+           // cleanup();
         }
     }
 

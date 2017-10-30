@@ -51,7 +51,6 @@ public class AppDriver {
 		if (OS.equalsIgnoreCase("windows")) {
 			System.setProperty("webdriver.chrome.driver",
 					System.getProperty("user.dir")+ File.separator + "src" +  File.separator + "test" + File.separator + "java" + File.separator  + "libs" + File.separator  + "DriverBinaries" + File.separator + "chromedriver.exe");
-			        System.out.println(System.getProperty("user.dir")+ File.separator + "src" +  File.separator + "test" + File.separator + "java" + File.separator  + "lib" + File.separator  + "DriverBinaries" + File.separator + "chromedriver.exe");
 		} else if (OS.equalsIgnoreCase("linux")) {
 			System.setProperty("webdriver.chrome.driver",
 					System.getProperty("user.dir")+ File.separator + "src" +  File.separator + "test" + File.separator + "java" + File.separator  + "libs" + File.separator  + "DriverBinaries" + File.separator + "chromedriver");

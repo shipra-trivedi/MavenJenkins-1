@@ -103,181 +103,29 @@ formatter.step({
   "name": "User enters Credentials to LogIn",
   "keyword": "And "
 });
-formatter.step({
-  "line": 27,
-  "name": "Message displayed Login Successfully",
-  "keyword": "Then "
-});
 formatter.match({
   "location": "Test_Steps.UserCheck()"
 });
 formatter.result({
-  "duration": 15138123456,
+  "duration": 14827819138,
   "status": "passed"
 });
 formatter.match({
   "location": "Test_Steps3.user_Navigate_to_LogIn_Page()"
 });
 formatter.result({
-  "duration": 18679550964,
+  "duration": 22114408741,
   "status": "passed"
 });
 formatter.match({
   "location": "Test_Steps3.user_enters_testuser__and_Test()"
 });
 formatter.result({
-  "duration": 291352628,
+  "duration": 267523850,
   "status": "passed"
 });
-formatter.match({
-  "location": "Test_Steps3.message_displayed_Login_Successfully()"
-});
-formatter.result({
-  "duration": 70258,
+formatter.after({
+  "duration": 187406044,
   "status": "passed"
-});
-formatter.scenario({
-  "line": 29,
-  "name": "Successful Login with Valid Credentials by Maps in Data Tables",
-  "description": "",
-  "id": "login-action;successful-login-with-valid-credentials-by-maps-in-data-tables",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "line": 30,
-  "name": "User is on Home Page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 31,
-  "name": "User Navigate to LogIn Page",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 32,
-  "name": "User enters Credentials to LogIns",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 33,
-  "name": "Message displayed Login Successfully",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "Test_Steps.UserCheck()"
-});
-formatter.result({
-  "duration": 13403783626,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Test_Steps3.user_Navigate_to_LogIn_Page()"
-});
-formatter.result({
-  "duration": 19190631361,
-  "status": "passed"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({
-  "location": "Test_Steps3.message_displayed_Login_Successfully()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "line": 35,
-  "name": "Successful Login with Valid Credentials",
-  "description": "",
-  "id": "login-action;successful-login-with-valid-credentials",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "line": 36,
-  "name": "User is on Home Page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 37,
-  "name": "User Navigate to LogIn Page",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 38,
-  "name": "User enters Credentials to LogIns",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 39,
-  "name": "Message displayed Login Successfully",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "Test_Steps.UserCheck()"
-});
-formatter.result({
-  "duration": 14447153179,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Test_Steps3.user_Navigate_to_LogIn_Page()"
-});
-formatter.result({
-  "duration": 21430679569,
-  "status": "passed"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({
-  "location": "Test_Steps3.message_displayed_Login_Successfully()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "line": 41,
-  "name": "Successful LogOut",
-  "description": "",
-  "id": "login-action;successful-logout",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "line": 42,
-  "name": "User LogOut from the Application",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 43,
-  "name": "Message displayed LogOut Successfullyy",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 44,
-  "name": "Asserts of JUnits",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "Test_Steps3.user_LogOut_from_the_Application()"
-});
-formatter.result({
-  "duration": 13456694020,
-  "status": "passed"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({
-  "location": "Test_Steps3.testAssert()"
-});
-formatter.result({
-  "status": "skipped"
 });
 });
