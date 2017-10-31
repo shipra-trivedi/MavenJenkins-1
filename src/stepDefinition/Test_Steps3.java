@@ -23,9 +23,10 @@ public class Test_Steps3 extends AutomationTestCaseVerification{
 	LoginPage loginpage=new LoginPage(Page.driver);
 	
 	public Test_Steps3() {
-		consetup();
+		//consetupSingleSessionExecution();                // Use Only if one session required
+		consetup();                                        // Use if every testcase run with an new session
 	}
-	
+		
 	@When("^User Navigate to LogIn Page$")
 	public void user_Navigate_to_LogIn_Page() throws Throwable {
 		home.button_MyAccount().click();
@@ -65,12 +66,6 @@ public class Test_Steps3 extends AutomationTestCaseVerification{
 		AppDriver.killChromePhantomInstance(Page.driver);
 	}
 	
-/*	@Given("^Email must be sent$")
-    public void UserCheck() 
-    {
-
-    }*/
-	
 	@After
 	public void beforeScenario() {
 		AutomationLog.info("I am in email send function");
@@ -105,39 +100,8 @@ public class Test_Steps3 extends AutomationTestCaseVerification{
         Assert.assertNull(string5);			
         Assert.assertTrue(variable1<variable2);					
         Assert.assertArrayEquals(airethematicArrary1, airethematicArrary2);
-     //   Assert.assertTrue(message, condition);
-        
-
-        
+     //   Assert.assertTrue(message, condition);        
 	}
-	@Given("^Email must be sent$")
-    public void UserCheck() 
-    {
-        try {
-			SendMailClass.execute();
-			AutomationLog.info("Email sent");
-		} catch (Exception e) {
-			System.out.println(e.getMessage());
-			e.printStackTrace();
-		}
-    }*/
-	
-/*	@Override
-	protected void verifyTestCases() throws Exception {
-		// TODO Auto-generated method stub
-		
-	}*/
-
-/*	@Override
-	protected String successMessage() {
-		AutomationLog.info("In successMessage");
-		return null;
-	}
-
-	@Override
-	protected String failureMessage() {
-		AutomationLog.info("In failureMessage");
-		return null;
-	}*/
+*/
 
 }

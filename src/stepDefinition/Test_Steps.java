@@ -31,9 +31,12 @@ import automationframework.AppPage.driver2;*/
 //import com.github.mkolisnyk.cucumber.reporting.*;
 
 import cucumber.api.DataTable;
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import mailReport.SendMailClass;
 
 
 public class Test_Steps extends AutomationTestCaseVerification {
@@ -41,11 +44,18 @@ public class Test_Steps extends AutomationTestCaseVerification {
 	Homepage home=new Homepage();
 	LoginPage loginpage=new LoginPage(Page.driver);
 	
-	
 	public Test_Steps() {
 		consetup();
 	}
-
+	
+	////// Use below Only if one session required  //////////
+	
+/*	@Before
+	public void beforeScenario() {
+		consetup();
+	}*/
+    /////////////////////////////////////////////////////////
+	
 	@Given("^User is on Home Page$")
     public void UserCheck() throws Exception
     {
@@ -71,25 +81,6 @@ public class Test_Steps extends AutomationTestCaseVerification {
 		
 		//int i=1/0;   // checking exception case in step defination
     }
-
-/*	@Override
-	protected void verifyTestCases() throws Exception {
-		AutomationLog.info("In verifyTestCases");
-		
-	}*/
-
-/*	@Override
-	protected String successMessage() {
-		AutomationLog.info("In successMessage");
-		return null;
-	}
-
-	@Override
-	protected String failureMessage() {
-		AutomationLog.info("In failureMessage");
-		return null;
-	}*/
-
 	
 /*	public void genrateReports() {
 		CucumberResultsOverview results = new CucumberResultsOverview();

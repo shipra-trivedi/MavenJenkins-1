@@ -57,6 +57,12 @@ public class AutomationTestCase
         testCaseData = TestDataProvider.getTestData(executingTestCaseFileName);
     }
 
+    public void consetupSingleSessionExecution() 
+    {
+        AutomationLog.startTestCase(executingTestCaseName);
+        testCaseData = TestDataProvider.getTestData(executingTestCaseFileName);
+    }
+    
     public static Credentials getGlobalUserCredentials()
     {
         String email = Configuration.getConfigurationValueForProperty("email");
@@ -64,7 +70,7 @@ public class AutomationTestCase
         Credentials credential =new Credentials(email, password);
         return credential;
     }
-
+    
     public void cleanup()
     {
 
