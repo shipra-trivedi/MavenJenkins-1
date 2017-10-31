@@ -106,3 +106,26 @@ formatter.step({
 formatter.match({
   "location": "Test_Steps.UserCheck()"
 });
+formatter.result({
+  "duration": 14117448600,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Test_Steps3.user_Navigate_to_LogIn_Page()"
+});
+formatter.result({
+  "duration": 18548123902,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Test_Steps3.user_enters_testuser__and_Test()"
+});
+formatter.result({
+  "duration": 259948806,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 20780669,
+  "status": "passed"
+});
+});
