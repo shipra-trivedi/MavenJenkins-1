@@ -1,7 +1,6 @@
 package automationframework;
 /**
  * @author Shubham Jain
- *
  */
 public class Init {
 

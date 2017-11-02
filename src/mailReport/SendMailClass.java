@@ -17,6 +17,8 @@ import org.openqa.selenium.remote.BrowserType;
 import automationframework.AppDriver;
 import automationframework.AutomationLog;
 import automationframework.ExcelLib;
+import de.idyl.winzipaes.AesZipFileEncrypter;
+import de.idyl.winzipaes.impl.AESEncrypterBC;
 import pageobjects.Page;
 
 import java.io.File;
@@ -24,9 +26,11 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.io.UnsupportedEncodingException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.zip.ZipEntry;
+import java.util.zip.ZipException;
 import java.util.zip.ZipOutputStream;
 /*This file is used for sending the report after execution of all suites using email*/
 public class SendMailClass 
@@ -53,24 +57,49 @@ public class SendMailClass
 	static File zipFile = new File(zipFilefolderpath);
 	static String subject = "Shubham Automation Application Test Cucumber report on browser";
     
-	public static void execute() throws Exception{
-		SendMailClass.zipFolder(folder, zipFile);
-	}
+/*	public static void execute() throws Exception{
+		SendMailClass.zipFolderWithPassword(folder, zipFile);
+	}*/
 	
- /*   public static void execute() throws Exception
+    public static void execute() throws Exception
     {
    	
     //	ExcelLib xl = new ExcelLib();
     	//////////////////////// Create a zip file of test-output folder /////////////////
     	
-    	SendMailClass.zipFolder(folder, zipFile);
+    //	SendMailClass.zipFolder(folder, zipFile);
     	//////////////////////////////////////////////////////////////////////////////////
    
-        path of file which contains report
+    //    path of file which contains report
         String path = zipFilefolderpath;
         String path2 = zipLogFilefolderpath;
          //Report file = path&gt;
-        No of recipients of the report, you can have many separated by comma
+    //    No of recipients of the report, you can have many separated by comma
+        
+        
+        
+        
+    	// We use the bouncy castle encrypter, as opposed to the JCA encrypter
+		AESEncrypterBC encrypter = new AESEncrypterBC();
+		try {
+			encrypter.init("my-password", 0);
+             //The 0 is keySize, it is ignored for AESEncrypterBC
+
+		AesZipFileEncrypter zipEncrypter = new AesZipFileEncrypter(zipFile, encrypter);
+		
+		listFilesAndFilesSubDirectories(testoutputfolderpath,zipEncrypter);
+		
+		// remember to close the zipEncrypter
+		zipEncrypter.close();
+		
+		} catch (ZipException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}  
+        
+        
+        
+        ///////////////////////////////////////////////
         
         String mailto = "shubham.jain@cuelogic.co.in";
         String mailcc = "shubham.jain@cuelogic.co.in";
@@ -82,7 +111,7 @@ public class SendMailClass
         String[] bcc={mailbcc};
 
         
-        email user name and password of sender 
+     //   email user name and password of sender 
    
    
         SendMailClass.sendMail("shubham.jain@cuelogic.co.in",   
@@ -222,31 +251,31 @@ InternetAddress(bcc[i]));
             return false;
         }
     }
-           */ 
-      public static void zipFolder(final File folder, final File zipFile) throws IOException {
-          zipFolder(folder, new FileOutputStream(zipFile));
+           
+ /*     public static void zipFolderWithPassword(final File folder, final File zipFile) throws IOException {
+         
           
-      }
-
-      public static void zipFolder(final File folder, final OutputStream outputStream) throws IOException {
-          try (ZipOutputStream zipOutputStream = new ZipOutputStream(outputStream)) {
-              processFolder(folder, zipOutputStream, folder.getPath().length() + 1);
-          }
-      }
-
-      private static void processFolder(final File folder, final ZipOutputStream zipOutputStream, final int prefixLength)
-              throws IOException {
-          for (final File file : folder.listFiles()) {
-              if (file.isFile()) {
-                  final ZipEntry zipEntry = new ZipEntry(file.getPath().substring(prefixLength));
-                  zipOutputStream.putNextEntry(zipEntry);
-                  try (FileInputStream inputStream = new FileInputStream(file)) {
-                      IOUtils.copy(inputStream, zipOutputStream);
-                  }
-                  zipOutputStream.closeEntry();
-              } else if (file.isDirectory()) {
-                  processFolder(file, zipOutputStream, prefixLength);
+      }*/
+      
+      public static void listFilesAndFilesSubDirectories(String directoryName, AesZipFileEncrypter zipEncrypter) throws UnsupportedEncodingException, IOException{
+      	File existingUnzippedFile =null;
+      	ArrayList<String> singleAddress2 = new ArrayList<String>();
+      	String singleAddress = null;
+          File directory = new File(directoryName);
+          //get all the files from a directory
+          File[] fList = directory.listFiles();
+          for (File file : fList){
+              if (file.isFile()){
+              	singleAddress=file.getAbsolutePath();
+              	singleAddress2.add(singleAddress);
+              } else if (file.isDirectory()){
+                  listFilesAndFilesSubDirectories(file.getAbsolutePath(), zipEncrypter);
               }
           }
+          for (int counter = 0; counter < singleAddress2.size(); counter++) { 		      
+              existingUnzippedFile= new File(singleAddress2.get(counter));
+              zipEncrypter.add(existingUnzippedFile, "my-password"); 
+          } 
       }
+
 }

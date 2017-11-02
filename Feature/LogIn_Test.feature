@@ -24,3 +24,8 @@ Scenario: Successful Login with Valid Credentials by data table
 	Given User is on Home Page
 	When User Navigate to LogIn Page
 	And User enters Credentials to LogIn
+	
+Scenario: Successful Login with Valid Credentials by Maps in Data Tables
+	Given User is on Home Page
+	When User Navigate to LogIn Page
+	Then Message displayed Login Successfully

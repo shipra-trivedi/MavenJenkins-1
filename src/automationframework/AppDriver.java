@@ -141,10 +141,16 @@ public class AppDriver {
 	}
 
 	public static void clearBrowserContext(WebDriver driver) {
-		if (driver != null) {
-			driver.manage().deleteAllCookies();
-			driver.quit();
-			killChromePhantomInstance(driver);
+		try {
+		if (Page.driver != null) {
+			Page.driver.quit();
+			killChromePhantomInstance(Page.driver);
+		}
+		}catch(Exception ex)
+		{
+			System.out.println(ex.getMessage());
+			ex.printStackTrace();
+			Page.driver.quit();
 		}
 	}
 

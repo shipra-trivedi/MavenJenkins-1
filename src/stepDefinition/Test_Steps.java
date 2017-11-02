@@ -1,5 +1,7 @@
 package stepDefinition;
-
+/**
+ * @author Shubham Jain
+ * */
 import java.io.File;
 import java.util.HashMap;
 import java.util.List;
@@ -7,6 +9,7 @@ import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.Assert;
+import org.junit.BeforeClass;
 import org.openqa.selenium.By;
 /*import org.openqa.selenium.WebPage.driver;
 import org.openqa.selenium.firefox.FirefoxPage.driver;*/
@@ -24,6 +27,7 @@ import automationframework.TestDataProvider;
 import pageobjects.Homepage;
 import pageobjects.LoginPage;
 import pageobjects.Page;
+import test.java.Runner.BeforeSuite;
 import automationframework.AppDriver;
 /*import automationframework.AppPage.driver;
 import automationframework.AppPage.driver2;*/
@@ -31,8 +35,8 @@ import automationframework.AppPage.driver2;*/
 //import com.github.mkolisnyk.cucumber.reporting.*;
 
 import cucumber.api.DataTable;
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
+/*import cucumber.api.java.After;
+import cucumber.api.java.Before;*/
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -45,23 +49,31 @@ public class Test_Steps extends AutomationTestCaseVerification {
 	LoginPage loginpage=new LoginPage(Page.driver);
 	
 	public Test_Steps() {
-		consetup();
-		
+		invoke();
 	}
-	
-	////// Use below Only if one session required  //////////
-	
-/*	@Before
-	public void beforeScenario() {
-		consetup();
-	}*/
-    /////////////////////////////////////////////////////////
+		
+	@BeforeSuite
+	public void afterScenario() {
+		AutomationLog.info("I am in email send function");
+        try {
+		//	SendMailClass.execute();
+        	
+        	System.out.println("Before is running");
+        	AutomationLog.info("Before is running");
+        	
+			AutomationLog.info("Email sent");
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+			e.printStackTrace();
+		}
+	}
 	
 	@Given("^User is on Home Page$")
     public void UserCheck() throws Exception
     {
-		System.out.println("Browser Name ="+Configuration.getConfigurationValueForProperty("browser"));
+/*		System.out.println("Browser Name ="+Configuration.getConfigurationValueForProperty("browser"));
 		System.out.println("applicationURL Name ="+Configuration.getConfigurationValueForProperty("applicationURL"));
+		System.out.println("applicationURL Name ="+Configuration.getConfigurationValueForProperty("execution-type"));*/
 		AutomationLog.info("Testing logger");
 		AutomationLog.error("Testing error");
 		AutomationLog.warn("Testing warn");
@@ -72,13 +84,13 @@ public class Test_Steps extends AutomationTestCaseVerification {
 	/*	Assert.assertEquals("Custom Error by shubham", Page.driver.getTitle());
 		AutomationLog.info("Title of the game is not equal");*/
 		
-		Assert.assertEquals("ONLINE STORE | Toolsqa Dummy Test site", Page.driver.getTitle());
+/*		Assert.assertEquals("ONLINE STORE | Toolsqa Dummy Test site", Page.driver.getTitle());
 		AutomationLog.info("Title of the game is equal");
 		
 
 		
 		Assert.assertEquals("ONLINE STORE | Toolsqa Dummy Test site", Page.driver.getTitle());
-		AutomationLog.info("Title of the game is equal 2");
+		AutomationLog.info("Title of the game is equal 2");*/
 		
 		//int i=1/0;   // checking exception case in step defination
     }

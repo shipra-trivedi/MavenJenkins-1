@@ -7,6 +7,7 @@ import java.util.HashMap;
 
 import org.openqa.selenium.WebDriver;
 
+import cucumber.api.java.Before;
 import pageobjects.Homepage;
 import pageobjects.LoginPage;
 import pageobjects.Page;
@@ -16,7 +17,10 @@ public class AutomationTestCase
 	Homepage homePage = Homepage.homePage();
 	LoginPage loginPage = new LoginPage(Page.driver);
     protected HashMap<String, HashMap<String, String>> testCaseData;
-
+    private static boolean initialized = false;
+    private static boolean loginInitialized = false;
+	String initializationType = Configuration.getConfigurationValueForProperty("execution-type");
+	String LoginType = Configuration.getConfigurationValueForProperty("login-each-session");
 
     private String executingTestCaseName = null;
     private String executingTestCaseFileName = null;
@@ -32,6 +36,36 @@ public class AutomationTestCase
         this.executingTestCaseName = this.getClass().getSimpleName();
         this.executingTestCaseFileName = executingTestCaseName;
     }
+    
+    @Before
+	public void invoke() {
+    try {
+    	if(initializationType.equalsIgnoreCase("single")) {
+	     if (!initialized){
+	            initialized = true;
+	              setup();   
+	            AutomationLog.info("Setting up Single Instance Type invokation");
+	        }
+			else {
+				invokeData();
+				AutomationLog.info("Instance is already invoked");
+			}
+	      }
+    	else if(initializationType.equalsIgnoreCase("multiple")) {
+    	 //   consetup();
+ 	          setup();    
+    		  AutomationLog.info("Setting up Multiple Instance Type invokation");
+    	}
+    	else {
+    		AutomationLog.error("Wrong Instance Type invokation parameter. Please check the configurations");
+    	}
+    }
+    catch(Exception ex) {
+    	AutomationLog.error("Exception occured in setup");
+    	AutomationLog.error(ex.getMessage());
+    	ex.printStackTrace();
+    }
+  } 
 
     public void setup() 
     {
@@ -41,6 +75,7 @@ public class AutomationTestCase
     	Credentials ValidCredentials = getGlobalUserCredentials();
         try {
         	loginPage.doSuccessfulLogin(ValidCredentials.getEmail(), ValidCredentials.getPassword());
+        	AutomationLog.startTestCase("Login done");
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
@@ -48,18 +83,42 @@ public class AutomationTestCase
         testCaseData = TestDataProvider.getTestData(executingTestCaseFileName);
     }
     
-    public void consetup() 
+/*    public void consetup() 
     {
         AutomationLog.startTestCase(executingTestCaseName);
 		new Page(AppDriver.getDriver(Configuration.getConfigurationValueForProperty("browser")));
        // populate test case data from csv
-        //System.out.println("checking name="+executingTestCaseFileName);
         testCaseData = TestDataProvider.getTestData(executingTestCaseFileName);
-    }
-
-    public void consetupSingleSessionExecution() 
+    }*/
+    
+    
+    public void invokeData() 
     {
         AutomationLog.startTestCase(executingTestCaseName);
+        Credentials ValidCredentials = getGlobalUserCredentials();
+    	if(LoginType.equalsIgnoreCase("yes")) {
+            try {
+            	loginPage.doSuccessfulLogin(ValidCredentials.getEmail(), ValidCredentials.getPassword());
+            	AutomationLog.startTestCase("Login done");
+    		} catch (Exception e) {
+    			System.out.println(e.getMessage());
+    		}
+    	}else if(LoginType.equalsIgnoreCase("no")){
+    		 if (!loginInitialized){
+    			 loginInitialized = true;
+    	          try {
+    	            	loginPage.doSuccessfulLogin(ValidCredentials.getEmail(), ValidCredentials.getPassword());
+    	            	AutomationLog.startTestCase("Login done");
+    	    		} catch (Exception e) {
+    	    			System.out.println(e.getMessage());
+    	    		}
+    		 }
+    		 else {
+    	    		AutomationLog.startTestCase("Continues Login session");
+    		 }
+    	}else {
+    		AutomationLog.startTestCase("check configiration login-each-session parameter is wrong");
+    	}
         testCaseData = TestDataProvider.getTestData(executingTestCaseFileName);
     }
     

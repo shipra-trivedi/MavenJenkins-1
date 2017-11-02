@@ -22,15 +22,21 @@ public abstract class AutomationTestCaseVerification extends AutomationTestCase
         super(executingTestCase);
     }
 
+    public void invoke()
+    {
+        super.invoke();
+    }
+        
     public void setup()
     {
         super.setup();
     }
 
-    public void Consetup()
+/*    public void Consetup()
     {
         super.consetup();
-    }
+    }*/
+    
     public void cleanup()
     {
         super.cleanup();
@@ -74,7 +80,7 @@ public abstract class AutomationTestCaseVerification extends AutomationTestCase
         }
     }
     
-    public void ConExecute() throws Exception
+/*    public void ConExecute() throws Exception
     {
         try
         {
@@ -94,7 +100,7 @@ public abstract class AutomationTestCaseVerification extends AutomationTestCase
         {
            // cleanup();
         }
-    }
+    }*/
 
     private void handleTestCaseFailure(String message) throws Exception
     {

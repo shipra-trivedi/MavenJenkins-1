@@ -1,10 +1,13 @@
 package pageobjects;
-
+/**
+ * @author Shubham Jain
+ * */
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import automationframework.AutomationLog;
+import automationframework.Configuration;
 import automationframework.ExcelLib;
 import automationframework.WaitFor;
 
@@ -12,7 +15,8 @@ import org.junit.Assert;
 
 public class LoginPage extends Page {
 	private WebElement element = null;
-	static ExcelLib xl = new ExcelLib();
+	Homepage home=new Homepage();
+//	static ExcelLib xl = new ExcelLib();
 
 	public LoginPage(WebDriver driver) {
 		super(driver);
@@ -68,9 +72,9 @@ public class LoginPage extends Page {
   	}
 }
 
-	private void validateAppURL() {
+/*	private void validateAppURL() {
 
-    	String expcted = xl.getXLcellValue("MainTemplate", 8, 1);
+ //   	String expcted = xl.getXLcellValue("MainTemplate", 8, 1);
     	String actual = driver.getTitle();
     	if(actual.equals(expcted)){
     		AutomationLog.info("URL Test passed");
@@ -79,16 +83,17 @@ public class LoginPage extends Page {
     		AutomationLog.error("App URL is invalid, Getting Title as ="+actual);
     		Assert.fail("App URL is invalid");
     	}
-	}
+	}*/
 
 	private void doLoginWithCredentials(String username, String password) throws Exception {
 		try {
+			home.button_MyAccount().click();
 			WebElement userNameTextBox = txtbx_UserName();
 			userNameTextBox.clear();
-			userNameTextBox.sendKeys(xl.getXLcellValue("MainTemplate", 1, 1));
+			userNameTextBox.sendKeys(Configuration.getConfigurationValueForProperty("email"));
 			WebElement passwordTextBox = txtbx_Password();
 			passwordTextBox.clear();
-			passwordTextBox.sendKeys(xl.getXLcellValue("MainTemplate", 1, 2));
+			passwordTextBox.sendKeys(Configuration.getConfigurationValueForProperty("password"));
 			button_LoginToAccount().click();
 			Thread.sleep(5000);
 		} catch (Exception e) {

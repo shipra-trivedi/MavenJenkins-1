@@ -89,7 +89,19 @@ public class Configuration
     
     public static String macFirefoxName()
     {
-        String password = Configuration.getConfigurationValueForProperty("FirefoxName");
-        return password;
+        String name = Configuration.getConfigurationValueForProperty("FirefoxName");
+        return name;
+    }
+    
+    public static String executionType()
+    {
+        String type = Configuration.getConfigurationValueForProperty("execution-type");
+        return type;
+    }
+    
+    public static String LoginRequiredEveryTime()
+    {
+        String type = Configuration.getConfigurationValueForProperty("execution-type");
+        return type;
     }
 }

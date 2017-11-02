@@ -68,5 +68,13 @@
   		<artifactId>mail</artifactId>
   		<version>1.4.7</version>
   	</dependency>
+  	<dependency>
+  		<groupId>de.idyl</groupId>
+  		<artifactId>winzipaes</artifactId>
+  		<version>1.0.1</version>
+  	</dependency>
   </dependencies>
+  <description>/**
+ * @author Shubham Jain
+ * */</description>
 </project>

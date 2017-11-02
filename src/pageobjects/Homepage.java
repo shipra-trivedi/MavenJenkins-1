@@ -1,5 +1,7 @@
 package pageobjects;
-
+/**
+ * @author Shubham Jain
+ * */
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -47,6 +49,4 @@ public class Homepage extends Page
 		}
 		return element;
 	}
-
-   
 }

@@ -3,6 +3,7 @@ automationframework\ScreenshotAndTestNgReporterListener.class
 automationframework\Configuration.class
 automationframework\WaitFor$3.class
 automationframework\AutomationTestCase.class
+stepDefinition\Test_Steps4.class
 automationframework\WaitFor$1.class
 automationframework\ScreenshotAndTestNgReporterListener$1.class
 test\java\Runner\TestRunner.class
@@ -13,8 +14,9 @@ mailReport\SendMailClass.class
 pageobjects\Homepage.class
 automationframework\WaitFor$4.class
 automationframework\AppDriver.class
-stepDefinition\Credentials.class
+test\java\Runner\ExtendedCucumberRunner.class
 automationframework\AutomationTestCaseVerification.class
+test\java\Runner\AfterSuite.class
 automationframework\AutomationLog$LogFormatter.class
 automationframework\Init.class
 automationframework\WaitFor.class
@@ -23,4 +25,6 @@ pageobjects\Page.class
 automationframework\AutomationLog.class
 stepDefinition\Test_Steps3.class
 automationframework\WaitFor$2.class
+test\java\Runner\ExtendedCucumberOptions.class
+test\java\Runner\BeforeSuite.class
 automationframework\TestDataProvider.class
