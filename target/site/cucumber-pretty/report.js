@@ -75,16 +75,16 @@ formatter.feature({
     }
   ],
   "line": 21,
-  "name": "Login Action",
+  "name": "Testing Framework Action",
   "description": "",
-  "id": "login-action",
+  "id": "testing-framework-action",
   "keyword": "Feature"
 });
 formatter.scenario({
   "line": 23,
   "name": "Testing my Framework cases",
   "description": "",
-  "id": "login-action;testing-my-framework-cases",
+  "id": "testing-framework-action;testing-my-framework-cases",
   "type": "scenario",
   "keyword": "Scenario"
 });
@@ -107,21 +107,21 @@ formatter.match({
   "location": "Test_Steps4.Test1()"
 });
 formatter.result({
-  "duration": 50240632741,
+  "duration": 42468582098,
   "status": "passed"
 });
 formatter.match({
   "location": "Test_Steps4.Test2()"
 });
 formatter.result({
-  "duration": 49493,
+  "duration": 51485,
   "status": "passed"
 });
 formatter.match({
   "location": "Test_Steps4.Test3()"
 });
 formatter.result({
-  "duration": 40106,
+  "duration": 46364,
   "status": "passed"
 });
 formatter.uri("LogIn_Test.feature");
@@ -233,21 +233,21 @@ formatter.match({
   "location": "Test_Steps.UserCheck()"
 });
 formatter.result({
-  "duration": 22846558064,
+  "duration": 22974579186,
   "status": "passed"
 });
 formatter.match({
   "location": "Test_Steps3.user_Navigate_to_LogIn_Page()"
 });
 formatter.result({
-  "duration": 7246578203,
+  "duration": 7631786742,
   "status": "passed"
 });
 formatter.match({
   "location": "Test_Steps3.user_enters_testuser__and_Test()"
 });
 formatter.result({
-  "duration": 298868223,
+  "duration": 287849977,
   "status": "passed"
 });
 formatter.scenario({
@@ -277,21 +277,21 @@ formatter.match({
   "location": "Test_Steps.UserCheck()"
 });
 formatter.result({
-  "duration": 345419289,
+  "duration": 365693079,
   "status": "passed"
 });
 formatter.match({
   "location": "Test_Steps3.user_Navigate_to_LogIn_Page()"
 });
 formatter.result({
-  "duration": 5080924490,
+  "duration": 4532507894,
   "status": "passed"
 });
 formatter.match({
   "location": "Test_Steps3.message_displayed_Login_Successfully()"
 });
 formatter.result({
-  "duration": 164693,
+  "duration": 128000,
   "status": "passed"
 });
 });

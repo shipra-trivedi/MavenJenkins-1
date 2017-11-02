@@ -12,10 +12,10 @@ import automationframework.AppDriver;
 import automationframework.AutomationLog;
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
-import net.masterthought.cucumber.Configuration;
+/*import net.masterthought.cucumber.Configuration;
 import net.masterthought.cucumber.ReportBuilder;
 import net.masterthought.cucumber.ReportParser;
-import net.masterthought.cucumber.Reportable;
+import net.masterthought.cucumber.Reportable;*/
 import pageobjects.Page;
  
 //@RunWith(Cucumber.class)
@@ -54,7 +54,7 @@ public class TestRunner {
         report.setJsonUsageFile("./src/test/resources/cucumber-usage.json");
         report.executeReport();*/
         
-        File reportOutputDirectory = new File("reports");
+/*        File reportOutputDirectory = new File("reports");
         List<String> jsonFiles = new ArrayList<>();
         jsonFiles.add("cucumber-report-1.json");
         jsonFiles.add("cucumber-report-2.json");
@@ -78,5 +78,5 @@ public class TestRunner {
         Reportable result = reportBuilder.generateReports();
         // and here validate 'result' to decide what to do
         // if report has failed features, undefined steps etc
-    }
+*/    }
 }

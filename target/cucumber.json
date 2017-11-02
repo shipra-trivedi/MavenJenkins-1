@@ -80,13 +80,13 @@
         "line": 23,
         "name": "Testing my Framework cases",
         "description": "",
-        "id": "login-action;testing-my-framework-cases",
+        "id": "testing-framework-action;testing-my-framework-cases",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 50240632741,
+              "duration": 42468582098,
               "status": "passed"
             },
             "line": 24,
@@ -98,7 +98,7 @@
           },
           {
             "result": {
-              "duration": 49493,
+              "duration": 51485,
               "status": "passed"
             },
             "line": 25,
@@ -110,7 +110,7 @@
           },
           {
             "result": {
-              "duration": 40106,
+              "duration": 46364,
               "status": "passed"
             },
             "line": 26,
@@ -123,9 +123,9 @@
         ]
       }
     ],
-    "name": "Login Action",
+    "name": "Testing Framework Action",
     "description": "",
-    "id": "login-action",
+    "id": "testing-framework-action",
     "keyword": "Feature",
     "uri": "A.LogIn_Test.feature"
   },
@@ -216,7 +216,7 @@
         "steps": [
           {
             "result": {
-              "duration": 22846558064,
+              "duration": 22974579186,
               "status": "passed"
             },
             "line": 24,
@@ -228,7 +228,7 @@
           },
           {
             "result": {
-              "duration": 7246578203,
+              "duration": 7631786742,
               "status": "passed"
             },
             "line": 25,
@@ -240,7 +240,7 @@
           },
           {
             "result": {
-              "duration": 298868223,
+              "duration": 287849977,
               "status": "passed"
             },
             "line": 26,
@@ -262,7 +262,7 @@
         "steps": [
           {
             "result": {
-              "duration": 345419289,
+              "duration": 365693079,
               "status": "passed"
             },
             "line": 29,
@@ -274,7 +274,7 @@
           },
           {
             "result": {
-              "duration": 5080924490,
+              "duration": 4532507894,
               "status": "passed"
             },
             "line": 30,
@@ -286,7 +286,7 @@
           },
           {
             "result": {
-              "duration": 164693,
+              "duration": 128000,
               "status": "passed"
             },
             "line": 31,

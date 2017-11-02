@@ -18,7 +18,7 @@
 
 #Sample Feature Definition Template
 
-Feature: Login Action
+Feature: Testing Framework Action
 
 Scenario: Testing my Framework cases
 	Given Test1
