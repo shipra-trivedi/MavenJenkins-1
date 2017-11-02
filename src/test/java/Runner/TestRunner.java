@@ -54,7 +54,7 @@ public class TestRunner {
         report.setJsonUsageFile("./src/test/resources/cucumber-usage.json");
         report.executeReport();*/
         
-        File reportOutputDirectory = new File("target");
+        File reportOutputDirectory = new File("reports");
         List<String> jsonFiles = new ArrayList<>();
         jsonFiles.add("cucumber-report-1.json");
         jsonFiles.add("cucumber-report-2.json");
