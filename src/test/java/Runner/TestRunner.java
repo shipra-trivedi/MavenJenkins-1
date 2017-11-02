@@ -1,4 +1,8 @@
 package test.java.Runner;
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @author Shubham Jain
  * */
@@ -8,16 +12,22 @@ import automationframework.AppDriver;
 import automationframework.AutomationLog;
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
+import net.masterthought.cucumber.Configuration;
+import net.masterthought.cucumber.ReportBuilder;
+import net.masterthought.cucumber.ReportParser;
+import net.masterthought.cucumber.Reportable;
 import pageobjects.Page;
  
 //@RunWith(Cucumber.class)
-@ExtendedCucumberOptions(jsonReport = "target/cucumber.json",
+@ExtendedCucumberOptions(
+		jsonReport = "target/cucumber.json",
 		retryCount = 3,
 		detailedReport = true,
 		detailedAggregatedReport = true,
 		overviewReport = true,
 		toPDF = true,
-		outputFolder = "target")
+		outputFolder = "target"
+		)
 @CucumberOptions(
 		features = "Feature"
 		,glue={"stepDefinition"}
@@ -37,5 +47,36 @@ public class TestRunner {
         System.out.println("In After Suite");
         AppDriver.clearBrowserContext(Page.driver);
         AutomationLog.info("Quiting Webdriver Instances");
+        
+        
+/*        CucumberUsageReporting report = new CucumberUsageReporting();
+        report.setOutputDirectory("target");
+        report.setJsonUsageFile("./src/test/resources/cucumber-usage.json");
+        report.executeReport();*/
+        
+		File reportOutputDirectory = new File("target");
+		List<String> jsonFiles = new ArrayList<>();
+		jsonFiles.add("cucumber.json");
+		//jsonFiles.add("cucumber-report-2.json");
+
+		String buildNumber = "1";
+		String projectName = "cucumberProject";
+		boolean runWithJenkins = false;
+		boolean parallelTesting = false;
+
+		Configuration configuration = new Configuration(reportOutputDirectory, projectName);
+		// optional configuration
+		configuration.setParallelTesting(parallelTesting);
+		configuration.setRunWithJenkins(runWithJenkins);
+		configuration.setBuildNumber(buildNumber);
+		// addidtional metadata presented on main page
+		configuration.addClassifications("Platform", "Windows");
+		configuration.addClassifications("Browser", "Firefox");
+		configuration.addClassifications("Branch", "release/1.0");
+
+		ReportBuilder reportBuilder = new ReportBuilder(jsonFiles, configuration);
+		Reportable result = reportBuilder.generateReports();
+		// and here validate 'result' to decide what to do
+		// if report has failed features, undefined steps etc
     }
 }

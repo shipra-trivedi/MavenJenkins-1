@@ -3,21 +3,15 @@ package stepDefinition;
  * @author Shubham Jain
  * */
 import java.util.HashMap;
-//import org.junit.AfterClass;
 import org.junit.Assert;
-
 import automationframework.AppDriver;
 import automationframework.AutomationLog;
 import automationframework.AutomationTestCaseVerification;
-//import cucumber.api.java.After;
-import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import mailReport.SendMailClass;
 import pageobjects.Homepage;
 import pageobjects.LoginPage;
 import pageobjects.Page;
-import test.java.Runner.AfterSuite;
 
 public class Test_Steps3 extends AutomationTestCaseVerification{
 	
@@ -66,23 +60,7 @@ public class Test_Steps3 extends AutomationTestCaseVerification{
 		Page.driver.quit();
 		AppDriver.killChromePhantomInstance(Page.driver);
 	}
-	
-	@AfterSuite
-	public void afterScenario() {
-		AutomationLog.info("I am in email send function");
-        try {
-		//	SendMailClass.execute();
-        	
-        	System.out.println("After is running");
-        	AutomationLog.info("After is running");
-        	
-			AutomationLog.info("Email sent");
-		} catch (Exception e) {
-			System.out.println(e.getMessage());
-			e.printStackTrace();
-		}
-	}
-	
+		
 /*	@Then("^Asserts of JUnits$")
     public void testAssert(){					
 		
