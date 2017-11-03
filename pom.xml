@@ -94,6 +94,11 @@
             <artifactId>winzipaes</artifactId>
             <version>1.0.1</version>
         </dependency>
+        <dependency>
+        	<groupId>com.dropbox.core</groupId>
+        	<artifactId>dropbox-core-sdk</artifactId>
+        	<version>3.0.5</version>
+        </dependency>
     </dependencies>
     <description>/**
  * @author Shubham Jain
