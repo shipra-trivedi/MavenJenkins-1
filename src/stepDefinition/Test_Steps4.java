@@ -14,7 +14,7 @@ import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import mailReport.SendMailClass;
+//import mailReport.SendMailClass;
 import pageobjects.Homepage;
 import pageobjects.LoginPage;
 import pageobjects.Page;
