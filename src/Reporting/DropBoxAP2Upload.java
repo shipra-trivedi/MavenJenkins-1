@@ -231,27 +231,27 @@ public class DropBoxAP2Upload {
             authInfo = DbxAuthInfo.Reader.readFromFile(argAuthFile);
         } catch (JsonReader.FileLoadException ex) {
             System.err.println("Error loading <auth-file>: " + ex.getMessage());
-            System.exit(1);
+           // System.exit(1);
             return;
         }
 
         String pathError = DbxPathV2.findError(dropboxPath);
         if (pathError != null) {
             System.err.println("Invalid <dropbox-path>: " + pathError);
-            System.exit(1);
+          //  System.exit(1);
             return;
         }
 
         File localFile = new File(localPath);
         if (!localFile.exists()) {
             System.err.println("Invalid <local-path>: file does not exist.");
-            System.exit(1);
+         //   System.exit(1);
             return;
         }
 
         if (!localFile.isFile()) {
             System.err.println("Invalid <local-path>: not a file.");
-            System.exit(1);
+         //   System.exit(1);
             return;
         }
 
