@@ -221,7 +221,7 @@ public class DropBoxAP2Upload {
          SimpleDateFormat dateFormatForFileName = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss");//dd/MM/yyyy
          String fileDateFormet = dateFormatForFileName.format(currentDate);
 
-        String argAuthFile = "D:\\Workspace\\MavenJenkins\\src\\Reporting\\Token";
+        String argAuthFile = System.getProperty("user.dir")+ File.separator + "src"+ File.separator +"Reporting"+ File.separator +"Token";
         String localPath =   ZipReports.zipFolder(folder, zipFile);
         String dropboxPath = "/Apps/ShubhamCucumberReports/"+fileDateFormet+".zip";
 
