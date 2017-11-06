@@ -62,13 +62,13 @@ public class DropBoxAP2Upload {
             System.out.println(metadata.toStringMultiline());
         } catch (UploadErrorException ex) {
             System.err.println("Error uploading to Dropbox: " + ex.getMessage());
-          //  System.exit(1);
+            System.exit(1);
         } catch (DbxException ex) {
             System.err.println("Error uploading to Dropbox: " + ex.getMessage());
-          //  System.exit(1);
+            System.exit(1);
         } catch (IOException ex) {
             System.err.println("Error reading from file \"" + localFile + "\": " + ex.getMessage());
-          //  System.exit(1);
+            System.exit(1);
         }
     }
 
@@ -89,7 +89,7 @@ public class DropBoxAP2Upload {
         // below to simplify the logic.
         if (size < CHUNKED_UPLOAD_CHUNK_SIZE) {
             System.err.println("File too small, use upload() instead.");
-           // System.exit(1);
+            System.exit(1);
             return;
         }
 
@@ -166,7 +166,7 @@ public class DropBoxAP2Upload {
                 } else {
                     // Some other error occurred, give up.
                     System.err.println("Error uploading to Dropbox: " + ex.getMessage());
-                  //  System.exit(1);
+                    System.exit(1);
                     return;
                 }
             } catch (UploadSessionFinishErrorException ex) {
@@ -182,23 +182,23 @@ public class DropBoxAP2Upload {
                 } else {
                     // some other error occurred, give up.
                     System.err.println("Error uploading to Dropbox: " + ex.getMessage());
-                 //   System.exit(1);
+                    System.exit(1);
                     return;
                 }
             } catch (DbxException ex) {
                 System.err.println("Error uploading to Dropbox: " + ex.getMessage());
-               // System.exit(1);
+                System.exit(1);
                 return;
             } catch (IOException ex) {
                 System.err.println("Error reading from file \"" + localFile + "\": " + ex.getMessage());
-              //  System.exit(1);
+                System.exit(1);
                 return;
             }
         }
 
         // if we made it here, then we must have run out of attempts
         System.err.println("Maxed out upload attempts to Dropbox. Most recent error: " + thrown.getMessage());
-       // System.exit(1);
+        System.exit(1);
     }
 
     private static void printProgress(long uploaded, long size) {
@@ -211,7 +211,7 @@ public class DropBoxAP2Upload {
         } catch (InterruptedException ex) {
             // just exit
             System.err.println("Error uploading to Dropbox: interrupted during backoff.");
-           // System.exit(1);
+            System.exit(1);
         }
     }
 
@@ -231,27 +231,27 @@ public class DropBoxAP2Upload {
             authInfo = DbxAuthInfo.Reader.readFromFile(argAuthFile);
         } catch (JsonReader.FileLoadException ex) {
             System.err.println("Error loading <auth-file>: " + ex.getMessage());
-           // System.exit(1);
+            System.exit(1);
             return;
         }
 
         String pathError = DbxPathV2.findError(dropboxPath);
         if (pathError != null) {
             System.err.println("Invalid <dropbox-path>: " + pathError);
-          //  System.exit(1);
+            System.exit(1);
             return;
         }
 
         File localFile = new File(localPath);
         if (!localFile.exists()) {
             System.err.println("Invalid <local-path>: file does not exist.");
-         //   System.exit(1);
+            System.exit(1);
             return;
         }
 
         if (!localFile.isFile()) {
             System.err.println("Invalid <local-path>: not a file.");
-         //   System.exit(1);
+            System.exit(1);
             return;
         }
 
