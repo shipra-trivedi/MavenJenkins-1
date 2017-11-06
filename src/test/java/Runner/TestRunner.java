@@ -1,5 +1,6 @@
 package test.java.Runner;
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,6 +9,7 @@ import java.util.List;
  * */
 import org.junit.runner.RunWith;
 
+import Reporting.DropBoxAP2Upload;
 import automationframework.AppDriver;
 import automationframework.AutomationLog;
 import cucumber.api.CucumberOptions;
@@ -47,5 +49,11 @@ public class TestRunner {
         System.out.println("In After Suite");
         AppDriver.clearBrowserContext(Page.driver);
         AutomationLog.info("Quiting Webdriver Instances");
+/*        try {
+			DropBoxAP2Upload.UploadReportsOnDropbox();
+		} catch (IOException e) {
+			System.out.println(e.getMessage());
+			e.printStackTrace();
+		}*/
    }
 }

@@ -1,8 +1,10 @@
 stepDefinition\Test_Steps.class
 automationframework\ScreenshotAndTestNgReporterListener.class
 automationframework\Configuration.class
+Reporting\SendMailClass.class
 automationframework\WaitFor$3.class
 automationframework\AutomationTestCase.class
+Reporting\AWSUpload.class
 stepDefinition\Test_Steps4.class
 automationframework\WaitFor$1.class
 automationframework\ScreenshotAndTestNgReporterListener$1.class
@@ -10,7 +12,6 @@ test\java\Runner\TestRunner.class
 pageobjects\LoginPage.class
 automationframework\AutomationFramework.class
 automationframework\Credentials.class
-mailReport\SendMailClass.class
 pageobjects\Homepage.class
 automationframework\WaitFor$4.class
 automationframework\AppDriver.class
@@ -18,10 +19,11 @@ test\java\Runner\ExtendedCucumberRunner.class
 automationframework\AutomationTestCaseVerification.class
 test\java\Runner\AfterSuite.class
 automationframework\AutomationLog$LogFormatter.class
-automationframework\Init.class
 automationframework\WaitFor.class
 automationframework\ExcelLib.class
 pageobjects\Page.class
+Reporting\DropBoxAP2Upload.class
+Reporting\ZipReports.class
 automationframework\AutomationLog.class
 stepDefinition\Test_Steps3.class
 automationframework\WaitFor$2.class
