@@ -104,4 +104,16 @@ public class Configuration
         String type = Configuration.getConfigurationValueForProperty("execution-type");
         return type;
     }
+    
+    public static String ReportInitialName()
+    {
+        String reportName = Configuration.getConfigurationValueForProperty("Report-Initial-Name");
+        return reportName;
+    }
+    
+    public static String ReportUploadPlatformName()
+    {
+        String PlatformName = Configuration.getConfigurationValueForProperty("Report-Upload-Platform-Name");
+        return PlatformName;
+    }
 }

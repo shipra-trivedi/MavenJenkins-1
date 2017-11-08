@@ -46,7 +46,7 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>1.6.0</version>
                 <configuration>
-                    <mainClass>Reporting.DropBoxAP2Upload</mainClass>
+                    <mainClass>Reporting.DropBoxAPI2Upload</mainClass>
                     <cleanupDaemonThreads>false</cleanupDaemonThreads>
                 </configuration>
             </plugin>
@@ -109,19 +109,29 @@
             <version>1.23.0</version>
         </dependency>
         <dependency>
-            <groupId>com.google.apis</groupId>
-            <artifactId>google-api-services-drive</artifactId>
-            <version>v2-rev65-1.13.2-beta</version>
-        </dependency>
-        <dependency>
-            <groupId>com.google.api-client</groupId>
-            <artifactId>google-api-client-extensions</artifactId>
-            <version>1.6.0-beta</version>
-        </dependency>
-        <dependency>
             <groupId>com.dropbox.core</groupId>
             <artifactId>dropbox-core-sdk</artifactId>
             <version>3.0.5</version>
+        </dependency>
+        <dependency>
+        	<groupId>com.google.oauth-client</groupId>
+        	<artifactId>google-oauth-client-jetty</artifactId>
+        	<version>1.23.0</version>
+        </dependency>
+        <dependency>
+        	<groupId>com.google.apis</groupId>
+        	<artifactId>google-api-services-drive</artifactId>
+        	<version>v3-rev89-1.23.0</version>
+        </dependency>
+        <dependency>
+        	<groupId>com.google.apis</groupId>
+        	<artifactId>google-api-services-admin-directory</artifactId>
+        	<version>directory_v1-rev53-1.20.0</version>
+        </dependency>
+        <dependency>
+        	<groupId>com.google.api-ads</groupId>
+        	<artifactId>ads-lib</artifactId>
+        	<version>3.9.0</version>
         </dependency>
     </dependencies>
     <description>/**

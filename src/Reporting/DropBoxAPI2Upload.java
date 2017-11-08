@@ -20,6 +20,9 @@ import com.dropbox.core.v2.files.UploadSessionFinishErrorException;
 import com.dropbox.core.v2.files.UploadSessionLookupErrorException;
 import com.dropbox.core.v2.files.WriteMode;
 
+import automationframework.AutomationLog;
+import automationframework.Configuration;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -31,17 +34,18 @@ import java.util.Date;
  * Note: Follow below link for prerequist for dropbox:
  * https://github.com/dropbox/dropbox-sdk-java
  */
-public class DropBoxAP2Upload {
+public class DropBoxAPI2Upload {
     // Adjust the chunk size based on your network speed and reliability. Larger chunk sizes will
     // result in fewer network requests, which will be faster. But if an error occurs, the entire
     // chunk will be lost and have to be re-uploaded. Use a multiple of 4MiB for your chunk size.
     private static final long CHUNKED_UPLOAD_CHUNK_SIZE = 8L << 20; // 8MiB
     private static final int CHUNKED_UPLOAD_MAX_ATTEMPTS = 5;
+    static String reportName=Configuration.getConfigurationValueForProperty("Report-Initial-Name");
 	static Date currentDate = new Date();
     static SimpleDateFormat dateFormatForFileName = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss");//dd/MM/yyyy
     static String fileDateFormet = dateFormatForFileName.format(currentDate);
  	static String testoutputfolderpath = System.getProperty("user.dir")+ File.separator +"target"+ File.separator+ "cucumber-html-reports";
-	static String zipFilefolderpath = System.getProperty("user.dir")+ File.separator +"reports"+File.separator+"results"+fileDateFormet+".zip";  // Zip Reports Files
+	static String zipFilefolderpath = System.getProperty("user.dir")+ File.separator +"reports"+File.separator+reportName+fileDateFormet+".zip";  // Zip Reports Files
 	static File folder = new File(testoutputfolderpath);
 	static File zipFile = new File(zipFilefolderpath);
     /**
@@ -223,7 +227,7 @@ public class DropBoxAP2Upload {
 
         String argAuthFile = System.getProperty("user.dir")+ File.separator + "src"+ File.separator +"Reporting"+ File.separator +"Token";
         String localPath =   ZipReports.zipFolder(folder, zipFile);
-        String dropboxPath = "/Apps/ShubhamCucumberReports/"+fileDateFormet+".zip";
+        String dropboxPath = "/Apps/ShubhamCucumberReports/"+reportName+fileDateFormet+".zip";
 
         // Read auth info file.
         DbxAuthInfo authInfo;
@@ -268,7 +272,12 @@ public class DropBoxAP2Upload {
         } else {
             chunkedUploadFile(dbxClient, localFile, dropboxPath);
         }
-
+        try {
+			SendMailClass.execute();
+		} catch (Exception e) {
+			AutomationLog.error(e.getMessage());
+			e.printStackTrace();
+		}
        // System.exit(0);
     }
 }

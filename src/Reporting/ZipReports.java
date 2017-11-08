@@ -12,10 +12,12 @@ import org.apache.commons.io.IOUtils;
 
 public class ZipReports {
 
+	private static String FilePath = "";
+	
     public static String zipFolder(final File folder, final File zipFile) throws IOException {
         zipFolder(folder, new FileOutputStream(zipFile));
+        FilePath=zipFile.toString();
         return zipFile.toString();
-        
     }
 
     public static void zipFolder(final File folder, final OutputStream outputStream) throws IOException {
@@ -38,5 +40,10 @@ public class ZipReports {
                 processFolder(file, zipOutputStream, prefixLength);
             }
         }
+    }
+    
+    public static String zipFilePathName()
+    {
+		return FilePath;
     }
 }

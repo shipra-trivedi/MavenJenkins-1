@@ -5,8 +5,11 @@ import java.lang.reflect.Method;
 
 import org.junit.runner.Description;
 import org.junit.runner.Runner;
+import org.junit.runner.notification.Failure;
 import org.junit.runner.notification.RunNotifier;
 
+import automationframework.AutomationLog;
+import automationframework.ScreenshotAndTestNgReporterListener;
 import test.java.Runner.AfterSuite;
 import test.java.Runner.BeforeSuite;
 
@@ -57,5 +60,18 @@ public class ExtendedCucumberRunner extends Runner {
             e.printStackTrace();
         }
     }
-
+    
+   // @Override
+    public void testFailure(Failure failure){
+     //   super.testFailure(failure);
+        if (!failure.getDescription().isSuite()) {
+        	ScreenshotAndTestNgReporterListener.customScreenshot();
+        	AutomationLog.error("In Custom Failer Class of Junit");
+            System.out.println("FAILED!!!!!"); //Here pass your screenshot capture event
+        }
+    	ScreenshotAndTestNgReporterListener.customScreenshot();
+    	AutomationLog.error("In Custom Failer Class of Junit");
+        System.out.println("FAILED!!!!!"); //Here pass your screenshot capture event
+    }
+    
 }

@@ -15,7 +15,7 @@ import org.openqa.selenium.remote.BrowserType;
 
 
 import automationframework.AppDriver;
-import automationframework.AutomationLog;
+import automationframework.Configuration;
 import automationframework.ExcelLib;
 import pageobjects.Page;
 
@@ -30,6 +30,7 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 /**
  * Note : This Class zip the folder of reports and sent the email via gmail. Make sure files do not contains any JS files or extention banned by gmail. 
+ * Don't use automation log in this class, It will override all before logs of the same session
  * */
 public class SendMailClass 
 {
@@ -45,25 +46,40 @@ public class SendMailClass
 	static Date currentDate = new Date();
     static SimpleDateFormat dateFormatForFileName = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss");//dd/MM/yyyy
     static String fileDateFormet = dateFormatForFileName.format(currentDate);
-	static String testoutputfolderpath = System.getProperty("user.dir")+ File.separator +"target"+ File.separator+ "cucumber-html-reports";
-	static String zipFilefolderpath = System.getProperty("user.dir")+ File.separator +"reports"+File.separator+"results"+fileDateFormet;  // Zip Reports Files
+//	static String testoutputfolderpath = System.getProperty("user.dir")+ File.separator +"target"+ File.separator+ "cucumber-html-reports";
+//	static String zipFilefolderpath = System.getProperty("user.dir")+ File.separator +"reports"+File.separator+"results"+fileDateFormet;  // Zip Reports Files
 	static String zipLogFilefolderpath = System.getProperty("user.dir")+ File.separator +"logs"+File.separator+"logs.txt";
-	static File folder = new File(zipLogFilefolderpath);
-	static File zipFile = new File(zipFilefolderpath);
-	static String subject = "Shubham Automation Application Test Cucumber report on browser";
+/*	static File folder = new File(zipLogFilefolderpath);
+	static File zipFile = new File(zipFilefolderpath);*/
+	static String subject = "Shubham Automation Application Test Cucumber report";
+	static String PlatformName = Configuration.getConfigurationValueForProperty("Report-Upload-Platform-Name");
+	
+    public static void main(String[] args) throws IOException {
+    	try {
+			execute();
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+			e.printStackTrace();
+		}
+    }
 	
     public static void execute() throws Exception
     {
-   	
-    //	ExcelLib xl = new ExcelLib();
-    	//////////////////////// Create a zip file of test-output folder /////////////////
     	
-    	ZipReports.zipFolder(folder, zipFile);
+    //	ExcelLib xl = new ExcelLib();
+    	
+    	
+    String FilenameLocalPath=ZipReports.zipFilePathName();
+    
+	String[] b = FilenameLocalPath.split("\\\\");
+	String FileName =  b[b.length-1];
+    
+    String text = "Hi Greetings, This is Final Automation Test Report. This Auto-generated report please do not reply, Find the reports on "+PlatformName+" account, The file name is : "+FileName;
     	//////////////////////////////////////////////////////////////////////////////////
-   
+    	////////////////////////Create a zip file of test-output folder /////////////////
     //    path of file which contains report
     	
-        String path = zipFilefolderpath;
+  //      String path = zipFilefolderpath;
         String path2 = zipLogFilefolderpath;
 
      //   No of recipients of the report, you can have many separated by comma
@@ -81,8 +97,8 @@ public class SendMailClass
       //  email user name and password of sender 
    
    
-        SendMailClass.sendMail("shubham.jain@cuelogic.co.in",   
-                            "shubhamjain1234",                     
+        SendMailClass.sendMail("kumolusautotest@gmail.com",   
+                            "Reset124",                     
                             "smtp.gmail.com",
                             "465",
                             "true",
@@ -93,8 +109,7 @@ public class SendMailClass
                              cc,
                              bcc,
                             subject,
-                            "Greetings, This is Final Automation Test Report. This Auto-generated report please do not reply",
-                            path,
+                            text,
                             path2,
                             "Test-Report");
       }
@@ -113,7 +128,6 @@ public class SendMailClass
                 String subject,
                 String text,
                 String attachmentPath,
-                String attachmentPath2,
                 String attachmentName){
 
         //Object Instantiation of a properties file.
@@ -164,10 +178,10 @@ public class SendMailClass
             DataSource source = new FileDataSource(attachmentPath);
                                   
             messageBodyPart.setDataHandler(new DataHandler(source));
-            messageBodyPart.setFileName("Reports");
+            messageBodyPart.setFileName("Logs.txt");
             multipart.addBodyPart(messageBodyPart);
             multipart.addBodyPart(objMessageBodyPart);
-
+/*
             /////////////////////////////// Add another File ////////////////
             
             DataSource source2 = new FileDataSource(attachmentPath2);  
@@ -175,11 +189,11 @@ public class SendMailClass
             messageBodyPart2.setText(text);
             messageBodyPart2.setDataHandler(new DataHandler(source2));
             messageBodyPart2.setFileName(attachmentPath2);
-            messageBodyPart2.setFileName("Logs.txt");
+            messageBodyPart2.setFileName("Reports.txt");
             multipart.addBodyPart(messageBodyPart2);
             
             /////////////////////////////////////////////////////////////////////
-            
+            */
             msg.setContent(multipart);
             
             msg.setFrom(new InternetAddress(userName));
@@ -208,9 +222,8 @@ InternetAddress(bcc[i]));
             transport.sendMessage(msg, msg.getAllRecipients());
 
             transport.close();
-            AutomationLog.info("Email is sucessfully sent");
 			//closing .exe of chrome or phantom driver binaries
-			AppDriver.clearBrowserContext(Page.driver);
+		//	AppDriver.clearBrowserContext(Page.driver);
             return true;
 
         } catch (Exception mex){

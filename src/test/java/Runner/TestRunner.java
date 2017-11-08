@@ -1,17 +1,15 @@
 package test.java.Runner;
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
+import org.junit.Rule;
+import org.junit.rules.TestWatcher;
+import org.junit.runner.Description;
 /**
  * @author Shubham Jain
  * */
 import org.junit.runner.RunWith;
-
-import Reporting.DropBoxAP2Upload;
 import automationframework.AppDriver;
 import automationframework.AutomationLog;
+import automationframework.ScreenshotAndTestNgReporterListener;
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 /*import net.masterthought.cucumber.Configuration;
@@ -49,11 +47,25 @@ public class TestRunner {
         System.out.println("In After Suite");
         AppDriver.clearBrowserContext(Page.driver);
         AutomationLog.info("Quiting Webdriver Instances");
-/*        try {
-			DropBoxAP2Upload.UploadReportsOnDropbox();
-		} catch (IOException e) {
-			System.out.println(e.getMessage());
-			e.printStackTrace();
-		}*/
    }
+    
+/*    
+    @Rule
+    public TestWatcher watchman= new TestWatcher() {
+    	private String watchedLog;
+        @Override
+        protected void failed(Throwable e, Description description) {
+        	ScreenshotAndTestNgReporterListener.customScreenshot();
+        	AutomationLog.error(e.getMessage());
+        	watchedLog+= description + "\n";
+        }
+
+        @Override
+        protected void succeeded(Description description) {
+            watchedLog+= description + " " + "success!\n";
+           }
+       };
+       */
 }
+
+
