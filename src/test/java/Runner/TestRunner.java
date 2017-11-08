@@ -11,6 +11,8 @@ import automationframework.AppDriver;
 import automationframework.AutomationLog;
 import automationframework.ScreenshotAndTestNgReporterListener;
 import cucumber.api.CucumberOptions;
+import cucumber.api.Scenario;
+import cucumber.api.java.After;
 import cucumber.api.junit.Cucumber;
 /*import net.masterthought.cucumber.Configuration;
 import net.masterthought.cucumber.ReportBuilder;
@@ -47,25 +49,7 @@ public class TestRunner {
         System.out.println("In After Suite");
         AppDriver.clearBrowserContext(Page.driver);
         AutomationLog.info("Quiting Webdriver Instances");
-   }
-    
-/*    
-    @Rule
-    public TestWatcher watchman= new TestWatcher() {
-    	private String watchedLog;
-        @Override
-        protected void failed(Throwable e, Description description) {
-        	ScreenshotAndTestNgReporterListener.customScreenshot();
-        	AutomationLog.error(e.getMessage());
-        	watchedLog+= description + "\n";
-        }
-
-        @Override
-        protected void succeeded(Description description) {
-            watchedLog+= description + " " + "success!\n";
-           }
-       };
-       */
+   }     
 }
 
 

@@ -127,7 +127,7 @@ public class LoginPage extends Page {
 
 	public WebElement button_LoginToAccount() throws Exception {
 		try {
-			element = driver.findElement(By.id("loginn"));
+			element = driver.findElement(By.id("login"));
 			AutomationLog.info("Login to Account button found on the Login Page");
 		} catch (Exception e) {
 			AutomationLog.error("Login to Account button was not found on the Login Page");

@@ -7,6 +7,8 @@ import java.util.HashMap;
 
 import org.openqa.selenium.WebDriver;
 
+import cucumber.api.Scenario;
+import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import pageobjects.Homepage;
 import pageobjects.LoginPage;
@@ -66,7 +68,7 @@ public class AutomationTestCase
     	ex.printStackTrace();
     }
   } 
-
+    
     public void setup() 
     {
         AutomationLog.startTestCase(executingTestCaseName);

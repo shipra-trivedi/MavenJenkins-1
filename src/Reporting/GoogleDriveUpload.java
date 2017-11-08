@@ -191,7 +191,7 @@ public class GoogleDriveUpload {
 
 				Directory.Users.List list = directory.users().list();
 				list.setDomain("cuelogic.com");
-				list.execute();	
+			//	list.execute();	
 			//	Users users = 	list.execute();			    
 			} catch (GeneralSecurityException e1) {
 				// TODO Auto-generated catch block

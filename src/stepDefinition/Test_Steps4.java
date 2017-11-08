@@ -9,6 +9,8 @@ import org.junit.Assert;
 import automationframework.AppDriver;
 import automationframework.AutomationLog;
 import automationframework.AutomationTestCaseVerification;
+import automationframework.ScreenshotAndTestNgReporterListener;
+import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
@@ -54,5 +56,5 @@ public class Test_Steps4 extends AutomationTestCaseVerification{
     public void Test3() throws Exception
     {
 		System.out.println("Test3");
-    }
+    }	
 }

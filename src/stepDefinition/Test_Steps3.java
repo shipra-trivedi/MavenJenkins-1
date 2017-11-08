@@ -7,6 +7,9 @@ import org.junit.Assert;
 import automationframework.AppDriver;
 import automationframework.AutomationLog;
 import automationframework.AutomationTestCaseVerification;
+import automationframework.ScreenshotAndTestNgReporterListener;
+import cucumber.api.Scenario;
+import cucumber.api.java.After;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import pageobjects.Homepage;
@@ -60,7 +63,7 @@ public class Test_Steps3 extends AutomationTestCaseVerification{
 		Page.driver.quit();
 		AppDriver.killChromePhantomInstance(Page.driver);
 	}
-		
+	
 /*	@Then("^Asserts of JUnits$")
     public void testAssert(){					
 		
@@ -87,4 +90,5 @@ public class Test_Steps3 extends AutomationTestCaseVerification{
 	}
 */
 
+//}
 }

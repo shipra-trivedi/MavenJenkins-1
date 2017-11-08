@@ -35,6 +35,8 @@ import automationframework.AppPage.driver2;*/
 //import com.github.mkolisnyk.cucumber.reporting.*;
 
 import cucumber.api.DataTable;
+import cucumber.api.Scenario;
+import cucumber.api.java.After;
 /*import cucumber.api.java.After;
 import cucumber.api.java.Before;*/
 import cucumber.api.java.en.Given;
@@ -81,6 +83,7 @@ public class Test_Steps extends AutomationTestCaseVerification {
 		ScreenshotAndTestNgReporterListener.customScreenshot();
 		AutomationLog.info("Testing Custom Snapshot taking by framework");
 		
+		
 	/*	Assert.assertEquals("Custom Error by shubham", Page.driver.getTitle());
 		AutomationLog.info("Title of the game is not equal");*/
 		
@@ -95,16 +98,12 @@ public class Test_Steps extends AutomationTestCaseVerification {
 		//int i=1/0;   // checking exception case in step defination
     }
 	
-/*	public void genrateReports() {
-		CucumberResultsOverview results = new CucumberResultsOverview();
-		results.setOutputDirectory("target");
-		results.setOutputName("shubham-cucumber-results");
-		results.setSourceFile("./target/cucumber.json");
-		try {
-			results.executeFeaturesOverviewReport();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}*/
-	
+	@After
+	public void afterMethod(Scenario scenario) {
+	    if(scenario.isFailed()) {
+	    	AutomationLog.error("Failed Scenario Name = "+scenario.getName()+" And it's status is = "+scenario.getStatus());
+        	ScreenshotAndTestNgReporterListener.customScreenshotOnFail(scenario.getName());
+        	AutomationLog.error("Testcase/Scenario fail");
+	    }
+	}
 }

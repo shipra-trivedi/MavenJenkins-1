@@ -14,6 +14,7 @@ import org.openqa.selenium.remote.Augmenter;
 import org.testng.Reporter;
 import org.testng.TestListenerAdapter;*/
 
+import cucumber.api.Scenario;
 import pageobjects.Page;
 
 import java.io.File;
@@ -126,6 +127,7 @@ public class ScreenshotAndTestNgReporterListener {
     }
     public static void customScreenshot(){
         try {
+        
             File screenShot=((TakesScreenshot)Page.driver).getScreenshotAs(OutputType.FILE);
             // extracting date for folder name.
             SimpleDateFormat dateFormatForFoldername = new SimpleDateFormat("yyyy-MM-dd");//dd/MM/yyyy
@@ -134,7 +136,7 @@ public class ScreenshotAndTestNgReporterListener {
             // extracting date and time for snapshot file
             SimpleDateFormat dateFormatForFileName = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss");//dd/MM/yyyy
             String fileDateFormet = dateFormatForFileName.format(currentDate);
-            String filefolder="./target"+"/cucumber-html-reports/"+"/Snap/"+folderDateFormat+"/";
+            String filefolder="./target"+"/cucumber-html-reports/"+"/Snap/"+"/CustomScreenShot/"+folderDateFormat+"/";
             // Creating folders and files
             File screenshot = new File(filefolder+fileDateFormet+".jpeg");
             FileUtils.copyFile(screenShot, new File(screenshot.getPath()));
@@ -144,4 +146,26 @@ public class ScreenshotAndTestNgReporterListener {
                 ex.printStackTrace();
             }
     }
+    
+    public static void customScreenshotOnFail(String ScenarioName){
+        try {
+            File screenShot=((TakesScreenshot)Page.driver).getScreenshotAs(OutputType.FILE);
+            // extracting date for folder name.
+            SimpleDateFormat dateFormatForFoldername = new SimpleDateFormat("yyyy-MM-dd");//dd/MM/yyyy
+            Date currentDate = new Date();
+            String folderDateFormat = dateFormatForFoldername.format(currentDate);
+            // extracting date and time for snapshot file
+            SimpleDateFormat dateFormatForFileName = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss");//dd/MM/yyyy
+            String fileDateFormet = dateFormatForFileName.format(currentDate);
+            String filefolder="./target"+"/cucumber-html-reports/"+"/Snap/"+"/FailCaseScreenShot/"+folderDateFormat+"/";
+            // Creating folders and files
+            File screenshot = new File(filefolder+ScenarioName+"-"+fileDateFormet+".jpeg");
+            FileUtils.copyFile(screenShot, new File(screenshot.getPath()));
+            } 
+            catch (Exception ex) {
+                System.err.println("Unable to capture screenshot...");
+                ex.printStackTrace();
+            }
+    }
+    
 }
