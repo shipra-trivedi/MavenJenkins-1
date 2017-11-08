@@ -17,6 +17,7 @@ import com.google.api.client.json.JsonFactory;
 import com.google.api.client.util.store.FileDataStoreFactory;
 
 import com.google.api.services.drive.DriveScopes;
+import com.google.api.services.drive.model.FileList;
 import com.google.api.services.admin.directory.Directory;
 import com.google.api.services.admin.directory.model.Users;
 import com.google.api.services.drive.Drive;
@@ -32,6 +33,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
+import java.util.List;
 
 /**
  * Note : https://developers.google.com/drive/v3/web/quickstart/java
@@ -140,7 +142,7 @@ public class GoogleDriveUpload {
     	
     	final String localPath =   ZipReports.zipFolder(folder, zipFile);
     	
-    	/*        Drive service = getDriveService();
+    	       Drive service = getDriveService();
 
         // Print the names and IDs for up to 10 files.
         FileList result = service.files().list()
@@ -156,9 +158,7 @@ public class GoogleDriveUpload {
                 System.out.printf("%s (%s)\n", file.getName(), file.getId());
             }
         }
-        */
-    	
-    	
+        
         //Uploading Files on google
     	
     	
