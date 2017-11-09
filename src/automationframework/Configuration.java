@@ -116,4 +116,16 @@ public class Configuration
         String PlatformName = Configuration.getConfigurationValueForProperty("Report-Upload-Platform-Name");
         return PlatformName;
     }
+    
+    public static String emailForsendingnotification()
+    {
+        String PlatformName = Configuration.getConfigurationValueForProperty("Email-Sending-Notification");
+        return PlatformName;
+    }
+    
+    public static String PasswordForsendingnotification()
+    {
+        String PlatformName = Configuration.getConfigurationValueForProperty("Pass-Sending-Notification");
+        return PlatformName;
+    }
 }

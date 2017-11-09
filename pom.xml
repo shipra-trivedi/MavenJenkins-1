@@ -133,5 +133,6 @@
     </dependencies>
     <description>/**
  * @author Shubham Jain
+ * @Goal - mvn clean install exec:java -Dmaven.test.failure.ignore=false
  * */</description>
 </project>

@@ -53,6 +53,8 @@ public class SendMailClass
 	static File zipFile = new File(zipFilefolderpath);*/
 	static String subject = "Shubham Automation Application Test Cucumber report";
 	static String PlatformName = Configuration.getConfigurationValueForProperty("Report-Upload-Platform-Name");
+	static String emailForsendingnotification = Configuration.getConfigurationValueForProperty("Email-Sending-Notification");
+	static String PasswordForsendingnotification = Configuration.getConfigurationValueForProperty("Pass-Sending-Notification");
 	
     public static void main(String[] args) throws IOException {
     	try {
@@ -97,8 +99,8 @@ public class SendMailClass
       //  email user name and password of sender 
    
    
-        SendMailClass.sendMail("kumolusautotest@gmail.com",   
-                            "Reset124",                     
+        SendMailClass.sendMail(emailForsendingnotification,   
+        					PasswordForsendingnotification,                     
                             "smtp.gmail.com",
                             "465",
                             "true",
