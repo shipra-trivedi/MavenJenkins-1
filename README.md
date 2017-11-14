@@ -4,7 +4,7 @@ MavenJenkins
 Hi forks,
 
 My name is Shubham Jain and I am a Lead QA in cuelogic technologies.
-I have created this java + selenium + cucumber + Maven based POM framework which helps to building strutured scripts which will be maintainable and flexible to add more functionality if required.
+I have created this java + selenium + cucumber + Maven based POM framework which helps to building structured scripts which will be maintainable and flexible to add more functionality if required.
 
 Steps :
 
