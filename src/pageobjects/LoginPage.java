@@ -127,7 +127,8 @@ public class LoginPage extends Page {
 
 	public WebElement button_LoginToAccount() throws Exception {
 		try {
-			element = driver.findElement(By.id("login"));
+		//	element = driver.findElement(By.id("login"));
+			element = driver.findElement(By.id("loginnn"));
 			AutomationLog.info("Login to Account button found on the Login Page");
 		} catch (Exception e) {
 			AutomationLog.error("Login to Account button was not found on the Login Page");
@@ -138,8 +139,7 @@ public class LoginPage extends Page {
 	
 	public WebElement button_SingOutToAccount() throws Exception {
 		try {
-		//	element = driver.findElement(By.xpath(".//*[@id='account_logout']/a"));
-			element = driver.findElement(By.xpath(".//*[@id='account_logouttt']/a"));
+			element = driver.findElement(By.xpath(".//*[@id='account_logout']/a"));
 			AutomationLog.info("SignOut Element Found");
 		} catch (Exception e) {
 			AutomationLog.error("SignOut Element not Found");
