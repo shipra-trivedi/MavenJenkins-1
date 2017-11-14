@@ -1,4 +1,26 @@
 -------------------------------------------------------------------------------
 Test set: test.java.Runner.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 83.01 sec
+Tests run: 12, Failures: 0, Errors: 4, Skipped: 2, Time elapsed: 148.593 sec <<< FAILURE!
+Given Test1(Scenario: Testing my Framework cases)  Time elapsed: 0.005 sec  <<< ERROR!
+java.lang.NullPointerException
+	at pageobjects.Homepage.button_MyAccount(Homepage.java:44)
+	at stepDefinition.Test_Steps4.Test1(Test_Steps4.java:38)
+	at ?.Given Test1(A.LogIn_Test.feature:24)
+
+Scenario: Testing my Framework cases  Time elapsed: 0.007 sec  <<< ERROR!
+java.lang.NullPointerException
+	at pageobjects.Homepage.button_MyAccount(Homepage.java:44)
+	at stepDefinition.Test_Steps4.Test1(Test_Steps4.java:38)
+	at ?.Given Test1(A.LogIn_Test.feature:24)
+
+And User enters Credentials to LogIn(Scenario: Successful Login with Valid Credentials by data table)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+	at stepDefinition.Test_Steps3.user_enters_testuser__and_Test(Test_Steps3.java:36)
+	at ?.And User enters Credentials to LogIn(LogIn_Test.feature:26)
+
+Scenario: Successful Login with Valid Credentials by data table  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.NullPointerException
+	at stepDefinition.Test_Steps3.user_enters_testuser__and_Test(Test_Steps3.java:36)
+	at ?.And User enters Credentials to LogIn(LogIn_Test.feature:26)
+

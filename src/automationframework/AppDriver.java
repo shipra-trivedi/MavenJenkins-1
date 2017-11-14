@@ -29,7 +29,7 @@ public class AppDriver {
 	private static final String CHROME = "GC";
 	private static final String PhantomJS = "HL";
 
-//	private static final ExcelLib xl = new ExcelLib();
+	private static final ExcelLib xl = new ExcelLib();
 
 	private static FirefoxProfile getFireFoxProfile() {
 		FirefoxProfile profile = new FirefoxProfile();
@@ -108,7 +108,8 @@ public class AppDriver {
 	public static WebDriver getDriver(String browserToUse) {
 		String OS = OSNAMES.split(" ")[0];
 		WebDriver driver = null;
-//		String browserType = xl.getXLcellValue("Controller", 1, 0);
+		String ExcelTest = xl.getXLcellValue("Controller", 1, 0);
+		System.out.println("My Excel Test = "+ExcelTest);
 		String browserType = browserToUse;
 		if (browserType.equalsIgnoreCase(FIREFOX)) {
 			setPropertyForBrowserFF(OS);
