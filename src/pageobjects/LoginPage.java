@@ -138,7 +138,8 @@ public class LoginPage extends Page {
 	
 	public WebElement button_SingOutToAccount() throws Exception {
 		try {
-			element = driver.findElement(By.xpath(".//*[@id='account_logout']/a/a"));
+		//	element = driver.findElement(By.xpath(".//*[@id='account_logout']/a"));
+			element = driver.findElement(By.xpath(".//*[@id='account_logout']"));
 			AutomationLog.info("SignOut Element Found");
 		} catch (Exception e) {
 			AutomationLog.error("SignOut Element not Found");

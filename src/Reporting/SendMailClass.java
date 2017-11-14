@@ -76,7 +76,7 @@ public class SendMailClass
 	String[] b = FilenameLocalPath.split("\\\\");
 	String FileName =  b[b.length-1];
     
-    String text = "Hi Greetings, This is Final Automation Test Report.\n This Auto-generated report please do not reply.\n Find the reports on "+PlatformName+" account, The file name is : "+FileName+".\n Please download your file from given URL: https://www.dropbox.com/home/Apps/AutomationResults/Apps/ShubhamCucumberReports";
+    String text = "Hi Greetings,\n This is Final Automation Test Report.\n This Auto-generated report please do not reply.\n Find the reports on "+PlatformName+" account, The Report file name is : "+FileName+".\n Please download your file from given URL: https://www.dropbox.com/home/Apps/AutomationResults/Apps/ShubhamCucumberReports";
     	//////////////////////////////////////////////////////////////////////////////////
     	////////////////////////Create a zip file of test-output folder /////////////////
     //    path of file which contains report
