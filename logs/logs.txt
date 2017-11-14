@@ -1,3 +1,56 @@
-14/11/2017 03:07:36.748 - [Shubham Automation] - [INFO] - java.util.logging.ConsoleHandler@33d512c1
-14/11/2017 03:07:36.749 - [Shubham Automation] - [INFO] - [ TestRunner : setUp ] In Before Suite
-14/11/2017 03:07:37.020 - [Shubham Automation] - [INFO] - [ AutomationTestCase : setup ] Begin Test case : Test_Steps4
+14/11/2017 04:48:53.854 - [Shubham Automation] - [INFO] - java.util.logging.ConsoleHandler@7bedc48a
+14/11/2017 04:48:53.855 - [Shubham Automation] - [INFO] - [ TestRunner : setUp ] In Before Suite
+14/11/2017 04:48:54.086 - [Shubham Automation] - [INFO] - [ AutomationTestCase : setup ] Begin Test case : Test_Steps4
+14/11/2017 04:49:10.375 - [Shubham Automation] - [INFO] - [ Homepage : button_MyAccount ] My Account Link is found on Home Page
+14/11/2017 04:49:15.707 - [Shubham Automation] - [INFO] - [ LoginPage : txtbx_UserName ] Username text box found on the Login Page
+14/11/2017 04:49:15.814 - [Shubham Automation] - [INFO] - [ LoginPage : txtbx_Password ] Password text box found on the Login Page
+14/11/2017 04:49:15.926 - [Shubham Automation] - [INFO] - [ LoginPage : button_LoginToAccount ] Login to Account button found on the Login Page
+14/11/2017 04:49:31.037 - [Shubham Automation] - [INFO] - [ LoginPage : validateLogin ] Login Test passed
+14/11/2017 04:49:31.039 - [Shubham Automation] - [INFO] - [ AutomationTestCase : setup ] Begin Test case : Login done
+14/11/2017 04:49:31.046 - [Shubham Automation] - [INFO] - [ AutomationTestCase : invoke ] Setting up Single Instance Type invokation
+14/11/2017 04:49:31.105 - [Shubham Automation] - [INFO] - [ Homepage : button_MyAccount ] My Account Link is found on Home Page
+14/11/2017 04:49:37.799 - [Shubham Automation] - [INFO] - [ Test_Steps4 : Test1 ] Implementing CSV data Provider in famework
+14/11/2017 04:49:37.829 - [Shubham Automation] - [INFO] - [ LoginPage : txtbx_UserName ] Username text box found on the Login Page
+14/11/2017 04:49:37.911 - [Shubham Automation] - [INFO] - [ Test_Steps4 : Test1 ] Enter Username from CSV
+14/11/2017 04:49:37.930 - [Shubham Automation] - [INFO] - [ LoginPage : txtbx_Password ] Password text box found on the Login Page
+14/11/2017 04:49:38.030 - [Shubham Automation] - [INFO] - [ Test_Steps4 : Test1 ] Enter Password from CSV
+14/11/2017 04:49:38.056 - [Shubham Automation] - [INFO] - [ LoginPage : button_LoginToAccount ] Login to Account button found on the Login Page
+14/11/2017 04:49:38.127 - [Shubham Automation] - [INFO] - [ Test_Steps4 : Test1 ] Clicking on Login button
+14/11/2017 04:49:38.137 - [Shubham Automation] - [INFO] - [ AutomationTestCase : invokeData ] Begin Test case : Test_Steps
+14/11/2017 04:49:38.159 - [Shubham Automation] - [INFO] - [ Homepage : button_MyAccount ] My Account Link is found on Home Page
+14/11/2017 04:49:45.553 - [Shubham Automation] - [INFO] - [ LoginPage : txtbx_UserName ] Username text box found on the Login Page
+14/11/2017 04:49:45.751 - [Shubham Automation] - [INFO] - [ LoginPage : txtbx_Password ] Password text box found on the Login Page
+14/11/2017 04:49:45.865 - [Shubham Automation] - [INFO] - [ LoginPage : button_LoginToAccount ] Login to Account button found on the Login Page
+14/11/2017 04:50:00.946 - [Shubham Automation] - [INFO] - [ LoginPage : validateLogin ] Login Test passed
+14/11/2017 04:50:00.947 - [Shubham Automation] - [INFO] - [ AutomationTestCase : invokeData ] Begin Test case : Login done
+14/11/2017 04:50:00.949 - [Shubham Automation] - [INFO] - [ AutomationTestCase : invoke ] Instance is already invoked
+14/11/2017 04:50:00.961 - [Shubham Automation] - [INFO] - [ AutomationTestCase : invokeData ] Begin Test case : Test_Steps
+14/11/2017 04:50:00.961 - [Shubham Automation] - [INFO] - [ AutomationTestCase : invokeData ] Begin Test case : Continues Login session
+14/11/2017 04:50:00.963 - [Shubham Automation] - [INFO] - [ AutomationTestCase : invoke ] Instance is already invoked
+14/11/2017 04:50:00.964 - [Shubham Automation] - [INFO] - [ Test_Steps : UserCheck ] Testing logger
+14/11/2017 04:50:00.966 - [Shubham Automation] - [SEVERE] - [ Test_Steps : UserCheck ] Testing error
+14/11/2017 04:50:00.968 - [Shubham Automation] - [WARNING] - [ Test_Steps : UserCheck ] Testing warn
+14/11/2017 04:50:01.340 - [Shubham Automation] - [INFO] - [ Test_Steps : UserCheck ] Testing Custom Snapshot taking by framework
+14/11/2017 04:50:01.341 - [Shubham Automation] - [INFO] - [ AutomationTestCase : invokeData ] Begin Test case : Test_Steps3
+14/11/2017 04:50:01.342 - [Shubham Automation] - [INFO] - [ AutomationTestCase : invokeData ] Begin Test case : Continues Login session
+14/11/2017 04:50:01.343 - [Shubham Automation] - [INFO] - [ AutomationTestCase : invoke ] Instance is already invoked
+14/11/2017 04:50:01.362 - [Shubham Automation] - [INFO] - [ Homepage : button_MyAccount ] My Account Link is found on Home Page
+14/11/2017 04:50:07.233 - [Shubham Automation] - [INFO] - [ Test_Steps3 : user_enters_testuser__and_Test ] Implementing CSV data Provider in famework
+14/11/2017 04:50:07.263 - [Shubham Automation] - [INFO] - [ LoginPage : txtbx_UserName ] Username text box found on the Login Page
+14/11/2017 04:50:07.352 - [Shubham Automation] - [INFO] - [ Test_Steps3 : user_enters_testuser__and_Test ] Enter Username from CSV
+14/11/2017 04:50:07.372 - [Shubham Automation] - [INFO] - [ LoginPage : txtbx_Password ] Password text box found on the Login Page
+14/11/2017 04:50:07.451 - [Shubham Automation] - [INFO] - [ Test_Steps3 : user_enters_testuser__and_Test ] Enter Password from CSV
+14/11/2017 04:50:07.473 - [Shubham Automation] - [INFO] - [ LoginPage : button_LoginToAccount ] Login to Account button found on the Login Page
+14/11/2017 04:50:07.526 - [Shubham Automation] - [INFO] - [ Test_Steps3 : user_enters_testuser__and_Test ] Clicking on Login button
+14/11/2017 04:50:07.529 - [Shubham Automation] - [INFO] - [ AutomationTestCase : invokeData ] Begin Test case : Test_Steps
+14/11/2017 04:50:07.530 - [Shubham Automation] - [INFO] - [ AutomationTestCase : invokeData ] Begin Test case : Continues Login session
+14/11/2017 04:50:07.531 - [Shubham Automation] - [INFO] - [ AutomationTestCase : invoke ] Instance is already invoked
+14/11/2017 04:50:07.531 - [Shubham Automation] - [INFO] - [ Test_Steps : UserCheck ] Testing logger
+14/11/2017 04:50:07.531 - [Shubham Automation] - [SEVERE] - [ Test_Steps : UserCheck ] Testing error
+14/11/2017 04:50:07.531 - [Shubham Automation] - [WARNING] - [ Test_Steps : UserCheck ] Testing warn
+14/11/2017 04:50:07.973 - [Shubham Automation] - [INFO] - [ Test_Steps : UserCheck ] Testing Custom Snapshot taking by framework
+14/11/2017 04:50:07.976 - [Shubham Automation] - [INFO] - [ AutomationTestCase : invokeData ] Begin Test case : Test_Steps3
+14/11/2017 04:50:07.976 - [Shubham Automation] - [INFO] - [ AutomationTestCase : invokeData ] Begin Test case : Continues Login session
+14/11/2017 04:50:07.977 - [Shubham Automation] - [INFO] - [ AutomationTestCase : invoke ] Instance is already invoked
+14/11/2017 04:50:07.988 - [Shubham Automation] - [INFO] - [ Homepage : button_MyAccount ] My Account Link is found on Home Page
+14/11/2017 04:50:15.443 - [Shubham Automation] - [INFO] - [ TestRunner : tearDown ] Quiting Webdriver Instances

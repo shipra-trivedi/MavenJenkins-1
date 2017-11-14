@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="80.679422">
+<testcase classname="Testing Framework Action" name="Testing my Framework cases" time="66.96518">
+<system-out><![CDATA[Given Test1.................................................................passed
+When Test2..................................................................passed
+Then Test3..................................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Action" name="Successful Login with Valid Credentials by data table" time="6.563262">
+<system-out><![CDATA[Given User is on Home Page..................................................passed
+When User Navigate to LogIn Page............................................passed
+And User enters Credentials to LogIn........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Action" name="Successful Login with Valid Credentials by Maps in Data Tables" time="7.15098">
+<system-out><![CDATA[Given User is on Home Page..................................................passed
+When User Navigate to LogIn Page............................................passed
+Then Message displayed Login Successfully...................................passed
+]]></system-out>
+</testcase>
+</testsuite>
