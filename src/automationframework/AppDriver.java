@@ -5,6 +5,8 @@ package automationframework;
  */
 
 import java.io.File;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
@@ -17,6 +19,7 @@ import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriverService;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.PageFactory;
 
 import automationframework.Configuration;
@@ -28,6 +31,8 @@ public class AppDriver {
 	private static final String FIREFOX = "MFF";
 	private static final String CHROME = "GC";
 	private static final String PhantomJS = "HL";
+	private static final String RemoteChrome = "RGC";
+	private static final String RemoteFirefox = "RMMF";
 
 	private static final ExcelLib xl = new ExcelLib();
 
@@ -104,6 +109,20 @@ public class AppDriver {
 		        new String[] { "--logLevel=2" });
 		return capabilities;
 	}
+	
+	private static Capabilities getRemoteChromeCapabilities() {
+        DesiredCapabilities cap = DesiredCapabilities.chrome();
+		cap.setCapability("version", "");
+		cap.setCapability("platform", "LINUX");
+		return cap;
+	}
+	
+	private static Capabilities getRemoteFirefoxCapabilities() {
+        	DesiredCapabilities cap = DesiredCapabilities.firefox();
+	        cap.setCapability("version", "");
+	        cap.setCapability("platform", "LINUX");
+		return cap;
+	}
 
 	public static WebDriver getDriver(String browserToUse) {
 		String OS = OSNAMES.split(" ")[0];
@@ -122,7 +141,28 @@ public class AppDriver {
 			setPropertyForPhantomJS(OS);
 			driver = new PhantomJSDriver(getPhantomCapabilities(OS));
 		}
-	    else if (!browserType.equalsIgnoreCase(PhantomJS) | !browserType.equalsIgnoreCase(CHROME) | !browserType.equalsIgnoreCase(FIREFOX)) {
+		else if (browserType.equalsIgnoreCase(RemoteChrome)) {
+			setPropertyForBrowserGC(OS);
+			Capabilities cap =getRemoteChromeCapabilities();
+	        try {
+	        	driver= new RemoteWebDriver(new URL("http://"+Configuration.RemoteURLIPAndPort()+"/wd/hub"), cap);
+			} catch (MalformedURLException e) {
+				System.out.println(e.getMessage());
+				e.printStackTrace();
+			}
+		}
+		else if (browserType.equalsIgnoreCase(RemoteFirefox)) {
+			setPropertyForBrowserGC(OS);
+			Capabilities cap =getRemoteFirefoxCapabilities();
+	        try {
+				driver= new RemoteWebDriver(new URL("http://"+Configuration.RemoteURLIPAndPort()+"/wd/hub"), cap);
+			} catch (MalformedURLException e) {
+				System.out.println(e.getMessage());
+				e.printStackTrace();
+			}
+		}
+		
+	    else if (!browserType.equalsIgnoreCase(PhantomJS) | !browserType.equalsIgnoreCase(CHROME) | !browserType.equalsIgnoreCase(FIREFOX) | !browserType.equalsIgnoreCase(RemoteChrome) | !browserType.equalsIgnoreCase(RemoteFirefox)) {
 	    	AutomationLog.error("Invalid browser name. Please check your browser Input");
 	    	clearBrowserContext(driver);
 	}
@@ -132,9 +172,6 @@ public class AppDriver {
 		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-	//	String url = xl.getXLcellValue("Controller", 1, 1);
-	//	driver.get(url);
-	//	driver.get("http://www.store.demoqa.com");
 		driver.get(Configuration.applicationUnderTestURL()); 
 	//	AutomationLog.info("Current URL="+driver.getCurrentUrl());
 		WaitFor.waitForPageToLoad(driver);

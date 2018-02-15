@@ -1,15 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="199.451422">
-<testcase classname="Testing Framework Action" name="Testing my Framework cases" time="136.746185">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="170.129817">
+<testcase classname="Testing Framework Action" name="Testing my Framework cases" time="148.331926">
 <system-out><![CDATA[Given Test1.................................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Login Action" name="Successful Login with Valid Credentials by data table" time="29.898332">
+<testcase classname="Login Action" name="Successful Login with Valid Credentials by data table" time="14.445149">
 <system-out><![CDATA[Given User is on Home Page..................................................passed
 When User Navigate to LogIn Page............................................passed
 And User enters Credentials to LogIn........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Login Action" name="Successful Login with Valid Credentials by Maps in Data Tables" time="32.806905">
+<testcase classname="Login Action" name="Successful Login with Valid Credentials by Maps in Data Tables" time="7.352742">
 <system-out><![CDATA[Given User is on Home Page..................................................passed
 When User Navigate to LogIn Page............................................passed
 Then Message displayed Login Successfully...................................passed

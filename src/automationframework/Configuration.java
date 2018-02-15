@@ -69,6 +69,11 @@ public class Configuration
     	return "http://" + Configuration.getConfigurationValueForProperty("applicationURL");
     }
     
+    public static String RemoteURLIPAndPort()
+    {
+    	return Configuration.getConfigurationValueForProperty("RemoteIPAndPort");
+    }
+    
     public static String getExcelFile()
     {
     	String excelvalue = Configuration.getConfigurationValueForProperty("Excelfile");

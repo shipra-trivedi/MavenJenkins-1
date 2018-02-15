@@ -97,11 +97,11 @@ formatter.match({
   "location": "Test_Steps4.Test1()"
 });
 formatter.result({
-  "duration": 88601827442,
+  "duration": 103883327682,
   "status": "passed"
 });
 formatter.after({
-  "duration": 48144357872,
+  "duration": 44448598599,
   "status": "passed"
 });
 formatter.uri("LogIn_Test.feature");
@@ -223,25 +223,25 @@ formatter.match({
   "location": "Test_Steps.UserCheck()"
 });
 formatter.result({
-  "duration": 378452304,
+  "duration": 257201282,
   "status": "passed"
 });
 formatter.match({
   "location": "Test_Steps3.user_Navigate_to_LogIn_Page()"
 });
 formatter.result({
-  "duration": 29266630618,
+  "duration": 13896913607,
   "status": "passed"
 });
 formatter.match({
   "location": "Test_Steps3.user_enters_testuser__and_Test()"
 });
 formatter.result({
-  "duration": 253225317,
+  "duration": 290999265,
   "status": "passed"
 });
 formatter.after({
-  "duration": 23609,
+  "duration": 34986,
   "status": "passed"
 });
 formatter.scenario({
@@ -271,25 +271,25 @@ formatter.match({
   "location": "Test_Steps.UserCheck()"
 });
 formatter.result({
-  "duration": 399952327,
+  "duration": 255732695,
   "status": "passed"
 });
 formatter.match({
   "location": "Test_Steps3.user_Navigate_to_LogIn_Page()"
 });
 formatter.result({
-  "duration": 32406816542,
+  "duration": 7096886641,
   "status": "passed"
 });
 formatter.match({
   "location": "Test_Steps3.message_displayed_Login_Successfully()"
 });
 formatter.result({
-  "duration": 107236,
+  "duration": 96995,
   "status": "passed"
 });
 formatter.after({
-  "duration": 28729,
+  "duration": 26169,
   "status": "passed"
 });
 });
