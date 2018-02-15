@@ -34,6 +34,7 @@ import pageobjects.Page;
 		features = "Feature"
 		,glue={"stepDefinition"}
 		,plugin = { "pretty", "html:target/site/cucumber-pretty", "json:target/cucumber.json","junit:target/cucumber.xml"}
+//		,tags= {"@smoke"}  // Run tests in groups
 //		,monochrome = false
 //		,dryRun = true
 		)

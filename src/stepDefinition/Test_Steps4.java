@@ -1,4 +1,5 @@
 package stepDefinition;
+import java.sql.ResultSet;
 /**
  * @author Shubham Jain
  * */
@@ -6,6 +7,7 @@ import java.util.HashMap;
 
 import org.junit.Assert;
 
+import DataBases.JdbcMYSQLServerConnection;
 import automationframework.AppDriver;
 import automationframework.AutomationLog;
 import automationframework.AutomationTestCaseVerification;
@@ -38,9 +40,21 @@ public class Test_Steps4 extends AutomationTestCaseVerification{
 		home.button_MyAccount().click();
 		 HashMap<String, String> expectedLoginData = testCaseData.get("AccountCredentials");
 		 AutomationLog.info("Implementing CSV data Provider in famework");
-		 loginpage.txtbx_UserName().sendKeys(expectedLoginData.get("username"));
+		/* 
+		 JdbcMYSQLServerConnection mysql=new JdbcMYSQLServerConnection();
+			ResultSet rs2 = mysql.dataBaseQuery("select * from credentials where username = 'shubham'");
+			if(rs2.next()) {	
+				System.out.println(rs2.getString(2));
+			}
+		 
+		 */
+/*		 loginpage.txtbx_UserName().sendKeys(expectedLoginData.get("username"));
 		 AutomationLog.info("Enter Username from CSV");
-		 loginpage.txtbx_Password().sendKeys(expectedLoginData.get("password"));
+		 loginpage.txtbx_Password().sendKeys(expectedLoginData.get("password"));*/
+			
+/*		loginpage.txtbx_UserName().sendKeys(rs2.getString(2));
+		AutomationLog.info("Enter Username from CSV");
+		loginpage.txtbx_Password().sendKeys(rs2.getString(3));	*/
 		 AutomationLog.info("Enter Password from CSV");
 		 loginpage.button_LoginToAccount().click();
 		 AutomationLog.info("Clicking on Login button");

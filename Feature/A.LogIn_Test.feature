@@ -22,5 +22,3 @@ Feature: Testing Framework Action
 
 Scenario: Testing my Framework cases
 	Given Test1
-	When Test2
-	Then Test3

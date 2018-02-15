@@ -84,7 +84,7 @@
         "after": [
           {
             "result": {
-              "duration": 22814995237,
+              "duration": 48144357872,
               "status": "passed"
             },
             "match": {
@@ -97,7 +97,7 @@
         "steps": [
           {
             "result": {
-              "duration": 44150028601,
+              "duration": 88601827442,
               "status": "passed"
             },
             "line": 24,
@@ -106,30 +106,6 @@
               "location": "Test_Steps4.Test1()"
             },
             "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 61155,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "Test2",
-            "match": {
-              "location": "Test_Steps4.Test2()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 94720,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "Test3",
-            "match": {
-              "location": "Test_Steps4.Test3()"
-            },
-            "keyword": "Then "
           }
         ]
       }
@@ -218,14 +194,14 @@
     "line": 21,
     "elements": [
       {
-        "line": 23,
+        "line": 24,
         "name": "Successful Login with Valid Credentials by data table",
         "description": "",
         "id": "login-action;successful-login-with-valid-credentials-by-data-table",
         "after": [
           {
             "result": {
-              "duration": 20765,
+              "duration": 23609,
               "status": "passed"
             },
             "match": {
@@ -238,10 +214,10 @@
         "steps": [
           {
             "result": {
-              "duration": 379989265,
+              "duration": 378452304,
               "status": "passed"
             },
-            "line": 24,
+            "line": 25,
             "name": "User is on Home Page",
             "match": {
               "location": "Test_Steps.UserCheck()"
@@ -250,10 +226,10 @@
           },
           {
             "result": {
-              "duration": 5889884667,
+              "duration": 29266630618,
               "status": "passed"
             },
-            "line": 25,
+            "line": 26,
             "name": "User Navigate to LogIn Page",
             "match": {
               "location": "Test_Steps3.user_Navigate_to_LogIn_Page()"
@@ -262,27 +238,37 @@
           },
           {
             "result": {
-              "duration": 293367349,
+              "duration": 253225317,
               "status": "passed"
             },
-            "line": 26,
+            "line": 27,
             "name": "User enters Credentials to LogIn",
             "match": {
               "location": "Test_Steps3.user_enters_testuser__and_Test()"
             },
             "keyword": "And "
           }
+        ],
+        "tags": [
+          {
+            "line": 23,
+            "name": "@SmokeTest"
+          },
+          {
+            "line": 23,
+            "name": "@RegressionTest"
+          }
         ]
       },
       {
-        "line": 28,
+        "line": 29,
         "name": "Successful Login with Valid Credentials by Maps in Data Tables",
         "description": "",
         "id": "login-action;successful-login-with-valid-credentials-by-maps-in-data-tables",
         "after": [
           {
             "result": {
-              "duration": 42382,
+              "duration": 28729,
               "status": "passed"
             },
             "match": {
@@ -295,10 +281,10 @@
         "steps": [
           {
             "result": {
-              "duration": 444285977,
+              "duration": 399952327,
               "status": "passed"
             },
-            "line": 29,
+            "line": 30,
             "name": "User is on Home Page",
             "match": {
               "location": "Test_Steps.UserCheck()"
@@ -307,10 +293,10 @@
           },
           {
             "result": {
-              "duration": 6706437237,
+              "duration": 32406816542,
               "status": "passed"
             },
-            "line": 30,
+            "line": 31,
             "name": "User Navigate to LogIn Page",
             "match": {
               "location": "Test_Steps3.user_Navigate_to_LogIn_Page()"
@@ -319,10 +305,10 @@
           },
           {
             "result": {
-              "duration": 214187,
+              "duration": 107236,
               "status": "passed"
             },
-            "line": 31,
+            "line": 32,
             "name": "Message displayed Login Successfully",
             "match": {
               "location": "Test_Steps3.message_displayed_Login_Successfully()"

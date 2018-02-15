@@ -1,5 +1,6 @@
 D:\Workspace\MavenJenkins\src\pageobjects\LoginPage.java
 D:\Workspace\MavenJenkins\src\Reporting\SendMailClass.java
+D:\Workspace\MavenJenkins\src\DataBases\JdbcMYSQLServerConnection.java
 D:\Workspace\MavenJenkins\src\test\java\Runner\BeforeSuite.java
 D:\Workspace\MavenJenkins\src\stepDefinition\Test_Steps4.java
 D:\Workspace\MavenJenkins\src\automationframework\Credentials.java
@@ -18,6 +19,7 @@ D:\Workspace\MavenJenkins\src\test\java\Runner\TestRunner.java
 D:\Workspace\MavenJenkins\src\stepDefinition\Test_Steps3.java
 D:\Workspace\MavenJenkins\src\pageobjects\Homepage.java
 D:\Workspace\MavenJenkins\src\automationframework\AppDriver.java
+D:\Workspace\MavenJenkins\src\DataBases\JdbcSQLServerConnection.java
 D:\Workspace\MavenJenkins\src\pageobjects\Page.java
 D:\Workspace\MavenJenkins\src\stepDefinition\Test_Steps.java
 D:\Workspace\MavenJenkins\src\test\java\Runner\ExtendedCucumberOptions.java

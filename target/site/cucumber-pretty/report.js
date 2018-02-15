@@ -93,39 +93,15 @@ formatter.step({
   "name": "Test1",
   "keyword": "Given "
 });
-formatter.step({
-  "line": 25,
-  "name": "Test2",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 26,
-  "name": "Test3",
-  "keyword": "Then "
-});
 formatter.match({
   "location": "Test_Steps4.Test1()"
 });
 formatter.result({
-  "duration": 44150028601,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Test_Steps4.Test2()"
-});
-formatter.result({
-  "duration": 61155,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Test_Steps4.Test3()"
-});
-formatter.result({
-  "duration": 94720,
+  "duration": 88601827442,
   "status": "passed"
 });
 formatter.after({
-  "duration": 22814995237,
+  "duration": 48144357872,
   "status": "passed"
 });
 formatter.uri("LogIn_Test.feature");
@@ -211,25 +187,35 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.scenario({
-  "line": 23,
+  "line": 24,
   "name": "Successful Login with Valid Credentials by data table",
   "description": "",
   "id": "login-action;successful-login-with-valid-credentials-by-data-table",
   "type": "scenario",
-  "keyword": "Scenario"
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 23,
+      "name": "@SmokeTest"
+    },
+    {
+      "line": 23,
+      "name": "@RegressionTest"
+    }
+  ]
 });
 formatter.step({
-  "line": 24,
+  "line": 25,
   "name": "User is on Home Page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 25,
+  "line": 26,
   "name": "User Navigate to LogIn Page",
   "keyword": "When "
 });
 formatter.step({
-  "line": 26,
+  "line": 27,
   "name": "User enters Credentials to LogIn",
   "keyword": "And "
 });
@@ -237,29 +223,29 @@ formatter.match({
   "location": "Test_Steps.UserCheck()"
 });
 formatter.result({
-  "duration": 379989265,
+  "duration": 378452304,
   "status": "passed"
 });
 formatter.match({
   "location": "Test_Steps3.user_Navigate_to_LogIn_Page()"
 });
 formatter.result({
-  "duration": 5889884667,
+  "duration": 29266630618,
   "status": "passed"
 });
 formatter.match({
   "location": "Test_Steps3.user_enters_testuser__and_Test()"
 });
 formatter.result({
-  "duration": 293367349,
+  "duration": 253225317,
   "status": "passed"
 });
 formatter.after({
-  "duration": 20765,
+  "duration": 23609,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 28,
+  "line": 29,
   "name": "Successful Login with Valid Credentials by Maps in Data Tables",
   "description": "",
   "id": "login-action;successful-login-with-valid-credentials-by-maps-in-data-tables",
@@ -267,17 +253,17 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 29,
+  "line": 30,
   "name": "User is on Home Page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 30,
+  "line": 31,
   "name": "User Navigate to LogIn Page",
   "keyword": "When "
 });
 formatter.step({
-  "line": 31,
+  "line": 32,
   "name": "Message displayed Login Successfully",
   "keyword": "Then "
 });
@@ -285,25 +271,25 @@ formatter.match({
   "location": "Test_Steps.UserCheck()"
 });
 formatter.result({
-  "duration": 444285977,
+  "duration": 399952327,
   "status": "passed"
 });
 formatter.match({
   "location": "Test_Steps3.user_Navigate_to_LogIn_Page()"
 });
 formatter.result({
-  "duration": 6706437237,
+  "duration": 32406816542,
   "status": "passed"
 });
 formatter.match({
   "location": "Test_Steps3.message_displayed_Login_Successfully()"
 });
 formatter.result({
-  "duration": 214187,
+  "duration": 107236,
   "status": "passed"
 });
 formatter.after({
-  "duration": 42382,
+  "duration": 28729,
   "status": "passed"
 });
 });

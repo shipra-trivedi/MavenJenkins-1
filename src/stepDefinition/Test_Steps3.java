@@ -4,6 +4,8 @@ package stepDefinition;
  * */
 import java.util.HashMap;
 import org.junit.Assert;
+import org.openqa.selenium.By;
+
 import automationframework.AppDriver;
 import automationframework.AutomationLog;
 import automationframework.AutomationTestCaseVerification;
@@ -59,9 +61,11 @@ public class Test_Steps3 extends AutomationTestCaseVerification{
 	public void message_displayed_LogOut_Successfully() throws Throwable {
 		System.out.println("LogOut Successfully");
 		
-
+		//Page.driver.findElements(By.xpath("")).get(2).click();
 		Page.driver.quit();
 		AppDriver.killChromePhantomInstance(Page.driver);
+		
+		
 	}
 	
 /*	@Then("^Asserts of JUnits$")

@@ -130,6 +130,11 @@
         	<artifactId>ads-lib</artifactId>
         	<version>3.9.0</version>
         </dependency>
+        <dependency>
+        	<groupId>mysql</groupId>
+        	<artifactId>mysql-connector-java</artifactId>
+        	<version>8.0.8-dmr</version>
+        </dependency>
     </dependencies>
     <description>/**
  * @author Shubham Jain

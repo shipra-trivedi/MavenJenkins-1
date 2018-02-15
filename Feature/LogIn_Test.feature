@@ -20,6 +20,7 @@
 
 Feature: Login Action
 
+@SmokeTest @RegressionTest
 Scenario: Successful Login with Valid Credentials by data table
 	Given User is on Home Page
 	When User Navigate to LogIn Page

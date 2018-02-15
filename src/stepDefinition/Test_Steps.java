@@ -3,6 +3,8 @@ package stepDefinition;
  * @author Shubham Jain
  * */
 import java.io.File;
+import java.sql.Connection;
+import java.sql.ResultSet;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -14,6 +16,7 @@ import org.openqa.selenium.By;
 /*import org.openqa.selenium.WebPage.driver;
 import org.openqa.selenium.firefox.FirefoxPage.driver;*/
 
+import DataBases.JdbcMYSQLServerConnection;
 import automationframework.AutomationFramework;
 
 import automationframework.AutomationTestCaseVerification;
@@ -82,8 +85,47 @@ public class Test_Steps extends AutomationTestCaseVerification {
 		
 		ScreenshotAndTestNgReporterListener.customScreenshot();
 		AutomationLog.info("Testing Custom Snapshot taking by framework");
+		/*
+		
+		JdbcMYSQLServerConnection mysql=new JdbcMYSQLServerConnection();		
+		
+		System.out.println("Query One Starts");
+		
+		ResultSet rs = mysql.dataBaseQuery("select * from credentials");
+		if(rs.next()) {
+		
+			System.out.println(rs.getString(1));
+		}
+		
+		mysql.closeConnection();
+		
+		System.out.println("Query two Starts");
+
+		ResultSet rs2 = mysql.dataBaseQuery("select * from credentials where username = 'udip'");
+		if(rs2.next()) {	
+			System.out.println(rs2.getString(2));
+		}
+		mysql.closeConnection();
+		
+		System.out.println("Query three Starts");		
+
+		ResultSet rs3 = mysql.dataBaseQuery("select * from credentials where username = 'gaurav'");
+		if(rs3.next()) {	
+			System.out.println(rs3.getString(3));
+		}
+		mysql.closeConnection();
+		
+		////////////////////////////////////////////////////////////
+		
+		*/
 		
 		
+		
+		// System.out.println(rs2.getString(1));
+		// mysql.closeConnection();
+
+	//	 con.close();
+		 
 	/*	Assert.assertEquals("Custom Error by shubham", Page.driver.getTitle());
 		AutomationLog.info("Title of the game is not equal");*/
 		
