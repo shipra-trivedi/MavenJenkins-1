@@ -27,7 +27,8 @@ services:
   jenkins:
     image: jenkins/jenkins
     volumes:
-      - /jenkins/jenkins:/var/jenkins_home
+      - /var/jenkins_home:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock
     depends_on:
       - hub
     environment:
