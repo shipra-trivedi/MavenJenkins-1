@@ -1,3 +1,43 @@
 23/02/2018 01:03:27.155 - [Shubham Automation] - [INFO] - java.util.logging.ConsoleHandler@38afe297
 23/02/2018 01:03:27.156 - [Shubham Automation] - [INFO] - [ TestRunner : setUp ] In Before Suite
 23/02/2018 01:03:27.786 - [Shubham Automation] - [INFO] - [ AutomationTestCase : setup ] Begin Test case : Test_Steps4
+23/02/2018 01:06:17.227 - [Shubham Automation] - [SEVERE] - [ AutomationTestCase : invoke ] Exception occured in setup
+23/02/2018 01:06:17.235 - [Shubham Automation] - [SEVERE] - [ AutomationTestCase : invoke ] Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'SHUBHAMJ-PC', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: AppDriver
+23/02/2018 01:06:17.262 - [Shubham Automation] - [SEVERE] - [ Homepage : button_MyAccount ] My Account Link is not found on Home Page
+23/02/2018 01:06:17.296 - [Shubham Automation] - [INFO] - [ AutomationTestCase : invokeData ] Begin Test case : Test_Steps
+23/02/2018 01:06:17.297 - [Shubham Automation] - [SEVERE] - [ Homepage : button_MyAccount ] My Account Link is not found on Home Page
+23/02/2018 01:06:17.297 - [Shubham Automation] - [SEVERE] - [ LoginPage : doLoginWithCredentials ] Login Failed
+23/02/2018 01:06:17.298 - [Shubham Automation] - [SEVERE] - [ LoginPage : doSuccessfulLogin ] Login failed.
+23/02/2018 01:06:17.301 - [Shubham Automation] - [INFO] - [ AutomationTestCase : invoke ] Instance is already invoked
+23/02/2018 01:06:17.302 - [Shubham Automation] - [SEVERE] - [ Test_Steps : afterMethod ] Failed Scenario Name = Testing my Framework cases And it's status is = failed
+23/02/2018 01:06:17.307 - [Shubham Automation] - [SEVERE] - [ Test_Steps : afterMethod ] Testcase/Scenario fail
+23/02/2018 01:06:17.317 - [Shubham Automation] - [INFO] - [ AutomationTestCase : invokeData ] Begin Test case : Test_Steps
+23/02/2018 01:06:17.318 - [Shubham Automation] - [INFO] - [ AutomationTestCase : invokeData ] Begin Test case : Continues Login session
+23/02/2018 01:06:17.319 - [Shubham Automation] - [INFO] - [ AutomationTestCase : invoke ] Instance is already invoked
+23/02/2018 01:06:17.320 - [Shubham Automation] - [INFO] - [ Test_Steps : UserCheck ] Testing logger
+23/02/2018 01:06:17.320 - [Shubham Automation] - [SEVERE] - [ Test_Steps : UserCheck ] Testing error
+23/02/2018 01:06:17.320 - [Shubham Automation] - [WARNING] - [ Test_Steps : UserCheck ] Testing warn
+23/02/2018 01:06:17.324 - [Shubham Automation] - [INFO] - [ Test_Steps : UserCheck ] Testing Custom Snapshot taking by framework
+23/02/2018 01:06:17.326 - [Shubham Automation] - [INFO] - [ AutomationTestCase : invokeData ] Begin Test case : Test_Steps3
+23/02/2018 01:06:17.326 - [Shubham Automation] - [INFO] - [ AutomationTestCase : invokeData ] Begin Test case : Continues Login session
+23/02/2018 01:06:17.327 - [Shubham Automation] - [INFO] - [ AutomationTestCase : invoke ] Instance is already invoked
+23/02/2018 01:06:17.328 - [Shubham Automation] - [SEVERE] - [ Homepage : button_MyAccount ] My Account Link is not found on Home Page
+23/02/2018 01:06:17.333 - [Shubham Automation] - [SEVERE] - [ Test_Steps : afterMethod ] Failed Scenario Name = Successful Login with Valid Credentials by data table And it's status is = failed
+23/02/2018 01:06:17.337 - [Shubham Automation] - [SEVERE] - [ Test_Steps : afterMethod ] Testcase/Scenario fail
+23/02/2018 01:06:17.340 - [Shubham Automation] - [INFO] - [ AutomationTestCase : invokeData ] Begin Test case : Test_Steps
+23/02/2018 01:06:17.341 - [Shubham Automation] - [INFO] - [ AutomationTestCase : invokeData ] Begin Test case : Continues Login session
+23/02/2018 01:06:17.342 - [Shubham Automation] - [INFO] - [ AutomationTestCase : invoke ] Instance is already invoked
+23/02/2018 01:06:17.342 - [Shubham Automation] - [INFO] - [ Test_Steps : UserCheck ] Testing logger
+23/02/2018 01:06:17.343 - [Shubham Automation] - [SEVERE] - [ Test_Steps : UserCheck ] Testing error
+23/02/2018 01:06:17.343 - [Shubham Automation] - [WARNING] - [ Test_Steps : UserCheck ] Testing warn
+23/02/2018 01:06:17.346 - [Shubham Automation] - [INFO] - [ Test_Steps : UserCheck ] Testing Custom Snapshot taking by framework
+23/02/2018 01:06:17.347 - [Shubham Automation] - [INFO] - [ AutomationTestCase : invokeData ] Begin Test case : Test_Steps3
+23/02/2018 01:06:17.348 - [Shubham Automation] - [INFO] - [ AutomationTestCase : invokeData ] Begin Test case : Continues Login session
+23/02/2018 01:06:17.348 - [Shubham Automation] - [INFO] - [ AutomationTestCase : invoke ] Instance is already invoked
+23/02/2018 01:06:17.349 - [Shubham Automation] - [SEVERE] - [ Homepage : button_MyAccount ] My Account Link is not found on Home Page
+23/02/2018 01:06:17.351 - [Shubham Automation] - [SEVERE] - [ Test_Steps : afterMethod ] Failed Scenario Name = Successful Login with Valid Credentials by Maps in Data Tables And it's status is = failed
+23/02/2018 01:06:17.353 - [Shubham Automation] - [SEVERE] - [ Test_Steps : afterMethod ] Testcase/Scenario fail
+23/02/2018 01:06:17.528 - [Shubham Automation] - [INFO] - [ TestRunner : tearDown ] Quiting Webdriver Instances

@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: test.java.Runner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 0, Errors: 6, Skipped: 2, Time elapsed: 171.102 sec <<< FAILURE!
+Given Test1(Scenario: Testing my Framework cases)  Time elapsed: 0.022 sec  <<< ERROR!
+java.lang.NullPointerException
+	at pageobjects.Homepage.button_MyAccount(Homepage.java:44)
+	at stepDefinition.Test_Steps4.Test1(Test_Steps4.java:40)
+	at ?.Given Test1(A.LogIn_Test.feature:24)
+
+Scenario: Testing my Framework cases  Time elapsed: 0.025 sec  <<< ERROR!
+java.lang.NullPointerException
+	at pageobjects.Homepage.button_MyAccount(Homepage.java:44)
+	at stepDefinition.Test_Steps4.Test1(Test_Steps4.java:40)
+	at ?.Given Test1(A.LogIn_Test.feature:24)
+
+When User Navigate to LogIn Page(Scenario: Successful Login with Valid Credentials by data table)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.NullPointerException
+	at pageobjects.Homepage.button_MyAccount(Homepage.java:44)
+	at stepDefinition.Test_Steps3.user_Navigate_to_LogIn_Page(Test_Steps3.java:32)
+	at ?.When User Navigate to LogIn Page(LogIn_Test.feature:26)
+
+Scenario: Successful Login with Valid Credentials by data table  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.NullPointerException
+	at pageobjects.Homepage.button_MyAccount(Homepage.java:44)
+	at stepDefinition.Test_Steps3.user_Navigate_to_LogIn_Page(Test_Steps3.java:32)
+	at ?.When User Navigate to LogIn Page(LogIn_Test.feature:26)
+
+When User Navigate to LogIn Page(Scenario: Successful Login with Valid Credentials by Maps in Data Tables)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+	at pageobjects.Homepage.button_MyAccount(Homepage.java:44)
+	at stepDefinition.Test_Steps3.user_Navigate_to_LogIn_Page(Test_Steps3.java:32)
+	at ?.When User Navigate to LogIn Page(LogIn_Test.feature:31)
+
+Scenario: Successful Login with Valid Credentials by Maps in Data Tables  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+	at pageobjects.Homepage.button_MyAccount(Homepage.java:44)
+	at stepDefinition.Test_Steps3.user_Navigate_to_LogIn_Page(Test_Steps3.java:32)
+	at ?.When User Navigate to LogIn Page(LogIn_Test.feature:31)
+

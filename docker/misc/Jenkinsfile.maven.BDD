@@ -11,9 +11,9 @@ node {
    stage('Build') {
       // Run the maven build
       if (isUnix()) {
-         sh "'${mvnHome}/bin/mvn' exec:java -Dmaven.test.failure.ignore clean install"
+         sh "'${mvnHome}/bin/mvn' clean install exec:java -Dmaven.test.failure.ignore"
       } else {
-         bat(/"${mvnHome}\bin\mvn" exec:java -Dmaven.test.failure.ignore clean install/)
+         bat(/"${mvnHome}\bin\mvn" clean install exec:java -Dmaven.test.failure.ignore/)
       }
    }
    stage('Results') {
