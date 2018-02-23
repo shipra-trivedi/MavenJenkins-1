@@ -26,7 +26,7 @@ services:
     ports:
       - "32773:5900"
 
-  jenkins:
+  ubuntu:
     image: ubuntu
     volumes:
       - /bin/bash:/bin/bash
