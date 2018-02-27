@@ -1,4 +1,5 @@
 D:\Workspace\MavenJenkins\src\pageobjects\LoginPage.java
+D:\Workspace\MavenJenkins\src\pageobjects\CueContactUsPage.java
 D:\Workspace\MavenJenkins\src\Reporting\SendMailClass.java
 D:\Workspace\MavenJenkins\src\DataBases\JdbcMYSQLServerConnection.java
 D:\Workspace\MavenJenkins\src\test\java\Runner\BeforeSuite.java
@@ -8,6 +9,7 @@ D:\Workspace\MavenJenkins\src\test\java\Runner\AfterSuite.java
 D:\Workspace\MavenJenkins\src\automationframework\AutomationLog.java
 D:\Workspace\MavenJenkins\src\Reporting\ZipReports.java
 D:\Workspace\MavenJenkins\src\automationframework\TestDataProvider.java
+D:\Workspace\MavenJenkins\src\pageobjects\CueHomePage.java
 D:\Workspace\MavenJenkins\src\automationframework\Configuration.java
 D:\Workspace\MavenJenkins\src\Reporting\GoogleDriveUpload.java
 D:\Workspace\MavenJenkins\src\automationframework\ExcelLib.java

@@ -1,36 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="3" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="169.878176">
-<testcase classname="Testing Framework Action" name="Testing my Framework cases" time="169.852121">
-<failure message="java.lang.NullPointerException&#13;&#10;&#9;at pageobjects.Homepage.button_MyAccount(Homepage.java:44)&#13;&#10;&#9;at stepDefinition.Test_Steps4.Test1(Test_Steps4.java:40)&#13;&#10;&#9;at ✽.Given Test1(A.LogIn_Test.feature:24)&#13;&#10;"><![CDATA[Given Test1.................................................................failed
-
-StackTrace:
-java.lang.NullPointerException
-	at pageobjects.Homepage.button_MyAccount(Homepage.java:44)
-	at stepDefinition.Test_Steps4.Test1(Test_Steps4.java:40)
-	at ✽.Given Test1(A.LogIn_Test.feature:24)
-]]></failure>
-</testcase>
-<testcase classname="Login Action" name="Successful Login with Valid Credentials by data table" time="0.015488">
-<failure message="java.lang.NullPointerException&#13;&#10;&#9;at pageobjects.Homepage.button_MyAccount(Homepage.java:44)&#13;&#10;&#9;at stepDefinition.Test_Steps3.user_Navigate_to_LogIn_Page(Test_Steps3.java:32)&#13;&#10;&#9;at ✽.When User Navigate to LogIn Page(LogIn_Test.feature:26)&#13;&#10;"><![CDATA[Given User is on Home Page..................................................passed
-When User Navigate to LogIn Page............................................failed
-And User enters Credentials to LogIn........................................skipped
-
-StackTrace:
-java.lang.NullPointerException
-	at pageobjects.Homepage.button_MyAccount(Homepage.java:44)
-	at stepDefinition.Test_Steps3.user_Navigate_to_LogIn_Page(Test_Steps3.java:32)
-	at ✽.When User Navigate to LogIn Page(LogIn_Test.feature:26)
-]]></failure>
-</testcase>
-<testcase classname="Login Action" name="Successful Login with Valid Credentials by Maps in Data Tables" time="0.010567">
-<failure message="java.lang.NullPointerException&#13;&#10;&#9;at pageobjects.Homepage.button_MyAccount(Homepage.java:44)&#13;&#10;&#9;at stepDefinition.Test_Steps3.user_Navigate_to_LogIn_Page(Test_Steps3.java:32)&#13;&#10;&#9;at ✽.When User Navigate to LogIn Page(LogIn_Test.feature:31)&#13;&#10;"><![CDATA[Given User is on Home Page..................................................passed
-When User Navigate to LogIn Page............................................failed
-Then Message displayed Login Successfully...................................skipped
-
-StackTrace:
-java.lang.NullPointerException
-	at pageobjects.Homepage.button_MyAccount(Homepage.java:44)
-	at stepDefinition.Test_Steps3.user_Navigate_to_LogIn_Page(Test_Steps3.java:32)
-	at ✽.When User Navigate to LogIn Page(LogIn_Test.feature:31)
-]]></failure>
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="34.487079">
+<testcase classname="Testing Framework Action" name="Testing my Framework cases" time="34.487079">
+<system-out><![CDATA[Given Test1.................................................................passed
+]]></system-out>
 </testcase>
 </testsuite>

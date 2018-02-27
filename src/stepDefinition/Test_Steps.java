@@ -100,7 +100,6 @@ public class Test_Steps extends AutomationTestCaseVerification {
 		mysql.closeConnection();
 		
 		System.out.println("Query two Starts");
-
 		ResultSet rs2 = mysql.dataBaseQuery("select * from credentials where username = 'udip'");
 		if(rs2.next()) {	
 			System.out.println(rs2.getString(2));
@@ -108,7 +107,6 @@ public class Test_Steps extends AutomationTestCaseVerification {
 		mysql.closeConnection();
 		
 		System.out.println("Query three Starts");		
-
 		ResultSet rs3 = mysql.dataBaseQuery("select * from credentials where username = 'gaurav'");
 		if(rs3.next()) {	
 			System.out.println(rs3.getString(3));
@@ -132,7 +130,6 @@ public class Test_Steps extends AutomationTestCaseVerification {
 /*		Assert.assertEquals("ONLINE STORE | Toolsqa Dummy Test site", Page.driver.getTitle());
 		AutomationLog.info("Title of the game is equal");
 		
-
 		
 		Assert.assertEquals("ONLINE STORE | Toolsqa Dummy Test site", Page.driver.getTitle());
 		AutomationLog.info("Title of the game is equal 2");*/

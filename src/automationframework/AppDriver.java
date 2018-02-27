@@ -16,8 +16,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
-import org.openqa.selenium.phantomjs.PhantomJSDriver;
-import org.openqa.selenium.phantomjs.PhantomJSDriverService;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.PageFactory;
@@ -102,11 +100,11 @@ public class AppDriver {
 		cliArgsCap.add("--ignore-ssl-errors=true");
 		capabilities.setCapability("takesScreenshot", true);
 		capabilities.setJavascriptEnabled(true);
-		capabilities.setCapability(
+		/*		capabilities.setCapability(
 		    PhantomJSDriverService.PHANTOMJS_CLI_ARGS, cliArgsCap);
 		capabilities.setCapability(
 		    PhantomJSDriverService.PHANTOMJS_GHOSTDRIVER_CLI_ARGS,
-		        new String[] { "--logLevel=2" });
+		        new String[] { "--logLevel=2" });*/
 		return capabilities;
 	}
 	
@@ -139,7 +137,7 @@ public class AppDriver {
 			
 		}else if (browserType.equalsIgnoreCase(PhantomJS)) {
 			setPropertyForPhantomJS(OS);
-			driver = new PhantomJSDriver(getPhantomCapabilities(OS));
+			//driver = new PhantomJSDriver(getPhantomCapabilities(OS));
 		}
 		else if (browserType.equalsIgnoreCase(RemoteChrome)) {
 			setPropertyForBrowserGC(OS);
@@ -195,10 +193,10 @@ public class AppDriver {
 	public static void killChromePhantomInstance(WebDriver driver) {
 		String OS = OSNAMES.split(" ")[0];
 		try{
-			if(Page.driver instanceof PhantomJSDriver & OS.equalsIgnoreCase("windows"))
+/*			if(Page.driver instanceof PhantomJSDriver & OS.equalsIgnoreCase("windows"))
 			{
 				Runtime.getRuntime().exec("taskkill /F /IM phantomjs.exe");
-			}
+			}*/
 			if(driver instanceof ChromeDriver & OS.equalsIgnoreCase("windows"))
 			{
 				Runtime.getRuntime().exec("taskkill /F /IM chromedriver.exe");

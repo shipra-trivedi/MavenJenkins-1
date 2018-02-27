@@ -8,11 +8,13 @@ Reporting\AWSUpload.class
 stepDefinition\Test_Steps4.class
 automationframework\WaitFor$1.class
 automationframework\ScreenshotAndTestNgReporterListener$1.class
+pageobjects\CueHomePage.class
 DataBases\JdbcMYSQLServerConnection.class
 test\java\Runner\TestRunner.class
 pageobjects\LoginPage.class
 automationframework\AutomationFramework.class
 automationframework\Credentials.class
+pageobjects\CueContactUsPage.class
 pageobjects\Homepage.class
 Reporting\GetRefreshToken.class
 automationframework\WaitFor$4.class
