@@ -21,8 +21,8 @@ public class AWSUpload {
 
 	    int iExitValue;
 	    String sCommandString;
-        static String Pemfilepath="/home/shubham/Experiment_zone/FTP-SCP-Project/src/lib/cuelogic.pem";
-        static String AWSAccountPublicIPAndPath = "ubuntu@54.152.13.148:/var/www/html/projects/kumo_reports/";
+        static String Pemfilepath={.pem filepath};
+        static String AWSAccountPublicIPAndPath = "reports_path";
         static String targetFolder = null;
         static String shellSciptLocation = "sh AWSUploadShell.sh";
 
